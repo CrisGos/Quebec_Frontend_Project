@@ -12,9 +12,10 @@
     <main>
         <h1>Queremos conocerte</h1>
         <form action="" method="post" class="">
-            <!-- info de banda -->
+            <!-- band info-->
             <section>
                 
+                <!-- soloist or band selection -->
                 <div>
                     <h3>Eres:</h3>
                     <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
@@ -22,27 +23,55 @@
                     <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
                     <label class="btn" for="option6">banda</label>
                 </div>
+                <!-- Artistic name-->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre Artistico">
+                    <label for="floatingInput">Nombre Artistico</label>
+                </div>
+                <!-- genre selecction -->
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option selected>Genero</option>
+                        <option value="1">Salsa</option>
+                        <option value="2">Mariachi</option>
+                        <option value="3">Rock</option>
+                    </select>
+                    <label for="floatingSelect">Works with selects</label>
+                    <button type="button" class="btn btn-primary">elegir</button>
+
+                </div>
+                <!-- band image -->
                 <div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                    </div>  
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Default file input example</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
                 </div>
 
             </section>
-            <!-- descripcion de la banda -->
+            <!-- band description-->
             <section>
 
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    <textarea class="form-control" placeholder="Descripcion" id="floatingTextarea2"
                         style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Comments</label>
+                    <label for="floatingTextarea2">Descripcion del grupo Artistico</label>
                 </div>
 
             </section>
-            <!-- datos de la cuenta -->
+            <!-- daccount info -->
             <section>
-
+                <!-- email adrres -->
+                <div>
+                    <h3>Email</h3>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label> 
+                    </div>  
+                </div>
             </section>
 
 
@@ -50,7 +79,7 @@
 
     </main>
     <footer></footer>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="../js/main.js"></script>
 </body>
 
 </html>
