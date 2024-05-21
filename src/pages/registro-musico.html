@@ -12,12 +12,12 @@
     <main>
         <h1>Queremos conocerte</h1>
         
-        
         <form action="" method="post" class="">
-            <section class="w-75 d-inline">
+            <section class="w-75 d-block ">
                 <!-- band info-->
-                <section id="band-info" class="container w-50">
-                <article>
+                <section id="band-info" class="container row">
+                    <!-- d-flex justify-content-between w-50 -->
+                <article class="col">
                     <!-- soloist or band selection -->
                     <div >
                         <h3>Eres:</h3>
@@ -58,15 +58,15 @@
                     </div>
                 </article>
                     <!-- band image -->
-                    <div class="col-6">
-                        <figure>
+                <article id="img-uploader" class="col">
+                        <figure class="h-50">
                             <img src="" alt="">
                         </figure>
                         <div class="mb-3">
                             <label for="formFile" class="form-label">Default file input example</label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
-                    </div>
+                </article>
 
                 </section>
 
