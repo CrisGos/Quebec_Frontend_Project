@@ -1,3 +1,86 @@
 @import url(./normalize.scss);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Jersey+25+Charted&display=swap');
+
+
+
+:root{
+    --verde:#015958;
+    --color:#028C8A;
+    --color-thre:#02A5A4;
+    --color-four:#02B2B0;
+    --color-five:#02BFBD;
+    --fire-color:#D92525;
+    --dark-color:#000000;
+    --white-color:#FFFFFF;
+    --color-ilustration:#0FC2C0;
+}
+
+
+header,
+footer {
+    background:linear-gradient(#015958,#028C8A,#02A5A4,#02B2B0,#02BFBD);
+    color: #ffffff;
+}
+
+
+
+.img-one {
+    background-image: url("..//../public/img/artist.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 8;
+}
+
+h1,
+h2 {
+    margin-bottom: 1em;
+}
+
+.title {
+    font-size: 5em;
+    font-family: "Jersey 25 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.collapse a , li{
+    color:#ffffff;
+}
+
+
+.common {
+    background-color: #02B2B0;
+    border: none;
+    color:white;
+}
+
+.estyl-select {
+    color: #02B2B0;
+}
+
+.two-parts {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.container-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+}
+
+.container-buttons button {
+    width: 30%;
+}
+
+
+.logo{
+    width: 8%;
+}
