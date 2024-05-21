@@ -10,99 +10,105 @@
 <body>
     <header></header>
     <main>
-        <section class="d-flex wrap-flex">
         <h1>Queremos conocerte</h1>
-        <form action="" method="post" class="">
-            <!-- band info-->
-            <section id="band-info" class="container ">
-                
-                <!-- soloist or band selection -->
-                <div>
-                    <h3>Eres:</h3>
-                    <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off" checked>
-                    <label class="btn" for="option1">Solista</label>
-                    <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
-                    <label class="btn" for="option62">banda</label>
-                </div>
-
-                <!-- Artistic name-->
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre Artistico">
-                    <label for="floatingInput">Nombre Artistico</label> 
-                </div>
-                <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                        <option selected>tipo de grupo</option>
-                        <option value="1">Pequeño(2 a 5 integrantes)</option>
-                        <option value="2">Mediano(6 a 9 integrantes)</option>
-                        <option value="3">Grande(10 o mas integrantes)</option>
-                    </select>
-
-                <!-- genre selecction -->
-                <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                        <option selected>Genero</option>
-                        <option value="1">Salsa</option>
-                        <option value="2">Mariachi</option>
-                        <option value="3">Rock</option>
-                    </select>
-                    <label for="floatingSelect">Works with selects</label>
-                    <button type="button" class="btn btn-primary">elegir</button>
-
-                </div>
-
-                <!-- band image -->
-                <div>
-                    <figure>
-                        <img src="" alt="">
-                    </figure>
-                    <div class="mb-3">
-                        <label for="formFile" class="form-label">Default file input example</label>
-                        <input class="form-control" type="file" id="formFile">
-                    </div>
-                </div>
-
-            </section>
-
-            <!-- band description-->
-            <section id="band-description">
-                <h3>Hablanos de tu banda</h3>
-                <!-- Descripcion -->
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Descripcion" id="floatingTextarea2"
-                        style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Descripcion del grupo Artistico</label>
-                </div>
-                <!-- Medellin adress -->
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Direccion en medellin">
-                    <label for="floatingInput">Direccion en Medellin</label>
-                </div>
-                <!-- youtube video -->
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Direccion en medellin">
-                    <label for="floatingInput">Video de youtube</label>
-                </div>
-
-
-            </section>
-
-            <!-- account info -->
-            <section id="accout-info">
-                <!-- email adrres -->
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                </div>
-            </section>
         
+        
+        <form action="" method="post" class="">
+            <section class="w-75 d-inline">
+                <!-- band info-->
+                <section id="band-info" class="container w-70">
+                    
+                    <!-- soloist or band selection -->
+                    <div >
+                        <h3>Eres:</h3>
+                        <!-- soloist radio button -->
+                        <input type="radio" class="btn-check" name="options-base" id="option1" autocomplete="off" checked>
+                        <label class="btn" for="option1">Solista</label>
+                        <!-- band radio button -->
+                        <input type="radio" class="btn-check" name="options-base" id="option2" autocomplete="off">
+                        <label class="btn" for="option2">banda</label>
+                    </div>
 
+                    <!-- Artistic name-->
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre Artistico">
+                        <label for="floatingInput">Nombre Artistico</label> 
+                    </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>tipo de grupo</option>
+                            <option value="1">Pequeño(2 a 5 integrantes)</option>
+                            <option value="2">Mediano(6 a 9 integrantes)</option>
+                            <option value="3">Grande(10 o mas integrantes)</option>
+                        </select>
+                        <label for="floatingSelect">Works with selects</label>
+                    </div>
+
+                    <!-- genre selecction -->
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Genero</option>
+                            <option value="1">Salsa</option>
+                            <option value="2">Mariachi</option>
+                            <option value="3">Rock</option>
+                        </select>
+                        <label for="floatingSelect">Works with selects</label>
+                        <button type="button" class="btn btn-primary">elegir</button>
+
+                    </div>
+
+                    <!-- band image -->
+                    <div class="col-6">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Default file input example</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- band description-->
+                <section id="band-description" class="container w-70">
+                    <h3>Hablanos de tu banda</h3>
+                    <!-- Descripcion -->
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Descripcion" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Descripcion del grupo Artistico</label>
+                    </div>
+                    <!-- Medellin adress -->
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Direccion en medellin">
+                        <label for="floatingInput">Direccion en Medellin</label>
+                    </div>
+                    <!-- youtube video -->
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Direccion en medellin">
+                        <label for="floatingInput">Video de youtube</label>
+                    </div>
+
+
+                </section>
+
+                <!-- account info -->
+                <section id="accout-info" class="w-50" class="container w-70">
+                    <!-- email adrres -->
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                </section>
+            </section>
         </form>
-    </section>
+    
+
         <section id="progress-bar"></section>
         
         <section class="d-flex justify-content-center">
