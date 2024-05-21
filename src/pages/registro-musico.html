@@ -13,10 +13,10 @@
         <h1>Queremos conocerte</h1>
         
         <form action="" method="post" class="">
-            <section class="row overflow-x-scroll">
+            <section class="row h-50">
                 <!-- band info-->
-                <section id="band-info" class="row col-8 w-50">
-                    <!-- d-flex justify-content-between w-50 -->
+                <section id="band-info" class="row col-8 w-50 visible">
+                    
                 <article class="col">
                     <!-- soloist or band selection -->
                     <div >
@@ -37,23 +37,24 @@
                     <div class="form-floating">
                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                             <option selected>tipo de grupo</option>
-                            <option value="1">Pequeño(2 a 5 integrantes)</option>
-                            <option value="2">Mediano(6 a 9 integrantes)</option>
-                            <option value="3">Grande(10 o mas integrantes)</option>
+                            <option value="smll">Pequeño(2 a 5 integrantes)</option>
+                            <option value="md">Mediano(6 a 9 integrantes)</option>
+                            <option value="lg">Grande(10 o mas integrantes)</option>
                         </select>
-                        <label for="floatingSelect">Works with selects</label>
+                        <label for="floatingSelect">Cantiada de integrantes</label>
                     </div>
 
                     <!-- genre selecction -->
                     <div class="form-floating">
                         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                             <option selected>Genero</option>
-                            <option value="1">Salsa</option>
-                            <option value="2">Mariachi</option>
+                            <option value="1">Urbano</option>
+                            <option value="2">Pop</option>
+                            <option value="3">Popular</option>
                             <option value="3">Rock</option>
+                            <option value="3">Electronica</option>
                         </select>
                         <label for="floatingSelect">Works with selects</label>
-                        <button type="button" class="btn btn-primary">elegir</button>
 
                     </div>
                 </article>
@@ -71,7 +72,7 @@
                 </section>
 
                 <!-- band description-->
-                <section id="band-description" class="col-8 w-50">
+                <section id="band-description" class="col-8 w-50 d-none">
                     <h3>Hablanos de tu banda</h3>
                     <!-- Descripcion -->
                     <div class="form-floating">
@@ -94,7 +95,7 @@
                 </section>
 
                 <!-- account info -->
-                <section id="accout-info"  class="col w-50">
+                <section id="accout-info"  class="col-8 w-50 d-none">
                     <h3>Tu cuenta en Music Market</h3>
                     <!-- email adrres -->
                     <div class="form-floating mb-3">
@@ -110,18 +111,19 @@
             </section>
         </form>
     
-
+        <!-- progress bar -->
         <section id="progress-bar"></section>
-        
-        <section class="d-flex justify-content-center">
-            <button type="button" class="btn btn-dark">Return</button>
+        <!-- register navigation buttons -->
+        <section id="nxt-bck-btns" class="d-flex justify-content-center">
+            <button type="button" class="btn btn-dark d-none">Return</button>
 
-        <button type="button" class="btn btn-success">Next</button>
+        <button type="button" class="btn btn-primary">Next</button>
         </section>
 
     </main>
     <footer></footer>
     <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/registerMusic.js"></script>
 </body>
 
 </html>

@@ -3,4 +3,11 @@
 
 $primary: #02B2b0;
 @import "bootstrap/scss/bootstrap";
+:root{
+    --bckgrnd:#212529;
+}
 
+body{
+    background-color: var(--bckgrnd);
+    
+}
