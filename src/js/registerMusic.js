@@ -1,3 +1,9 @@
+// Import our custom CSS
+import '../scss/colors.scss';
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
+
 
 const sect0= document.querySelector('#band-info')
 const sect1= document.querySelector('#band-description')

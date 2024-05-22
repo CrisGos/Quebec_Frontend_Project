@@ -1,4 +1,25 @@
-$greenMM:008F8C;
+@import url(./normalize.scss);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+$green-ligtest-mm:#0FC2C0;
+$green-lighter-mm: #0CABA8;
+$green-mm:#008F8C;
+$green-darker-mm:#044040;
+$green-darkest-mm:#023535;
+$red-mm:#8C1F28;
+$red-darker:#8C1F28;
+
+
+$theme-colors:(
+    'green-ligtest-mm':#0FC2C0,
+    'green-lighter-mm': #0CABA8,
+    'green-mm':#008F8C,
+    'green-darker-mm':#044040,
+    'green-darkest-mm':#023535,
+    'red-mm':#8C1F28,
+    'red-darker':#8C1F28,
+    
+    );
 
 
 
