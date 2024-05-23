@@ -1,14 +1,7 @@
 @import url(./normalize.scss);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-$primary: #02B2b0;
-
-// $azulito: #0FC2C0;
-
-// $theme-colors:(
-//     "lightest": $azulito
-// );
-@import "bootstrap/scss/bootstrap";
+@import url(./colors.scss);
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Jersey+25+Charted&display=swap');
 
 

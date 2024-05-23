@@ -1,31 +1,40 @@
 @import url(./normalize.scss);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
-$green-ligtest-mm:#0FC2C0;
-$green-lighter-mm: #0CABA8;
-$green-mm:#008F8C;
-$green-darker-mm:#044040;
-$green-darkest-mm:#023535;
+//basic colors
+$primary: #007A78;
+$background:#171718;
+$secondary: #023535;
+$info : #0FC2C0 ;
+$warning:#ECA72C;
+$danger:#8C1F28;
+$light:#eff6ee;
+$dark: #040F0F;
+//custom colors
+$green-lt-mm:#0FC2C0;
+$green-lr-mm: #0CABA8;
+$green-mm:#007A78;
+$green-dr-mm:#044040;
+$green-dt-mm:#023535;
 $red-mm:#8C1F28;
-$red-darker:#8C1F28;
+
 
 
 $theme-colors: (
-    "primary":    $primary,
+    "primary":    $green-mm,
     "secondary":  $secondary,
-    "success":    $success,
+    "success":    $green-lighter-mm,
     "info":       $info,
     "warning":    $warning,
     "danger":     $danger,
     "light":      $light,
     "dark":       $dark
-    'green-lt':$green-ligtest-mm,
-    'green-lr': #0CABA8,
-    'green-mm':#008F8C,
-    'green-dr-mm':#044040,
-    'green-dt-mm':#023535,
-    'red-mm':#8C1F28,
-    'red-dr':#8C1F28,
+    'green-lt':$green-lt-mm,
+    'green-lr': $green-lr-mm,
+    'green-mm':$green-mm,
+    'green-dr-mm':$green-dr-mm,
+    'green-dt-mm':$green-dt-mm,
+    'red-mm':$red-mm,
+    'bg-pg':$background,
 );
 
 @import "bootstrap/scss/bootstrap";
