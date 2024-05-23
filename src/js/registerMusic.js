@@ -22,7 +22,7 @@ regisForm.addEventListener('submit',()=>{
 btnSec.addEventListener('click',(event)=>{
     if (event.target.id=='to-band-desc') {
         let there=btnSec.parentNode
-        console.log(there);
+        console.log(there.);
         
     }
 
