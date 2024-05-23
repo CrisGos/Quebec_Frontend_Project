@@ -1,86 +1,108 @@
 @import url(./normalize.scss);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import "bootstrap/scss/bootstrap";
+@import url(./colors.scss);
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Jersey+25+Charted&display=swap');
 
 
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+.dark{
+    background-color:#171718;
+
+}
+
+:root{
+    --gray:#696969;
+}
 
 :root{
     --verde:#015958;
-    --color:#028C8A;
+    --color:#137676;
     --color-thre:#02A5A4;
-    --color-four:#02B2B0;
-    --color-five:#02BFBD;
+    --color-four:#266f6e;
+    --color-five:#203838;
     --fire-color:#D92525;
     --dark-color:#000000;
     --white-color:#FFFFFF;
-    --color-ilustration:#0FC2C0;
+    --color-ilustration:#122626;
 }
 
 
-header,
-footer {
-    background:linear-gradient(#015958,#028C8A,#02A5A4,#02B2B0,#02BFBD);
-    color: #ffffff;
-}
+header {
 
-
-
-.img-one {
-    background-image: url("..//../public/img/artist.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 8;
-}
-
-h1,
-h2 {
-    margin-bottom: 1em;
-}
-
-.title {
-    font-size: 5em;
-    font-family: "Jersey 25 Charted", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.collapse a , li{
-    color:#ffffff;
-}
-
-
-.common {
-    background-color: #02B2B0;
-    border: none;
-    color:white;
-}
-
-.estyl-select {
-    color: #02B2B0;
-}
-
-.two-parts {
-    display: flex;
-    flex-wrap: wrap;
+	padding: 4em 0;
+	width: 100%;
 
 }
 
-.container-buttons {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 3em;
 
-}
+.navbar,
+.footer {
+    background-color: transparent;
+    opacity: 0.5; /* Hace que la barra de navegación sea transparente */
+  }
 
-.container-buttons button {
-    width: 30%;
-}
 
 
 .logo{
-    width: 8%;
+    width: 4em;
+}
+
+//cotizar page
+
+
+.navbar-scrolled,
+.footer{
+    background:linear-gradient(#008057,#005181);
+}
+
+
+.header {
+    height: 60vh;
+    margin-top: 70px; /* Ajusta la altura del header según tus necesidades */
+  }
+
+  /* Estilos para la imagen de fondo */
+  .carrousel .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/img/musician.webp'); /* Ruta de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Ajusta la opacidad según tus necesidades */
+  }
+
+  /* Estilos para el texto superpuesto */
+  .carrousel .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 2rem; /* Ajusta el tamaño del texto según tus necesidades */
+  }
+
+
+// footer
+.redes{
+  color:var(--white-color);
+  display: flex;
+  
+}
+.footer a {
+  
+  text-decoration: none;
+}
+a span{
+  color:var(--white-color);
+  font-size: 1em;
 }

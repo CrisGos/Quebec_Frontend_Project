@@ -28,66 +28,94 @@
 
 <body class="bg-dark text-light ">
 
-   <!-- star header -->
-  
-   <header class="  d-flex w-100 header sm-100">
-    <a href="./index.html" class="logo">
-      <img class="w-100"    src="./public/icon/logo.webp" alt="logo music market">
-    </a>
-    <nav class="container ">
-      <div class="  d-flex  navbar-collapse justify-content-end h-100" id="navbar">
-        <div class="gap-2 d-flex text-light fs-2">
-          <a class="nav-link active"  href="/src/page/quienes.html">Quienes somos</a>
-          <a class="nav-link" href="#">Login</a>
-          <button class="  btn btn-primary common ">Ingresar</button>
+  <!-- star header -->
+
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled">
+      <div class="overlay"></div> <!-- Div para la transparencia -->
+      <section class="container">
+        <a href="/">
+         <img src="/public/icon/logo.webp" alt="" class="logo">
+        </a>
+        <button class="navbar-toggler " type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbar-start"  
+        aria-label="Toggle navigation"
+        aria-controls="navbar-start" 
+        aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-start">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="/src/page/quienes.html" class="nav-link active">
+                Quienes Somos
+              </a>
+            </li> 
+            <li>
+              <a href="" class="nav-link">Ingresar</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">Registrarse</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      </div>
+      </section>
     </nav>
 
+    
+    <div class="carrousel">
+      <div class="bg-img"></div>
+      <div class="text-overlay right">
+        <h1 class="letter title">Dale un impulso a tu negocio con el mejor talento de Medellín</h1>
+        <h3 class="letter">Realiza tus contrataciones de una manera segura.
+          Te conectamos con el mejor talento de Medellín.</h3>
+      </div>
+      <div class="container d-flex gap-5 justify-content-center m-4">
+        <button class="btn rigth common w-25">Quiero contratar</button>
+        <button class="btn rigth common w-25">Soy artista</button>
+      </div>
+    </div>
   </header>
 
   <!-- here start main -->
 
   <main>
 
+
     <!-- start section -->
     <section class="two-parts img-one p-5">
-      <article class="left ">
-        <select class="form-select estyl-select" aria-label="Default select example">
-          <option selected>Buscar artista por genero</option>
-          <option value="1">Salsa</option>
-          <option value="2">Urbano</option>
-          <option value="3">Popular</option>
-          <option value="4">Vallenato</option>
-          <option value="5">Tropical</option>
-          <option value="6">Rock</option>
-          <option value="7">Electronica</option>
-          <option value="8">Djs</option>
-          <option value="9">Jazz~blues</option>
-          <option value="10">Covers</option>
-          <option value="11">Cuerdas</option>
-        </select>
-      </article>
+      <div class="row">
+        <article class="left col-sm-6 align-items justify-content-center">
+          <select class="form-select estyl-select" aria-label="Default select example">
+            <option selected>Buscar artista por genero</option>
+            <option value="1">Salsa</option>
+            <option value="2">Urbano</option>
+            <option value="3">Popular</option>
+            <option value="4">Vallenato</option>
+            <option value="5">Tropical</option>
+            <option value="6">Rock</option>
+            <option value="7">Electronica</option>
+            <option value="8">Djs</option>
+            <option value="9">Jazz~blues</option>
+            <option value="10">Covers</option>
+            <option value="11">Cuerdas</option>
+          </select>
+        </article>
 
-      <!-- right side -->
+        <!-- right side -->
 
-      <article class="rigth text-light">
-        <h1 class="letter title">Dale un impulso a tu negocio con el mejor talento de Medellín</h1>
-        <h3 class="letter subtitle">Realiza tus contrataciones de una manera segura.
-          Te conectamos con el mejor talento de Medellín.</h3>
-        <div class="container d-flex gap-5 justify-content-center m-4">
-          <button class="btn rigth common w-25">Quiero contratar</button>
-          <button class="btn rigth common w-25">Soy artista</button>
-        </div>
+        <article class="rigth text-light col-sm-6">
+         
 
 
-      </article>
 
+        </article>
+      </div>
 
     </section>
 
-          <!-- start carousel image -->
+    <!-- start carousel image -->
 
     <section class="one-part container d-flex justify-content-center w-100">
       <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -118,25 +146,27 @@
     <!-- how it works section -->
 
 
-    <section class="two-parts p-3">
-      <article class="rigth container p-4">
-        <h2 class="subtitle2 ">Como
-          <span>funciona?</span>
-        </h2>
-        <p class="subtitle3">
-          Te ayudamos a conectar tu talento con contratantes a nivel local.</p>
-          <a href="/src/page/funciona.html"><input type="button" value="Concer más"></a>
+    <section class="two-parts p-3 container">
+      <div class="row">
+        <article class="rigth col-sm-6 p-5">
+          <h2 class="subtitle">Como
+            <span>funciona?</span>
+          </h2>
+          <p class="fs-5">
+            Te ayudamos a conectar tu talento con contratantes a nivel local.</p>
+          <a href="/src/page/funciona.html " class="btn-conocer"><input type="button" value="Conocer más"></a>
 
-      </article>
+        </article>
 
-      <article class="left ">
-        <img src="./public/img/ilustracion.webp" alt="ilustracion">
-      </article>
+        <article class="left col-sm-6 ">
+          <img src="./public/img/ilustracion.webp" alt="ilustracion">
+        </article>
+      </div>
     </section>
 
     <!-- browse and quote section -->
 
-    <section class="one-part">
+    <section class="one-part ">
       <h3>Navega y cotiza</h3>
       <h3>Reserva de forma segura</h3>
     </section>
@@ -159,7 +189,7 @@
               <a href="/src/page/funciona.html" class="text-body">Como funciona</a>
             </li>
             <li>
-              <a href="#!" class="text-body">Como cotizar</a>
+              <a href="/src/page/cotiza.html" class="text-body">Como cotizar</a>
             </li>
 
           </ul>
@@ -226,10 +256,10 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="./src/js/main.js"></script>
-  
 
 
- 
+
+
 </body>
 
 </html>
