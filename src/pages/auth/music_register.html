@@ -37,16 +37,16 @@
                         <div >
                             <h3>Eres:</h3>
                             <!-- soloist radio button -->
-                            <input type="radio" class="btn-check" name="options-base" id="option-soloist" autocomplete="off" checked>
+                            <input  type="radio" class="btn-check" music-type="solista" name="options-base" id="option-soloist" autocomplete="off" checked>
                             <label class="btn" for="option-soloist">Solista</label>
                             <!-- band radio button -->
-                            <input type="radio" class="btn-check" name="options-base" id="option-band" autocomplete="off">
+                            <input type="radio" class="btn-check" music-type="banda" name="options-base" id="option-band" autocomplete="off">
                             <label class="btn" for="option-band">banda</label>
                         </div>
 
                         <!-- Artistic name-->
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Nombre Artistico">
+                            <input required type="text" class="form-control" id="floatingInput" placeholder="Nombre Artistico">
                             <label for="floatingInput">Nombre Artistico</label> 
                         </div>
                         <div class="form-floating">
@@ -80,12 +80,12 @@
                             </figure>
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Default file input example</label>
-                                <input class="form-control" type="file" id="formFile">
+                                <input required class="form-control" type="file" id="formFile">
                             </div>
                     </article>
                 <!-- movement buttons -->
                     <section class="d-flex justify-content-center nxt-bck-btns"> 
-                        <button type="button" id="to-band-desc" class="btn btn-primary">Next</button>
+                        <button type="submit" id="to-band-desc" class="btn btn-primary">Next</button>
                     </section>
                 </section>
 
@@ -100,18 +100,18 @@
                     </div>
                     <!-- Medellin adress -->
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Direccion en medellin">
+                        <input required type="text" class="form-control" id="floatingInput" placeholder="Direccion en medellin">
                         <label for="floatingInput">Direccion en Medellin</label>
                     </div>
                     <!-- youtube video -->
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="youtube">
+                        <input required type="text" class="form-control" id="floatingInput" placeholder="youtube">
                         <label for="floatingInput">Video de youtube</label>
                     </div>
                     <!-- movement buttons -->
                     <section class="d-flex justify-content-center nxt-bck-btns"> 
                         <button type="button" id="to-band-info" class="btn btn-dark">Return</button>
-                        <button type="button" id="to-account-info" class="btn btn-primary">Next</button>
+                        <button type="submit" id="to-account-info" class="btn btn-primary">Next</button>
                     </section>
 
 
@@ -122,12 +122,12 @@
                     <h3>Tu cuenta en Music Market</h3>
                 <!-- email adrres -->
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input required type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                         <label for="floatingInput">Email address</label>
                     </div>
                 <!-- password -->
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <input required type="password" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Password</label>
                     </div>
                     <!-- movement buttons -->
@@ -146,8 +146,10 @@
 
     </main>
     <footer></footer>
+    
     <script type="module" src="../../js/main.js"></script>
     <script type="module" src="../../js/registerMusic.js"></script>
+    
 
 </body>
 
