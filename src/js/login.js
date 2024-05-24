@@ -4,6 +4,7 @@ const email = document.querySelector('#email')
 const password = document.querySelector('#password')
 
 form.addEventListener('submit', async (event) => {
+    console.log("jola");
 
     event.preventDefault()
     const user = await validateEmail(email)

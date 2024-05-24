@@ -15,7 +15,7 @@ form.addEventListener("submit", async (event) => {
     if (checkPasswords === true && checkEmail == true) {
         //acá llamamos a la función que nos guarda un nuevo usuario
         await registerUser(username, lastName, email, password)
-        window.location.href="../auth/login.html"
+        window.location.href="./login.html"
     }
 })
 
