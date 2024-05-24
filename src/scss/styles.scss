@@ -1,12 +1,10 @@
+//local archives and bootstrap(icons and styles)
 @import url(./normalize.scss);
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url(./colors.scss);
+//fonts
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Jersey+25+Charted&display=swap');
-
-
-@import "bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
-@import "../../node_modules/bootstrap/scss/bootstrap";
+
 
 
 .dark{
