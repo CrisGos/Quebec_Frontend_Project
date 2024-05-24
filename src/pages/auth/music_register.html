@@ -27,24 +27,24 @@
     <main class="bg-bg-pg">
         <h1>Queremos conocerte</h1>
         
-        <form action="" method="post" class="">
-            <section class="row h-50">
+        
+            <form action="" method="post" class="row h-50">
 <!-- band info-->
-                <section id="band-info" class="row col-8 w-50 visible">
+                <section  id="band-info" class="row col-8 w-50 visible">
                     
                     <article class="col">
-                        <!-- soloist or band selection -->
+                <!-- soloist or band selection -->
                         <div >
                             <h3>Eres:</h3>
-                            <!-- soloist radio button -->
+                        <!-- soloist radio button -->
                             <input  type="radio" class="btn-check" music-type="solista" name="options-base" id="option-soloist" autocomplete="off" checked>
                             <label class="btn" for="option-soloist">Solista</label>
-                            <!-- band radio button -->
+                        <!-- band radio button -->
                             <input type="radio" class="btn-check" music-type="banda" name="options-base" id="option-band" autocomplete="off">
                             <label class="btn" for="option-band">banda</label>
                         </div>
 
-                        <!-- Artistic name-->
+                <!-- Artistic name-->
                         <div class="form-floating mb-3">
                             <input required type="text" class="form-control" id="floatingInput" placeholder="Nombre Artistico">
                             <label for="floatingInput">Nombre Artistico</label> 
@@ -85,12 +85,13 @@
                     </article>
                 <!-- movement buttons -->
                     <section class="d-flex justify-content-center nxt-bck-btns"> 
-                        <button type="submit" id="to-band-desc" class="btn btn-primary">Next</button>
+                        <button type="button" id="to-band-info" class="btn btn-dark visually-hidden">Return</button>
+                        <button type="submit" id="to-band-desc" class="next btn btn-primary">Siguiente</button>
                     </section>
                 </section>
 
 <!-- band description-->
-                <section id="band-description" class="col-8 w-50 d-none">
+                <section action="" method="post" id="band-description" class="col-8 w-50 d-none">
                     <h3>Hablanos de tu banda</h3>
                     <!-- Descripcion -->
                     <div class="form-floating">
@@ -110,15 +111,15 @@
                     </div>
                     <!-- movement buttons -->
                     <section class="d-flex justify-content-center nxt-bck-btns"> 
-                        <button type="button" id="to-band-info" class="btn btn-dark">Return</button>
-                        <button type="submit" id="to-account-info" class="btn btn-primary">Next</button>
+                        <button type="button" id="to-band-info" class="btn btn-dark back ">Return</button>
+                        <button type="submit" id="to-account-info" class="next btn btn-primary">Siguiente</button>
                     </section>
 
 
                 </section>
 
 <!-- account info -->
-                <section id="accout-info"  class="col-8 w-50 d-none">
+                <section action="" method="post" id="accout-info"  class="col-8 w-50 d-none">
                     <h3>Tu cuenta en Music Market</h3>
                 <!-- email adrres -->
                     <div class="form-floating mb-3">
@@ -132,12 +133,11 @@
                     </div>
                     <!-- movement buttons -->
                     <section class="d-flex justify-content-center nxt-bck-btns"> 
-                        <button type="button"  class="btn btn-dark d-none">Return</button>
+                        <button type="button"  class="btn btn-dark ">Return</button>
                         <button type="submit" class="btn btn-primary">submit</button>
                     </section>
                 </section>
-            </section>
-        </form>
+            </form>
     
     <!-- progress bar -->
         <section id="progress-bar"></section>

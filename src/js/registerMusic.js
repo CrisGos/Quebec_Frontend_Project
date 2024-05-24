@@ -5,24 +5,31 @@ import '../scss/colors.scss';
 import * as bootstrap from 'bootstrap'
 
 //sections
-const sect0= document.querySelector('#band-info')
-const sect1= document.querySelector('#band-description')
-const sect2= document.querySelector('#accout-info')
-const btnSec=document.querySelector('.nxt-bck-btns')
-const regisForm=document.querySelector('form')
-// const btnNext=btnSec.querySelector('#to-band-desc')
-// const btnBack=btnSec.querySelector('.btn-dark')
+const form=document.querySelector('form')
+const artform=form.querySelectorAll('section')
+const sect0= form.querySelector('#band-info')
+const sect1= form.querySelector('#band-description')
+const sect2= form.querySelector('#accout-info')
+const btnSec=form.querySelector('.nxt-bck-btns')
+console.log(artform);
+let cont=0
 
-
-
-regisForm.addEventListener('submit',()=>{
-    alert('Bienvenido a Music market')
-})
 
 btnSec.addEventListener('click',(event)=>{
-    if (event.target.id=='to-band-desc') {
-        let there=btnSec.parentNode
-        console.log(there.);
+    if (event.target.type=='submit') {
+        cont++
+        artform[cont].classList.replace('d-none','visible')
+        artform[--cont].classList.replace('visible','d-none')
+        
+        
+        
+        
+    }
+    if (event.target.type=='button') {
+        artform[cont].classList.replace('visible','d-none')
+        
+        cont--
+        artform[cont].classList.replace('d-none','visible')
         
     }
 
