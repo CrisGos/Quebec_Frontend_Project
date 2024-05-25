@@ -9,3 +9,15 @@
 //         navEL.classList.remove('navbar-scrolled')
 //      }
 // })
+
+let nav = document.querySelector('#navbar');
+window.onscroll = function () {
+  if (window.scrollY > window.innerHeight) {
+    nav.classList.add("change");
+  } else {
+    nav.classList.remove("change");
+  }
+}
+
+
+ 

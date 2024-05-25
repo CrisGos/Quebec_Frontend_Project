@@ -1,6 +1,8 @@
+
 @import url(./normalize.scss);
+//bootstrap icons
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-//basic colors
+//custom color variables
 $primary: #007A78;
 $background:#171718;
 $secondary: #023535;
@@ -17,7 +19,7 @@ $green-dr-mm:#044040;
 $green-dt-mm:#023535;
 $red-mm:#8C1F28;
 
-
+//custom colors classes
 
 $theme-colors: (
     "primary":    $green-mm,
