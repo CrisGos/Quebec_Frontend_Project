@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Multisección</title>
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container mt-4">
         <form id="multiStepForm">
-            <!-- Sección 1 -->
-
+<!-- Sección 1 -->
             <section id="section1">
                 <h2>Sección 1</h2>
         <!-- radiobuttons -->
@@ -41,9 +40,25 @@
                             <label for="name">Nombre</label>
                             <input type="text" class="form-control" id="name" required>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" required>
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>tipo de grupo</option>
+                                <option value="smll">Pequeño(2 a 5 integrantes)</option>
+                                <option value="md">Mediano(6 a 9 integrantes)</option>
+                                <option value="lg">Grande(10 o mas integrantes)</option>
+                            </select>
+                            <label for="floatingSelect">Cantiada de integrantes</label>
+                        </div>
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Genero</option>
+                                <option value="1">Urbano</option>
+                                <option value="2">Pop</option>
+                                <option value="3">Popular</option>
+                                <option value="3">Rock</option>
+                                <option value="3">Electronica</option>
+                            </select>
+                            <label for="floatingSelect">Works with selects</label>
                         </div>
                     </div>
     
@@ -61,19 +76,59 @@
                 <button type="button" class="btn btn-primary" onclick="nextSection(1)">Siguiente</button>
             </section>
 
-            <!-- Sección 2 -->
+<!-- Sección 2 -->
             <div id="section2" class="hidden">
                 <h2>Sección 2</h2>
+            
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
                 <div class="form-group">
-                    <label for="address">Dirección</label>
+                    <label for="address">Dirección de uno delos integrantes dentro de la ciudad de Medellín</label>
                     <input type="text" class="form-control" id="address" required>
                 </div>
+                        <!-- youtube-iframe -->
+                        <article id="youtube-iframe" class="d-flex">
+                            <div class="form-group">
+                                <label for="name">Iframe de youtube</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+        
+        
+        
+                    <!-- Button trigger modal -->
+                            <button type="button" class="btn bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                
+                            </button>
+                            
+                    <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    ...
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </article>
+
                 <button type="button" class="btn btn-primary" onclick="nextSection(2)">Siguiente</button>
                 <button type="button" class="btn btn-secondary" onclick="prevSection(2)">Anterior</button>
             </div>
 
             <!-- Sección 3 -->
-            <div id="section3" class="hidden">
+            <section id="section3" class="hidden">
                 <h2>Sección 3</h2>
                 <div class="form-group">
                     <label for="phone">Teléfono</label>
@@ -81,11 +136,13 @@
                 </div>
                 <button type="submit" class="btn btn-success">Enviar</button>
                 <button type="button" class="btn btn-secondary" onclick="prevSection(3)">Anterior</button>
-            </div>
+
+
+            </section>
         </form>
     </div>
     <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>
 
