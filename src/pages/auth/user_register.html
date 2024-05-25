@@ -23,6 +23,49 @@
 </head>
 
 <body>
+    <div class="container mt-5 vh-100 gradient-custom">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card"  >
+                    <div class="card-header card bg-dark text-white">
+                        <h3 class="text-center">Registro</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="register-form">
+                            <div class="form-group">
+                                <label for="userName">Nombre de usuario</label>
+                                <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Apellido</label>
+                                <input type="text" class="form-control" id="last-name" placeholder="Ingrese su apellido">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm-password"
+                                    placeholder="Confirm password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <p class="text-center">Already have an account? <a href="./login.html">Login here</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../../js/main.js"></script>
+    <script type="module" src="../../js/register.js"></script>
 
 </body>
 
