@@ -1,86 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Multisección</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .hidden {
-            display: none;
-        }
-        
-        .slide-out-left {
-            animation: slideOutLeft 0.5s forwards;
-        }
-
-        .slide-in-right {
-            animation: slideInRight 0.5s forwards;
-        }
-
-        @keyframes slideOutLeft {
-            100% {
-                transform: translateX(-100%);
-                opacity: 0;
-            }
-        }
-
-        @keyframes slideInRight {
-            0% {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        .slide-out-right {
-            animation: slideOutRight 0.5s forwards;
-        }
-
-        .slide-in-left {
-            animation: slideInLeft 0.5s forwards;
-        }
-
-        @keyframes slideOutRight {
-            100% {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-        }
-
-        @keyframes slideInLeft {
-            0% {
-                transform: translateX(-100%);
-                opacity: 0;
-            }
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container mt-4">
         <form id="multiStepForm">
             <!-- Sección 1 -->
-            <div id="section1">
+
+            <section id="section1">
                 <h2>Sección 1</h2>
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
+        <!-- radiobuttons -->
+                <article class="d-felx">
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Default radio
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Default checked radio
+                        </label>
+                    </div>
+                </article>
+        <!-- band info -->
+                    
+                <article class="d-flex">
+                    <div >
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+    
+                    <div class="band-image">
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Default file input example</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                </article>
+
                 <button type="button" class="btn btn-primary" onclick="nextSection(1)">Siguiente</button>
-            </div>
-            
+            </section>
+
             <!-- Sección 2 -->
             <div id="section2" class="hidden">
                 <h2>Sección 2</h2>
@@ -91,7 +71,7 @@
                 <button type="button" class="btn btn-primary" onclick="nextSection(2)">Siguiente</button>
                 <button type="button" class="btn btn-secondary" onclick="prevSection(2)">Anterior</button>
             </div>
-            
+
             <!-- Sección 3 -->
             <div id="section3" class="hidden">
                 <h2>Sección 3</h2>
@@ -106,56 +86,7 @@
     </div>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        function nextSection(currentSection) {
-            const section = document.querySelector(`#section${currentSection}`);
-            if (validateSection(section)) {
-                section.classList.add('slide-out-left');
-                section.addEventListener('animationend', function() {
-                    section.classList.add('hidden');
-                    section.classList.remove('slide-out-left');
-                    const nextSection = document.querySelector(`#section${currentSection + 1}`);
-                    nextSection.classList.remove('hidden');
-                    nextSection.classList.add('slide-in-right');
-                    nextSection.addEventListener('animationend', function() {
-                        nextSection.classList.remove('slide-in-right');
-                    }, { once: true });
-                }, { once: true });
-            }
-        }
-        
-
-        function prevSection(currentSection) {
-            const section = document.querySelector(`#section${currentSection}`);
-            section.classList.add('slide-out-right');
-            section.addEventListener('animationend', function() {
-                section.classList.add('hidden');
-                section.classList.remove('slide-out-right');
-                const prevSection = document.querySelector(`#section${currentSection - 1}`);
-                prevSection.classList.remove('hidden');
-                prevSection.classList.add('slide-in-left');
-                prevSection.addEventListener('animationend', function() {
-                    prevSection.classList.remove('slide-in-left');
-                }, { once: true });
-            }, { once: true });
-        }
-
-        function validateSection(section) {
-            const inputs = section.querySelectorAll('input');
-            for (let input of inputs) {
-                if (!input.checkValidity()) {
-                    input.reportValidity();
-                    return false;
-                }
-            }
-            return true;
-        }
-
-        // Prevent form submission for demo purposes
-        document.querySelector('#multiStepForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Formulario enviado correctamente!');
-        });
-    </script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
