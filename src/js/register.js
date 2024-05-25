@@ -2,7 +2,7 @@
 const form = document.getElementById("register-form")
 //sacar los input
 const username = document.getElementById("username")
-const lastName = document.getElementById("last-name")
+const lastName = document.getElementById("fullname")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
 const confirmPasword = document.getElementById("confirm-password")
