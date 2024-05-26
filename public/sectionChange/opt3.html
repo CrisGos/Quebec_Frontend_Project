@@ -12,7 +12,8 @@
 
 <body>
     <header></header>
-    <main><h1>Queremos conocerte</h1>
+    <main>
+        <h1>Queremos conocerte</h1>
         <div class="container m-2">
             <form id="multiStepForm" method="post">
     <!-- Sección 1 -->
@@ -77,14 +78,14 @@
                         </div>
                     </article>
     
-                    <button type="button" class="btn btn-primary" onclick="nextSection(1)">Siguiente</button>
+                    <button type="button" class="btn btn-primary rounded-5" onclick="nextSection(1)">Siguiente</button>
                 </section>
     
     <!-- Sección 2 -->
-                <div id="section2" class="hidden ">
+                <div id="section2" class="hidden container m-2 w-50 ">
                     <h2>Sobre tu banda</h2>
                 
-                    <div class="mb-3">
+                    <div class="mb-3 ">
                         <label for="music-description" class="form-label">Descripcion de la banda</label>
                         <textarea class="form-control" id="music-description" rows="3" maxlength="720" placeholder="Una breve descripcion de tu banda(maximo: 720 caracteres)" ></textarea>
                     </div>
@@ -101,7 +102,7 @@
                                 </div>
     
                         <!-- Button trigger modal -->
-                            <button type="button" class="btn bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#steps-for-iframe" title="Como conseguir un Iframe" >
+                            <button type="button" class="btn bi bi-info-circle rounded-5" data-bs-toggle="modal" data-bs-target="#steps-for-iframe" title="Como conseguir un Iframe" >
                                     
                             </button>                           
                                 
@@ -133,35 +134,32 @@
                                         </div>
                                 <!-- modal footer -->
                                         <div class="modal-footer">
-                                        <button type="button" class="btn btn-prymary" data-bs-dismiss="modal">Listo</button>
+                                        <button type="button" class="btn btn-prymary rounded-5" data-bs-dismiss="modal">Listo</button>
                                         </div>
                                     </div>
                                     </div>
                                 </div>
                             </article>
     
-                    <button type="button" class="btn btn-primary" onclick="nextSection(2)">Siguiente</button>
-                    <button type="button" class="btn btn-secondary" onclick="prevSection(2)">Anterior</button>
+                    
+                    <button type="button" class="btn btn-secondary rounded-5" onclick="prevSection(2)">Anterior</button>
+                    <button type="button" class="btn btn-primary rounded-5" onclick="nextSection(2)">Siguiente</button>
                 </div>
     
     <!-- Sección 3 -->
-                <section id="section3" class="hidden ">
-                    <h2>Sección 3</h2>
-                    <div class="form-group">
-                        <label for="phone">Teléfono</label>
-                        <input type="tel" class="form-control" id="phone" required>
-                    </div>
-                    <button type="button" class="btn btn-primary" onclick="nextSection(3)">Siguiente</button>
-                    <button type="button" class="btn btn-secondary" onclick="prevSection(3)">Anterior</button>
-    
-    <!-- section4 -->
-                </section>
-                <section id="section4" class="hidden">
-                    <h2>Sección 3</h2>
+                <section id="section3" class="hidden container m-2 w-50">
+                    <h2>Datos de la cuenta</h2>
                     <article id="payment-options">
-                        espacio para el pago
+                        <h3>Metodos de pago</h3>
+                        <div id="opciones-pago" class="border border-primary rounded-4">
+                            <h4>Suscripcion al servicio: <strong>$10.000 </strong>cop</h4>
+                            <button type="button" class="btn btn-primary rounded-5">Nequi</button>
+                            <button type="button" class="btn btn-primary rounded-5">Tarjeta de Credito</button>
+                            <button type="button" class="btn btn-primary rounded-5">Tarjeta Debito</button>
+                        </div>
                     </article>
                     <article id="data-acount">
+                        <h3>Datos de la cuenta</h3>
                         <div id="email-verification">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -186,13 +184,15 @@
                         </div>
                         <div class="mb-3 form-check">
                             <h5>Politicas de privacidad y condiciones del servicio</h5>
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <input type="checkbox" class="form-check-input" id="term-condi-service" required>
+                            <label class="form-check-label" for="term-condi-service" >acepto los <a href="">Terminos y condiciones</a> del servicio</label>
                         </div>
-                    <button type="submit" class="btn btn-success">Enviar</button>
-                    <button type="button" class="btn btn-secondary" onclick="prevSection(4)">Anterior</button>
+                    <div class="">
+                        <button type="button" class="btn btn-secondary rounded-5" onclick="prevSection(3)">Anterior</button>
+                        <button type="submit" class="btn btn-success rounded-5">Enviar</button>
+                    </div>
     
-    
+                </section>
                 </section>
             </form>
         </div>
@@ -200,7 +200,8 @@
         
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="./main.js"></script></main>
+        <script src="./main.js"></script>
+    </main>
 
 </body>
 
