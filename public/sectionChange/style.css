@@ -60,3 +60,10 @@
         opacity: 1;
     }
 }
+img {
+    min-width: 320px;
+    min-height: 320px;
+    object-position: bottom;
+    max-width: 320px;
+    max-height: 320px;
+}
