@@ -47,3 +47,18 @@
         event.preventDefault();
         alert('Formulario enviado correctamente!');
     });
+
+
+//image validator and dys
+    document.querySelector('#imageUpload').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file && file.type === 'image/jpeg' ||file && file.type === 'image/png') {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.querySelector('#imagePreview').src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        } else {
+            alert('Por favor, seleccione una imagen en formato JPG.');
+        }
+    });
