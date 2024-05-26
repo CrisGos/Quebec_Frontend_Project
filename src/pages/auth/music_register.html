@@ -23,12 +23,98 @@
 </head>
 
 <body class="bg-bg-pg text-light">
-    <header></header>
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1" id="navbar">
+            <div class="overlay"></div> <!-- Div para la transparencia -->
+            <section class="container">
+            <a href="/">
+                <img src="/public/icon/logo.webp" alt="logo" class="logo">
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
+                aria-label="Toggle navigation" aria-controls="navbar-start" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-start">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="./src/page/quienes.html" class="nav-link active">
+                    Quienes Somos
+                    </a>
+                </li>
+                <li>
+                    <a href="./src/pages/auth/login.html" class="nav-link">Ingresar</a>
+                </li>
+                
+                </ul>
+            </div>
+            </section>
+        </nav>
+    </header>
     <main>
         
     </main>
 
-    <footer></footer>
+    <footer class=" footer text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Artistas</h5>
+
+                <ul class="list-unstyled">
+                <li>
+                    <a href="#!" class="text-body">Promociona tu talento</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-body">Registtate</a>
+                </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Soporte</h5>
+
+                <ul class="list-unstyled mb-0">
+                <li>
+                    <a href="#!" class="text-body">Centro de Ayuda</a>
+                </li>
+                <li>
+                    <a href="#!" class="text-body">Contactanos</a>
+                </li>
+
+                </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Redes</h5>
+
+                <ul class="list-unstyled">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-tiktok"></i>
+                <i class="bi bi-linkedin"></i>
+                </ul>
+            </div>
+            <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-body" href="#">Quebec group</a>
+        </div>
+        <!-- Copyright -->
+        </footer>
     
     <script type="module" src="../../js/registerMusic.js"></script>
     
