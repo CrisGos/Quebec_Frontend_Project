@@ -4,68 +4,43 @@ import '../scss/styles.scss';
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
+// Definicion de las constantes del local server y el id del section donde se imprimira el contenido
+const URL_DATABASE = 'http://localhost:3000'
+const generos = document.getElementById("generos-musica")
 
-const container = document.querySelector('.container');
+
+// dandole clases a la seccion
+generos.classList.add("gap-5")
+
+
+// botonGeneros.addEventListener('submit', async (event) => {
+//     event.preventDefault()    
+// })
 
 
 
-const genresDatabase = [
-    {
-        tipoMusica: 'Urbano',
-        route: '../../public/img/urbano-genre.webp',
-        idGenre: 1
-    },
-    {
-        tipoMusica: 'Pop',
-        route: '../../public/img/pop-genre.webp',
-        idGenre: 2
-    },
-    {
-        tipoMusica: 'Popular',
-        route: '../../public/img/popular-genre.webp',
-        idGenre: 3
-    },
-    {
-        tipoMusica: 'Tropical',
-        route: '../../public/img/tropical-genre.webp',
-        idGenre: 4
-    },
-    {
-        tipoMusica: 'Rock',
-        route: '../../public/img/rock-genre.webp',
-        idGenre: 5
-    },
-    {
-        tipoMusica: 'Electronica',
-        route: '../../public/img/electronica-genre.webp',
-        idGenre: 6
+
+
+// funcion para imprimir el contenido
+async function categorias(generos) {
+    const response = await fetch(`${URL_DATABASE}/generosCategorias`)
+    const generosDatabase = await response.json()
+    for (const genero of generosDatabase) {
+
+        // impresion de contenido por medio de un innerHTML dentro de un for
+        generos.innerHTML += `
+            <article class="text-center">
+                <div class="circle-img-container" value="${genero.idGenre}">
+                    <a class="a-genero" href="./artistasPorGenero.html?tipoMusica=${genero.tipoMusica}">
+                        <img src="${genero.route}" alt="${genero.tipoMusica}" class="img-fluid circle-img" id="${genero.idGenre}">
+                    </a>
+                </div>
+                <button type="button" class="btn btn-primary image-caption">${genero.tipoMusica}</button>
+            </article>
+        `
     }
-];
-
-const genres = document.getElementById("generos-musica")
-
-genres.classList.add("d-flex")
-genres.classList.add("justify-content-center")
-genres.classList.add("flex-wrap")
-genres.classList.add("flex-row")
-genres.classList.add("gap-5")
-
-for (const genero of genresDatabase) {
-    // genres.innerHTML += `
-    //     <article>
-    //     <a href="" class="d-flex justify-content-center flex-column align-items-center"><img src=${genero.route} id="genero-${genero.idGenre}" class="rounded-circle border-info" alt="${genero.tipoMusica}" style="width: 45vh; height: 45vh;">
-    //         <h3 class="texto-h3-generos">${genero.tipoMusica}</h3></a>
-    //     </article>
-    // `
-
-    genres.innerHTML += `
-        <article class="text-center">
-            <div class="circle-img-container">
-                <a href="">
-                    <img src="${genero.route}" alt="${genero.tipoMusica}" class="img-fluid circle-img" value="${genero.idGenre}">
-                </a>
-            </div>
-            <a href="" class="image-caption">${genero.tipoMusica}</a>
-        </article>
-    `
 }
+
+
+// llamado de la funcion
+categorias(generos)

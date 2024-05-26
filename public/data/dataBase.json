@@ -21,5 +21,81 @@
       "email": "soto.alexis.8810@gmail.com",
       "password": "1234"
     }
-  ]
+  ],
+  "generosCategorias": [
+    {
+        "tipoMusica": "Urbano",
+        "route": "../../public/img/urbano-genre.webp",
+        "idGenre": "genero-1"
+    },
+    {
+        "tipoMusica": "Pop",
+        "route": "../../public/img/pop-genre.webp",
+        "idGenre": "genero-2"
+    },
+    {
+        "tipoMusica": "Popular",
+        "route": "../../public/img/popular-genre.webp",
+        "idGenre": "genero-3"
+    },
+    {
+        "tipoMusica": "Tropical",
+        "route": "../../public/img/tropical-genre.webp",
+        "idGenre": "genero-4"
+    },
+    {
+        "tipoMusica": "Rock",
+        "route": "../../public/img/rock-genre.webp",
+        "idGenre": "genero-5"
+    },
+    {
+        "tipoMusica": "Electronica",
+        "route": "../../public/img/electronica-genre.webp",
+        "idGenre": "genero-6"
+    }
+],
+"artistas": [
+  {
+    "nombre": "Laura Escobar",
+    "fotografia": "../../public/img/laura_escobar.webp",
+    "biografia": "Laura Escobar nacio como cantantes en 2015 en el colegio de la UPB, ha participado en eventos en multiples ciudades de Colombia y España, ha sido solista y ha pertenecido a grupos, tiene un repertorio muy versatil con multiples generos",
+    "genero1": "Pop",
+    "genero2": "Popular",
+    "genero3": "Tropical",
+    "video":"<iframe width='560' height='315' src='https://www.youtube.com/embed/1kuBsrOYu7s?si=IuskP8jGwheLae6l' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+    "instagram": "",
+    "facebook": "",
+    "spotify": "",
+    "tiktok": "",
+    "youtube": ""
+  },
+  {
+    "nombre": "Juan",
+    "fotografia": "",
+    "biografia": "Lorem asijdajsdh ahsd iajksd",
+    "genero1": "Pop",
+    "genero2": "Popular",
+    "genero3": "Urbano",
+    "video":"",
+    "instagram": "",
+    "facebook": "",
+    "spotify": "",
+    "tiktok": "",
+    "youtube": ""
+  },
+  {
+    "nombre": "Juan",
+    "fotografia": "",
+    "biografia": "Lorem asijdajsdh ahsd iajksd",
+    "genero1": "Tropical",
+    "genero2": "Popular",
+    "genero3": "Urbano",
+    "video":"",
+    "instagram": "",
+    "facebook": "",
+    "spotify": "",
+    "tiktok": "",
+    "youtube": ""
+  }
+]
 }
