@@ -58,44 +58,130 @@
   {
     "nombre": "Laura Escobar",
     "fotografia": "../../public/img/laura_escobar.webp",
-    "biografia": "Laura Escobar nacio como cantantes en 2015 en el colegio de la UPB, ha participado en eventos en multiples ciudades de Colombia y España, ha sido solista y ha pertenecido a grupos, tiene un repertorio muy versatil con multiples generos",
+    "biografia": "Laura Escobar nacio como cantante en 2015 en el colegio de la UPB, ha participado en eventos en multiples ciudades de Colombia y España, ha sido solista y ha pertenecido a grupos, tiene un repertorio muy versatil con multiples generos",
     "genero1": "Pop",
     "genero2": "Popular",
     "genero3": "Tropical",
     "video":"<iframe width='560' height='315' src='https://www.youtube.com/embed/1kuBsrOYu7s?si=IuskP8jGwheLae6l' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-    "instagram": "",
-    "facebook": "",
-    "spotify": "",
-    "tiktok": "",
-    "youtube": ""
+    "instagram": "https://www.instagram.com/lauraescobarbedoya/",
+    "redes": {
+      "facebook": "https://www.facebook.com/lauris.escobar96",
+      "spotify": "",
+      "tiktok": "",
+      "youtube": "https://www.youtube.com/@laurita961"
+    }
   },
   {
-    "nombre": "Juan",
-    "fotografia": "",
-    "biografia": "Lorem asijdajsdh ahsd iajksd",
+    "nombre": "Chazz Dj",
+    "fotografia": "../../public/img/chazz-dj.webp",
+    "biografia": "Dj crossover/top 40. músico apasionado desde niño, con formación académica y con aprendizaje de varios instrumentos durante mi vida. en la actualidad dedicado a la estructuración musical y performance de eventos privados, en su gran mayoría bodas, donde el objetivo es reflejar la personalidad del cliente y lograr un show único. 16 años de experiencia. sets en discotecas y bares de medellín y brisbane. más de 100 eventos privados y bodas. especializado en bodas de destino. hablo inglés fluido.",
+    "genero1": "Electronica",
+    "genero2": "",
+    "genero3": "",
+    "video":"<iframe width='560' height='315' src='https://www.youtube.com/embed/_R5OKfXX3zU?si=AyzVcLdADV-mC5_a' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+    "instagram": "instagram.com/chazz_dj",
+    "redes": {
+      "facebook": "",
+      "spotify": "",
+      "tiktok": "https://www.tiktok.com/@chazz_dj?_t=8mg7V5PhQyz&_r=1",
+      "youtube": "https://www.youtube.com/@CHAZZdj9" 
+    }
+  },
+  {
+    "nombre": "Nar Marina",
+    "fotografia": "../../public/img/nar_marina.webp",
+    "biografia": "Narciris Mena is the best of the best in the world",
     "genero1": "Pop",
     "genero2": "Popular",
-    "genero3": "Urbano",
-    "video":"",
-    "instagram": "",
-    "facebook": "",
-    "spotify": "",
-    "tiktok": "",
-    "youtube": ""
+    "genero3": "",
+    "video":"<iframe width='560' height='315' src='https://www.youtube.com/embed/GWQyhPIv8no?si=rMCdxpB4TQ8S5ere' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+    "instagram": "https://www.instagram.com/soynarmarina/",
+    "redes": {
+      "facebook": "",
+      "spotify": "",
+      "tiktok": "https://www.tiktok.com/@soynarmarina?_t=8mg8Q7zyAHl&_r=1",
+      "youtube": "https://www.youtube.com/@NarMarinaCantante"
+    }
   },
   {
-    "nombre": "Juan",
-    "fotografia": "",
-    "biografia": "Lorem asijdajsdh ahsd iajksd",
+    "nombre": "Seone",
+    "fotografia": "../../public/img/seone.webp",
+    "biografia": "Seone es un artista y compositor del genero urbano (reggaeton, trap, drill, etc) dando a la creacion del genero urbano alternativo, con un recorrido en televisión, radio, etc. no lo pienses más, es tu mejor opción para tus eventos.",
+    "genero1": "Urbano",
+    "genero2": "",
+    "genero3": "",
+    "video":"<iframe width='560' height='315' src='https://www.youtube.com/embed/DzI6MbGHk68?si=fOtcKV8NDlTxm76E' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+    "instagram": "https://www.instagram.com/seone_pl/",
+    "redes": {
+      "facebook": "",
+      "spotify": "https://open.spotify.com/intl-es/artist/0TcyoWwPWqhulBUOqb15Xb",
+      "tiktok": "https://www.tiktok.com/@seone_pl",
+      "youtube": "https://www.youtube.com/@seone_pl"
+    }
+  },
+  {
+    "nombre": "La Combi Orquesta",
+    "fotografia": "../../public/img/combi_orquesta.webp",
+    "biografia": "Vive una experiencia crossover inolvidable, agrupación con 10 años de experiencia en eventos de ciudad, matrimonios y fiestas empresariales.",
     "genero1": "Tropical",
-    "genero2": "Popular",
-    "genero3": "Urbano",
-    "video":"",
-    "instagram": "",
-    "facebook": "",
-    "spotify": "",
-    "tiktok": "",
-    "youtube": ""
+    "genero2": "",
+    "genero3": "",
+    "video":"<iframe width='560' height='315' src='https://www.youtube.com/embed/Y5ge-QaY720?si=MG6VHFXjC0mPlYCn' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+    "instagram": "https://www.instagram.com/lacombiorquesta/",
+    "redes": {
+      "facebook": "https://www.facebook.com/LaCombiOrquesta",
+      "spotify": "https://open.spotify.com/intl-es/artist/33jNPjRPZq0I3wxTcz8iiV",
+      "tiktok": "",
+      "youtube": "https://www.youtube.com/results?search_query=La+Combi+Orquesta"
+    }
+  },
+  {
+    "nombre": "Los del Solar de Ruben",
+    "fotografia": "../../public/img/solar_ruben.webp",
+    "biografia": "Es una agrupación que rinde tributo al la obra del maestro rubén blades y la salsa clásica. cuenta con excelentes interpretes y un formato novedoso que incluye guitarra eléctrica y violín, interpretando los temas mas importantes de la obra del maestro rubén y los clásicos dela salsa",
+    "genero1": "Tropical",
+    "genero2": "",
+    "genero3": "",
+    "video":"<iframe width='560' height='315' src='https://www.youtube.com/embed/qHPV62l9-Eg?si=YIJ2BHRmLfS-YcsH' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+    "instagram": "https://www.instagram.com/losdelsolarderuben/",
+    "redes": {
+      "facebook": "",
+      "spotify": "",
+      "tiktok": "",
+      "youtube": "https://www.youtube.com/@LosdelsolardeRuben"
+    }
+  },
+  {
+    "nombre": "Intemperie",
+    "fotografia": "../../public/img/intemperie.webp",
+    "biografia": "somos una agrupación de rock en español con temas de nuestra propia autoría, también contamos con repertorio extenso de rock en español clásico de colombia, españa y argentina. temas de sodaestereo, andrés calamaro, fito paez, luis alberto spinetta, héroes del silencio, entre otras agrupaciones de la escena del rock.",
+    "genero1": "Rock",
+    "genero2": "",
+    "genero3": "",
+    "video":"<iframe width='560' height='315' src='https://www.youtube.com/embed/K8FFVoZ4iQ0?si=SLfQ-J75jws1aUtT' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+    "instagram": "https://www.instagram.com/intemperie_oficial/",
+    "redes": {
+      "facebook": "https://www.facebook.com/profile.php?id=100086862940841",
+      "spotify": "",
+      "tiktok": "",
+      "youtube": "https://www.youtube.com/@intemperie5198"
+    }
+  },
+  {
+    "nombre": "Mariachi Medellín show",
+    "fotografia": "../../public/img/mariachi_medellin_show.webp",
+    "biografia": "Mariachi Medellin Show nacio hace 10 años, teniendo un gran recorrido en el ambito musical, somo un grupo de 10 personas con un amplio repertorio, daremos a tus serenatas, eventos y reuniones un gran espectaculo.",
+    "genero1": "Popular",
+    "genero2": "",
+    "genero3": "",
+    "video":"<iframe width='560' height='315' src='https://www.youtube.com/embed/twMqrLWM8dk?si=YjlQqI6mDrANRh3_' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+    "instagram": "https://www.instagram.com/mariachimedellinshow/",
+    "redes": {
+      "facebook": "https://www.facebook.com/profile.php?id=100041448986493",
+      "spotify": "",
+      "tiktok": "",
+      "youtube": "https://www.youtube.com/@dibermu82"
+    }
   }
 ]
 }
