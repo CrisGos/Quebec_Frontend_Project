@@ -30,7 +30,7 @@
   <!-- star header -->
 
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1 mb-5" id="navbar">
       <div class="overlay"></div> <!-- Div para la transparencia -->
       <section class="container">
         <a href="/">
@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbar-start">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="/src/page/quienes.html" class="nav-link active">
+              <a href="/src/pages/quienes.html" class="nav-link active">
                 Quienes Somos
               </a>
             </li>
@@ -74,20 +74,15 @@
       <div class="container mt-5">
         <div class="row mt-5">
               <article class="col-sm-6 mt-5 ">
-                <select class="form-select estyl-select w-50 text-center m-5" aria-label="Default select example">
+                <!-- <select class="form-select estyl-select w-50 text-center m-5" aria-label="Default select example">
                   <option selected class="text-center w-25">Buscar artista por genero</option>
-                  <option value="1">Salsa</option>
-                  <option value="2">Urbano</option>
+                  <option value="1">Urbano</option>
+                  <option value="2">Pop</option>
                   <option value="3">Popular</option>
-                  <option value="4">Vallenato</option>
-                  <option value="5">Tropical</option>
-                  <option value="6">Rock</option>
-                  <option value="7">Electronica</option>
-                  <option value="8">Djs</option>
-                  <option value="9">Jazz~bjustify-content-centerlues</option>
-                  <option value="10">Covers</option>
-                  <option value="11">Cuerdas</option>
-                </select>
+                  <option value="4">Rock</option>
+                  <option value="5">Electronica</option>
+                </select> -->
+                <input class="btn  artist-genre" value="Ver artistas por genero" type="submit" id="genre-select" class="artist-genre"></input>
               </article>
               <div class=" col-sm-6 mt-5">
                 <h1 class="title mb-5">Dale un impulso a tu negocio con el mejor talento de Medellín</h1>
@@ -105,7 +100,7 @@
 
   <!-- here start main -->
 
-  <main>
+  <main class="main">
 
 
     <!-- start section -->
@@ -136,9 +131,9 @@
             <img src="/public/img/dj.webp" class="d-block w-25" alt="...">
           </div>
           <div class="carousel-item d-flex flex-wrap">
-            <img src="/public/img/guitar.webp" class="d-block w-25" alt="...">
-            <img src="/public/img/concert.webp" class="d-block w-25" alt="...">
-            <img src="/public/img/guitar.webp" class="d-block w-25" alt="...">
+            <img src="/public/img/laura_escobar.webp" class="d-block w-25" alt="...">
+            <img src="/public/img/electronica-genre.webp" class="d-block w-25" alt="...">
+            <img src="/public/img/genero_background.webp" class="d-block w-25" alt="...">
             <img src="/public/img/guitar.webp" class="d-block w-25" alt="...">
           </div>
           <div class="carousel-item">
@@ -167,7 +162,7 @@
             Te ayudamos a conectar tu talento con contratantes a nivel local.</p>
             <p>Te concectamos con músicos profesionales de Medellin
               Queremos ser parte del crecimiento de tu negocio o evento músical</p></p>
-          <button  class=" btn btn-conocer">Conocer Más</button>
+          <button  class=" btn btn-conocer" id="funciona">Conocer Más</button>
           
         </article>
 
@@ -183,6 +178,7 @@
   </main>
 
   <!--start footer -->
+ 
   <footer class=" footer text-center text-lg-start">
     <!-- Grid container -->
     <div class="container p-4">
@@ -194,10 +190,10 @@
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!" class="text-body">Promociona tu talento</a>
+              <a href="/src/pages/auth/music_register.html" class="text-body"><span>Promociona tu talento</span></a>
             </li>
             <li>
-              <a href="#!" class="text-body">Registtate</a>
+              <a href="/src/pages/auth/music_register.html" class="text-body"><span>Registrate</span></a>
             </li>
           </ul>
         </div>
@@ -205,14 +201,14 @@
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Soporte</h5>
+          <h5 class="text-uppercase"><span></span>Soporte</h5>
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-body">Centro de Ayuda</a>
+              <a href="/src/pages/funciona.html" class="text-body"><span>Centro de Ayuda</span></a>
             </li>
             <li>
-              <a href="#!" class="text-body">Contactanos</a>
+              <a href="#!" class="text-body"><span>Contáctanos</span></a>
             </li>
 
           </ul>
@@ -224,16 +220,17 @@
           <h5 class="text-uppercase mb-0">Redes</h5>
 
           <ul class="list-unstyled">
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter-x"></i>
-            <i class="bi bi-tiktok"></i>
-            <i class="bi bi-linkedin"></i>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-tiktok"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
           </ul>
         </div>
         <!--Grid column-->
       </div>
-      <!--Grid row-->
+      <!-- Copyright -->
+      
     </div>
     <!-- Grid container -->
 

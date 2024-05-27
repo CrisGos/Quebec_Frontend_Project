@@ -7,7 +7,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 
-main{
+.main{
     background-color:var(--gray);
 
 }
@@ -39,13 +39,19 @@ main{
   background-size: cover;
   overflow: hidden;
   height: 500px;
-
-}
+  margin-bottom: 2em;
+ }
 #navbar{
+ 
+  height: 5em;
+ 
+}
+
+.change{
   transition: 350ms cubic-bezier(0.65,0,0.35,1);
   background:linear-gradient(#008057,#005181);
-  height: 5em;
 }
+
 .logo{
     width: 6.5em;
     margin-top: 1em;
@@ -69,14 +75,43 @@ main{
 }
 
 .btn-style:hover,
-.btn-conocer:hover{
+.btn-conocer:hover, 
+.artist-genre:hover{
   background:var(--gray);
 }
 
-.form-select{
+.artist-genre{
   background-color: var(--color-ilustration);
-  opacity: .4;
+  opacity: .8;
   color:var(--white-color);
+  margin:3em;
+  width: 50%;
+  font-weight: bold;
+}
+
+
+//section about us
+.about-us{
+  width: 80%;
+}
+.main-quienes{
+ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//section functions
+
+.img-fun {
+margin-bottom: 2em;
+background-image: url(/public/img/ilustracion2.png);
+}
+
+.im-artis:hover,
+.want-to-hire:hover{
+  cursor: pointer;
+  border: solid var(--white-color) 0.1em;
 }
 //image bottom
 .image-container{
@@ -95,8 +130,34 @@ main{
 .footer a {
   
   text-decoration: none;
+  color: var(--white-color);
 }
 a span{
   color:var(--white-color);
   font-size: 1em;
 }
+
+
+
+/* Estilo básico para el Slider*/
+#gallery {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.gallery-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+
