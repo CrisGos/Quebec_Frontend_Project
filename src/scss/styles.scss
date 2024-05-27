@@ -1,10 +1,9 @@
+//local archives and bootstrap(icons and styles)
 @import url(./normalize.scss);
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url(./colors.scss);
+//fonts
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Jersey+25+Charted&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
-@import "../../node_modules/bootstrap/scss/bootstrap";
 
 
 .main{
@@ -12,9 +11,7 @@
 
 }
 
-:root{
-    --gray:#1f2124;
-}
+
 
 :root{
     --verde:#015958;
@@ -25,8 +22,9 @@
     --fire-color:#D92525;
     --dark-color:#000000;
     --white-color:#FFFFFF;  /* Estilos para el texto superpuesto */
-
+	--gray:#1f2124;
     --color-ilustration:#122626;
+
 }
 
 
@@ -135,29 +133,5 @@ background-image: url(/public/img/ilustracion2.png);
 a span{
   color:var(--white-color);
   font-size: 1em;
-}
-
-
-
-/* Estilo básico para el Slider*/
-#gallery {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.gallery-container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.gallery-item {
-  min-width: 100%;
-  box-sizing: border-box;
-}
-
-.gallery-item img {
-  width: 100%;
-  display: block;
 }
 
