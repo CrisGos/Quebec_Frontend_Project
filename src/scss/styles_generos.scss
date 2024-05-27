@@ -13,14 +13,14 @@
     padding-bottom: 2rem;
 }
 
-.genre-background {
+.genre-background, .artistas-background {
     background-image: url("../../public/img/genero_background.webp");
     background-attachment: scroll;
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-    
 }
+
  .generos-musica {
     margin-bottom: 2vh;
  }
@@ -87,6 +87,8 @@
     height: 300px;
     overflow: hidden;
   }
+
+
   
 .custom-img {
     width: 100%;
@@ -94,7 +96,8 @@
     object-fit: cover; /* Para que la imagen abarque todo el apartado sin distorsionarse */
     transition: 0.3s;
 }
-  
+
+
 .biografia-text {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -133,4 +136,41 @@
 
 .artista {
     text-decoration: none;
+}
+
+
+@media (max-width:400px){
+
+    .artistas-background {
+        background-image: none;
+        background-color: var(--gray) !important;
+    }
+
+    .artista {
+        width: 80vh;
+    }
+
+    .custom-card {
+        width: 80vh;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .custom-img {
+        width: 100%;
+        height: 150px; /* Ajustar la altura de la imagen */
+        object-fit: cover; /* Para que la imagen abarque todo el apartado sin distorsionarse */
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    iframe {
+        width:350px;
+        height:auto;
+    }
+
+    .logo{
+        width: 4.5em;
+        margin-top: 1em;
+    }
 }
