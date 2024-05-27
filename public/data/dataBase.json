@@ -1,23 +1,16 @@
 {
   "users": [
     {
-      "id": "ad2",
-      "username": "example",
-      "lastName": "example",
-      "email": "example@example.com",
-      "password": "1234"
-    },
-    {
       "id": "d536",
-      "username": "alexis",
-      "lastName": "soto",
+      "username": "sotomen10",
+      "fullName": "alexis soto",
       "email": "soto.alexis@hotmail.com",
       "password": "1234"
     },
     {
-      "id": "f6c9",
-      "username": "alexis",
-      "lastName": "soto",
+      "id": "28df",
+      "username": "sotomen10",
+      "fullName": "alexis soto barreiro",
       "email": "soto.alexis.8810@gmail.com",
       "password": "1234"
     }

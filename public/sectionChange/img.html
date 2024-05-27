@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsualización de Imagen</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .img-preview {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Previsualización de Imagen</h2>
+        <form>
+            <div class="form-group">
+                <label for="imageUpload">Subir Imagen (solo formato JPG)</label>
+                <input type="file" class="form-control-file" id="imageUpload" accept="image/jpeg">
+            </div>
+            <div class="form-group">
+                <img id="imagePreview" class="img-preview" src="" alt="Previsualización de la Imagen">
+            </div>
+        </form>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('imageUpload').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file && file.type === 'image/jpeg') {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            } else {
+                alert('Por favor, seleccione una imagen en formato JPG.');
+            }
+        });
+    </script>
+</body>
+</html>
