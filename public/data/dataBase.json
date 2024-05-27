@@ -1,16 +1,9 @@
 {
   "users": [
     {
-      "id": "ad2",
-      "username": "example",
-      "fullName": "example",
-      "email": "example@example.com",
-      "password": "1234"
-    },
-    {
       "id": "d536",
       "username": "alexis",
-      "fullName": "soto",
+      "lastName": "soto",
       "email": "soto.alexis@hotmail.com",
       "password": "1234"
     }

@@ -1,4 +1,4 @@
-//formulario
+//form
 const form = document.querySelector('form')
 const email = document.querySelector('#email')
 const password = document.querySelector('#password')
@@ -20,10 +20,10 @@ form.addEventListener('submit', async (event) => {
     }
 })
 
-//valida que el correo que no exista
+// Validates that the email does not exist
 async function validateEmail(email) {
-    const response = await fetch(`http://localhost:3000/users?email=${email.value}`)//traemos todos lo usuarios o el dato específico que requerimos
-    const data = await response.json()//pasamos de json a javaScript
+    const response = await fetch(`http://localhost:3000/users?email=${email.value}`)
+    const data = await response.json()
 
     if (data.length > 0) {
         return data[0]
