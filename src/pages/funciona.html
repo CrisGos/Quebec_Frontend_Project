@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -13,10 +13,10 @@
 
 </head>
 
-<body class="bg-dark text-light ">
+<body>
 
   <header class=" d-flex w-100  sm-100">
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1 mb-5" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1" id="navbar">
       <div class="overlay"></div> <!-- Div para la transparencia -->
       <section class="container">
         <a href="/">
@@ -29,29 +29,46 @@
         <div class="collapse navbar-collapse" id="navbar-start">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="/src/pages/quienes.html" class="nav-link active">
+              <a href="../pages/quienes.html" class="nav-link active">
                 Quienes Somos
               </a>
             </li>
             <li>
-              <a href="" class="nav-link">Ingresar</a>
+              <a href="../pages/auth/login.html" class="nav-link" id="login">Ingresar</a>
             </li>
-            <div class="collapse navbar-collapse" id="dropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Registrarse
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Artista</a></li>
-                    <li><a class="dropdown-item" href="#">Cliente</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </ul>
+            <ul class="navbar-nav">
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav" id="dropdown">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Registrarse
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./auth/music_register.html">Artista</a></li>
+                      <li><a class="dropdown-item" href="./auth/user_register.html">Cliente</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="collapse navbar-collapse ">
+                <ul class="navbar-nav" id="user-dropdown" style="display:none;">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="../pages/artistaProfile.html">Perfil</a></li>
+                      <li><a class="dropdown-item" href="#">Cuenta</a></li>
+                      <li><a class="dropdown-item" id="logout" href="#">Cerrar sesión</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </ul>
         </div>
+
       </section>
     </nav>
 
@@ -61,96 +78,99 @@
 
     <section class="about-us img-fun">
       <h1 class="text-center m-5">¿Como funciona?</h1>
-      <p class="text-sm-center lh-sm">Nuestro proposito es concectarte y ser parte del crecimiento profesional en Medellín</p>
+      <p class="text-sm-center lh-sm">Nuestro proposito es concectarte y ser parte del crecimiento profesional en
+        Medellín</p>
       <div class="container d-flex justify-content-center">
-        <div class="row ">   
-    
-      
-        <article class="im-artis col-sm-6">
-          <h3 class="text-center">Soy Artista</h3>
-          <p class="text-center">Queremos ayudar a potenciar tu talento a nivel local, y que puedas conectarte con mas posibles contratantes 
-            .</p>
-            <p class="text-center">Inscribete en nuestra plataforma y conectate con potenciales clientes a nivel local</p>
+        <div class="row ">
 
-        </article>
-        <article class="want-to-hire col-sm-6">
-          <h3 class="text-center">Quiero contratar</h3>
+
+          <article class="im-artis col-sm-6">
+            <h3 class="text-center">Soy Artista</h3>
+            <p class="text-center">Queremos ayudar a potenciar tu talento a nivel local, y que puedas conectarte con mas
+              posibles contratantes
+              .</p>
+            <p class="text-center">Inscribete en nuestra plataforma y conectate con potenciales clientes a nivel local
+            </p>
+
+          </article>
+          <article class="want-to-hire col-sm-6">
+            <h3 class="text-center">Quiero contratar</h3>
 
 
             <p class="text-center">si eres proveedor de
               eventos relacionados con la música, te invitamos a inscribirte y ser parte de nuestra plataforma</p>
 
-        </article>
-      
-    </div>
-  </div>
+          </article>
+
+        </div>
+      </div>
     </section>
 
   </main>
 
- <!--start footer -->
- <footer class=" footer text-center text-lg-start">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!--Grid row-->
-    <div class="row">
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-0">Artistas</h5>
+  <!--start footer -->
+  <footer class=" footer text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Artistas</h5>
 
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!" class="text-body"><span>Promociona tu talento</span></a>
-          </li>
-          <li>
-            <a href="#!" class="text-body"><span>Registrate</span></a>
-          </li>
-        </ul>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-body"><span>Promociona tu talento</span></a>
+            </li>
+            <li>
+              <a href="#!" class="text-body"><span>Registrate</span></a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase"><span></span>Soporte</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-body"><span>Centro de Ayuda</span></a>
+            </li>
+            <li>
+              <a href="#!" class="text-body"><span>Contáctanos</span></a>
+            </li>
+
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Redes</h5>
+
+          <ul class="list-unstyled">
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-tiktok"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </ul>
+        </div>
+        <!--Grid column-->
       </div>
-      <!--Grid column-->
+      <!-- Copyright -->
 
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase"><span></span>Soporte</h5>
+    </div>
+    <!-- Grid container -->
 
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#!" class="text-body"><span>Centro de Ayuda</span></a>
-          </li>
-          <li>
-            <a href="#!" class="text-body"><span>Contáctanos</span></a>
-          </li>
-
-        </ul>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-0">Redes</h5>
-
-        <ul class="list-unstyled">
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-tiktok"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </ul>
-      </div>
-      <!--Grid column-->
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-body" href="#"><span>Quebec group</span></a>
     </div>
     <!-- Copyright -->
-    
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2024 Copyright:
-    <a class="text-body" href="#"><span>Quebec group</span></a>
-  </div>
-  <!-- Copyright -->
-</footer>
+  </footer>
 
   <!-- script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -159,6 +179,7 @@
 
   <script type="module" src="../js/main.js"></script>
   <script type="module" src="../js/operations.js"></script>
+  <script type="module" src="../js/logout.js"></script>
 </body>
 
 </html>

@@ -44,16 +44,16 @@
         <div class="collapse navbar-collapse" id="navbar-start">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="../quienes.html" class="nav-link active">
+              <a href="./src/pages/quienes.html" class="nav-link active">
                 Quienes Somos
               </a>
             </li>
             <li>
-              <a href="./login.html" class="nav-link" id="login">Ingresar</a>
+              <a href="./src/pages/auth/login.html" class="nav-link" id="login">Ingresar</a>
             </li>
-            <ul class="navbar-nav" >
-              <div class="collapse navbar-collapse" >
-                <ul class="navbar-nav" id="dropdown" >
+            <ul class="navbar-nav">
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav" id="dropdown">
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
@@ -74,9 +74,9 @@
                       data-bs-toggle="dropdown" aria-expanded="false">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Perfil</a></li>
+                      <li><a class="dropdown-item" href="./src/pages/artistaProfile.html">Perfil</a></li>
                       <li><a class="dropdown-item" href="#">Cuenta</a></li>
-                      <li><a class="dropdown-item" id="logout" href="#">Cerra sesión</a></li>
+                      <li><a class="dropdown-item" id="logout" href="#">Cerrar sesión</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -88,11 +88,11 @@
     </nav>
 
 
-    
-      <div class="container mt-5">
-        <div class="row mt-5">
-              <article class="col-sm-6 mt-5 ">
-                <!-- <select class="form-select estyl-select w-50 text-center m-5" aria-label="Default select example">
+
+    <div class="container mt-5">
+      <div class="row mt-5">
+        <article class="col-sm-6 mt-5 ">
+          <!-- <select class="form-select estyl-select w-50 text-center m-5" aria-label="Default select example">
                   <option selected class="text-center w-25">Buscar artista por genero</option>
                   <option value="1">Urbano</option>
                   <option value="2">Pop</option>
@@ -101,19 +101,20 @@
                   <option value="4">Rock</option>
                   <option value="5">Electronica</option>
                 </select> -->
-                <a href="./src/pages/genero.html"><input class="btn  artist-genre" value="Ver artistas por genero" type="submit" id="genre-select" class="artist-genre"></input></a>
+          <a href="./src/pages/genero.html"><input class="btn  artist-genre" value="Ver artistas por genero"
+              type="submit" id="genre-select" class="artist-genre"></input></a>
 
-              </article>
-              <div class=" col-sm-6 mt-5">
-                <h1 class="title mb-5">Dale un impulso a tu negocio con el mejor talento de Medellín</h1>
-                <h3 class="subtitle mb-5">Realiza tus contrataciones de manera segura. <br>
-                  Te conectamos con el mejor talento de Medellín.</h3>
-                  <div class="container d-flex justify-content-center gap-2">
-                    <button class="btn btn-style  w-25">Quiero contratar</button>
-                    <button class="btn  btn-style w-25">Soy artista</button>
-                  </div>
-              </div>
-  
+        </article>
+        <div class=" col-sm-6 mt-5">
+          <h1 class="title mb-5">Dale un impulso a tu negocio con el mejor talento de Medellín</h1>
+          <h3 class="subtitle mb-5">Realiza tus contrataciones de manera segura. <br>
+            Te conectamos con el mejor talento de Medellín.</h3>
+          <div class="container d-flex justify-content-center gap-2">
+            <button class="btn btn-style  w-25">Quiero contratar</button>
+            <button class="btn  btn-style w-25">Soy artista</button>
+          </div>
+        </div>
+
       </div>
     </div>
   </header>
@@ -140,11 +141,13 @@
             <img src="..." class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev"  id="carouselExampleAutoplaying">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev" id="carouselExampleAutoplaying">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next"  id="carouselExampleAutoplaying">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next" id="carouselExampleAutoplaying">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>

@@ -12,7 +12,7 @@
 // Función para manejar el encabezado
 function manejarEncabezado() {
     // Verificar si hay datos en localStorage para determinar si hay un usuario en línea
-    const userOnline = localStorage.getItem("userOnline");
+    const userOnline = localStorage.getItem("userOnline")
     if (userOnline) {
       // Ocultar botones de iniciar sesión y el menú de registro
       document.getElementById("login").style.display = "none";

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <title>Quienes Somos</title>
 </head>
 
-<body class="bg-dark text-light">
+<body>
   <header class=" d-flex w-100  sm-100">
 
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1" id="navbar">
@@ -23,31 +23,46 @@
         <div class="collapse navbar-collapse" id="navbar-start">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="/src/pages/quienes.html" class="nav-link active">
+              <a href="../pages/quienes.html" class="nav-link active">
                 Quienes Somos
               </a>
             </li>
             <li>
-              <a href="/src/pages/auth/login.html" class="nav-link">Ingresar</a>
+              <a href="../pages/auth/login.html" class="nav-link" id="login">Ingresar</a>
             </li>
-            <div class="collapse navbar-collapse" id="dropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Registrarse
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="/src/pages/auth/music_register.html" id="dropdown">Artista</a>
-                    </li>
-                    <li><a class="dropdown-item" href="/src/pages/auth/user_register.html" id="dropdown">Cliente</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </ul>
+            <ul class="navbar-nav">
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav" id="dropdown">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Registrarse
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./auth/music_register.html">Artista</a></li>
+                      <li><a class="dropdown-item" href="./auth/user_register.html">Cliente</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="collapse navbar-collapse ">
+                <ul class="navbar-nav" id="user-dropdown" style="display:none;">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="../pages/artistaProfile.html">Perfil</a></li>
+                      <li><a class="dropdown-item" href="#">Cuenta</a></li>
+                      <li><a class="dropdown-item" id="logout" href="#">Cerrar sesión</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </ul>
         </div>
+
       </section>
     </nav>
 
@@ -105,7 +120,7 @@
               <img src="../../public/img/alexis.webp" class="card-img-top" alt="imagen alexis">
               <div class="card-body">
                 <h1 class="card-text">Alexis.</h1>
-                <p> Coder, Ingeniero Civil</p>
+                <p> Coder, Ingeniero Industrial</p>
               </div>
             </div>
           </article>
@@ -186,6 +201,7 @@
 
   <script type="module" src="../js/main.js"></script>
   <script type="module" src="../js/operations.js"></script>
+  <script type="module" src="../js/logout.js"></script>
 
 </body>
 
