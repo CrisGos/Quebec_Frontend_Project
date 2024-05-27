@@ -1,0 +1,176 @@
+@import url(./styles.scss);
+
+.texto-h3-generos {
+    color: antiquewhite;
+}
+
+.a-genero {
+    text-decoration: none !important;
+} 
+
+.main-genero, .main-artistas {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.genre-background, .artistas-background {
+    background-image: url("../../public/img/genero_background.webp");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+ .generos-musica {
+    margin-bottom: 2vh;
+ }
+
+.circle-img-container {
+    width: 40vh;
+    height: 40vh;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem auto;
+    border: 2px solid var(--white-color);
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.circle-img-container::before {
+    content: ""; 
+    display: block;
+    padding-top: 100%;
+}
+
+.circle-img-container:hover {
+    border: 4px solid var(--color-thre);
+    box-shadow: 10px 5px 5px var(--color-five);
+    transform: scale(1.15);
+}
+
+.circle-img-container img {
+    width: 100%;
+    height: 100%;
+    object-position: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 92%;
+    transition: opacity 0.5s ease;
+    transition: transform 0.3s ease;
+}
+
+.circle-img-container:hover img {
+    opacity: 100%;
+    transform: scale(0.98);
+}
+
+.image-caption {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    color: var( --color-five);
+}
+
+.image-caption:hover {
+    text-decoration: none;
+}
+
+
+.custom-card {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+  }
+
+
+  
+.custom-img {
+    width: 100%;
+    height: 150px; /* Ajustar la altura de la imagen */
+    object-fit: cover; /* Para que la imagen abarque todo el apartado sin distorsionarse */
+    transition: 0.3s;
+}
+
+
+.biografia-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas a mostrar */
+    -webkit-box-orient: vertical;
+    height: 2.6em; /* Ajusta la altura según el número de líneas */
+    white-space: normal;
+}
+
+
+.custom-card:hover {
+    border: 4px solid var(--color-thre);
+    box-shadow: 10px 5px 5px var(--color-five);
+    transform: scale(1.05);
+}
+
+#artista-imagen {
+    height: 25vh;
+    object-fit: cover;
+}
+  
+#artista-nombre {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+
+.main-artista {
+    background-color: var(--gray);
+}
+
+.artist-background {
+    color: var(--white-color)
+}
+
+.artista {
+    text-decoration: none;
+}
+
+
+@media (max-width:400px){
+
+    .artistas-background {
+        background-image: none;
+        background-color: var(--gray) !important;
+    }
+
+    .artista {
+        width: 80vh;
+    }
+
+    .custom-card {
+        width: 80vh;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .custom-img {
+        width: 100%;
+        height: 150px; /* Ajustar la altura de la imagen */
+        object-fit: cover; /* Para que la imagen abarque todo el apartado sin distorsionarse */
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    iframe {
+        width:350px;
+        height:auto;
+    }
+
+    .logo{
+        width: 4.5em;
+        margin-top: 1em;
+    }
+}
