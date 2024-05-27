@@ -2,62 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Quebec Project" content="" />
-    <meta name="keywords" content="music, musica, contrata, talento, medellin, fiestas, eventos, events" />
-    <meta name="sitedomain" content="https://marketmusic.com/" />
-    <meta name="organization" content="Riwi_Dell" />
-    <meta name="author" content="Cristian Ortega" />
-    <meta name="author" content="Santiago Castro" />
-    <meta name="author" content="Narciris Mena" />
-    <meta name="author" content="Alexis Soto" />
-    <meta name="designer" content="Quebec team" />
-    <meta name="copyright" content="© 2024 Riwi. Todos los derechos reservados" />
-    <meta name="robots" content="index,follow" />
-    <meta name="googlebot" content="index,follow" />
-    <meta name="revisit-after" content="15days" />
-
-    <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon" />
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Multisección</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-bg-pg text-light">
-    <header class="">
-        <nav class="navbar navbar-expand-lg navbar-dark  p-1 mb-5" id="navbar">
-            <div class="overlay"></div> <!-- Div para la transparencia -->
-            <section class="container">
-                <a href="/">
-                <img  src="../../../public/icon/logo.webp" alt="logo" class="logo">
-                </a>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
-                aria-label="Toggle navigation" aria-controls="navbar-start" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-start">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                    <a href="./src/page/quienes.html" class="nav-link active">
-                        Quienes Somos
-                    </a>
-                    </li>
-                    <li>
-                    <a href="./login.html" class="nav-link">Ingresar</a>
-                    </li>
-                    
-                </ul>
-                </div>
-            </section>
-            </nav>
-        
-    </header>
-    <br>
+<body>
+    <header></header>
     <main>
         <h1>Queremos conocerte</h1>
         <div class="container m-2">
             <form id="multiStepForm" method="post">
     <!-- Sección 1 -->
-                <section id="section1" class="contianer vsbl">
+                <section id="section1" class="contianer">
                     <h2>Hablanos de tu banda</h2>
             <!-- radiobuttons -->
                     <article class="row">
@@ -109,23 +69,20 @@
         
                         <div class="band-image">
                             <figure class="w-25 h-75">
-                                <img class=".bandPhoto" id="imagePreview" src="" alt="">
+                                <img id="imagePreview" src="" alt="">
                             </figure>
                             <div class="mb-3">
-                                <label for="imageUpload" class="form-label">Agrega tu imagen imagen</label>
+                                <label for="imageUpload" class="form-label">Default file input example</label>
                                 <input class="form-control" type="file" accept="image/png, image/jpeg" id="imageUpload">
                             </div>
                         </div>
                     </article>
     
-                    <div class="nxt-bck-btn">
-                        <button type="button" btn-sec="2" class="btn btn-secondary rounded-5 hidden">Anterior</button>
-                        <button type="button" btn-sec="1" class="btn btn-primary rounded-5" >Siguiente</button>
-                    </div>
+                    <button type="button" class="btn btn-primary rounded-5" onclick="nextSection(1)">Siguiente</button>
                 </section>
     
     <!-- Sección 2 -->
-                <section id="section2" class="hidden container m-2 w-50 ">
+                <div id="section2" class="hidden container m-2 w-50 ">
                     <h2>Sobre tu banda</h2>
                 
                     <div class="mb-3 ">
@@ -177,18 +134,17 @@
                                         </div>
                                 <!-- modal footer -->
                                         <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary rounded-5" data-bs-dismiss="modal">Listo</button>
+                                        <button type="button" class="btn btn-prymary rounded-5" data-bs-dismiss="modal">Listo</button>
                                         </div>
                                     </div>
                                     </div>
                                 </div>
                             </article>
+    
                     
-                    <div class="nxt-bck-btn">
-                        <button type="button" btn-sec="2" class="btn btn-secondary rounded-5">Anterior</button>
-                        <button type="button" btn-sec="2" class="btn btn-primary rounded-5" >Siguiente</button>
-                    </div>
-                </section>
+                    <button type="button" class="btn btn-secondary rounded-5" onclick="prevSection(2)">Anterior</button>
+                    <button type="button" class="btn btn-primary rounded-5" onclick="nextSection(2)">Siguiente</button>
+                </div>
     
     <!-- Sección 3 -->
                 <section id="section3" class="hidden container m-2 w-50">
@@ -231,81 +187,21 @@
                             <input type="checkbox" class="form-check-input" id="term-condi-service" required>
                             <label class="form-check-label" for="term-condi-service" >acepto los <a href="">Terminos y condiciones</a> del servicio</label>
                         </div>
-                    <div class="nxt-bck-btn">
-                        <button type="button" btn-sec="3" class="btn btn-secondary rounded-5" >Anterior</button>
+                    <div class="">
+                        <button type="button" class="btn btn-secondary rounded-5" onclick="prevSection(3)">Anterior</button>
                         <button type="submit" class="btn btn-success rounded-5">Enviar</button>
                     </div>
     
                 </section>
+                </section>
             </form>
         </div>
+        <!-- Bootstrap JS -->
+        
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="./main.js"></script>
     </main>
-
-    <footer class=" footer text-center fixed-bottom text-lg-start">
-        <!-- Grid container -->
-        <div class="container p-4">
-            <!--Grid row-->
-            <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-0">Artistas</h5>
-
-                <ul class="list-unstyled">
-                <li>
-                    <a href="/src/pages/auth/music_register.html" class="text-body"><span>Promociona tu talento</span></a>
-                </li>
-                <li>
-                    <a href="/src/pages/auth/music_register.html" class="text-body"><span>Registrate</span></a>
-                </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase"><span></span>Soporte</h5>
-
-                <ul class="list-unstyled mb-0">
-                <li>
-                    <a href="/src/pages/funciona.html" class="text-body"><span>Centro de Ayuda</span></a>
-                </li>
-                <li>
-                    <a href="#!" class="text-body"><span>Contáctanos</span></a>
-                </li>
-
-                </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-0">Redes</h5>
-
-                <ul class="list-unstyled">
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-tiktok"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-                </ul>
-            </div>
-            <!--Grid column-->
-            </div>
-            <!-- Copyright -->
-            
-        </div>
-        <!-- Grid container -->
-
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 Copyright:
-            <a class="text-body" href="#">Quebec group</a>
-        </div>
-        <!-- Copyright -->
-        </footer>
-    <script type="module" src="../../js/registerMusic.js"></script>
-
-
 
 </body>
 
