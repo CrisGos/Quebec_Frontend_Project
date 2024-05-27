@@ -42,46 +42,57 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbar-start">
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
-              <a href="/src/pages/quienes.html" class="nav-link active">Quienes Somos</a>
+              <a href="/src/pages/quienes.html" class="nav-link active">
+                Quienes Somos
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="/src/pages/auth/login.html" class="nav-link">Ingresar</a>
+            <li>
+              <a href="" class="nav-link">Ingresar</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">Registrarse</a>
-              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="/src/pages/auth/music_register.html">Artista</a></li>
-                <li><a class="dropdown-item" href="/src/pages/auth/user_register.html">Cliente</a></li>
+            <div class="collapse navbar-collapse" id="dropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Registrarse
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Artista</a></li>
+                    <li><a class="dropdown-item" href="#">Cliente</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
           </ul>
         </div>
-      </div>
-    </nav> 
+      </section>
+    </nav>
 
-    <div class="container mt-5">
-      <div class="row mt-5">
-        <article class="col-sm-6 mt-5 contain-artis">
-          <a class="btn  artist-genre"  type="button" id="genre-select" href="/src/pages/genero.html">   Ver artistas por género</a>
-         
-        </article>
-        <div class="col-sm-6 mt-5 left contain-title">
-        
-          <h1 class="title mb-5">Dale un impulso a tu negocio con el mejor talento de Medellín</h1>
-          <h3 class="subtitle mb-5">Realiza tus contrataciones de manera segura.<br>
-            Te conectamos con el mejor talento de Medellín.
-          </h3>
-     
-          <div class=" d-flex flex-column flex-md-row justify-content-center gap-1 left">
-            <a href="/src/pages/auth/user_register.html">
-              <button class="btn btn-style">Quiero contratar</button>
-            </a>
-            <a href="/src/pages/auth/music_register.html">
-              <button class="btn btn-style">Soy artista</button>
-            </a>
-          </div>
-        </div>
+
+    
+      <div class="container mt-5">
+        <div class="row mt-5">
+              <article class="col-sm-6 mt-5 ">
+                <!-- <select class="form-select estyl-select w-50 text-center m-5" aria-label="Default select example">
+                  <option selected class="text-center w-25">Buscar artista por genero</option>
+                  <option value="1">Urbano</option>
+                  <option value="2">Pop</option>
+                  <option value="3">Popular</option>
+                  <option value="4">Rock</option>
+                  <option value="5">Electronica</option>
+                </select> -->
+                <input class="btn  artist-genre" value="Ver artistas por genero" type="submit" id="genre-select" class="artist-genre"></input>
+              </article>
+              <div class=" col-sm-6 mt-5">
+                <h1 class="title mb-5">Dale un impulso a tu negocio con el mejor talento de Medellín</h1>
+                <h3 class="subtitle mb-5">Realiza tus contrataciones de manera segura. <br>
+                  Te conectamos con el mejor talento de Medellín.</h3>
+                  <div class="container d-flex justify-content-center gap-2">
+                    <button class="btn btn-style  w-25">Quiero contratar</button>
+                    <button class="btn  btn-style w-25">Soy artista</button>
+                  </div>
+              </div>
+  
       </div>
     </div>
   </header>
