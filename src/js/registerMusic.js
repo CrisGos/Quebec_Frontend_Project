@@ -4,13 +4,14 @@ import '../scss/registerMusic.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 let formRegister = document.querySelector("form")
-let secCounter=1
+let secCounter = 1
 let seCurrent = formRegister.querySelector(`#section${secCounter}`)
 let divNxtBck = seCurrent.querySelector('.nxt-bck-btn')
 let nxtBtn = divNxtBck.querySelector('.btn-primary')
 let bckBtn = divNxtBck.querySelector(".btn-secondary")
-let arrsection=formRegister.querySelectorAll('section')
-arrsection.forEach(section=> {
+let arrsection = formRegister.querySelectorAll('section')
+
+arrsection.forEach(section => {
     divNxtBck = section.querySelector('.nxt-bck-btn')
     if (divNxtBck.contains(divNxtBck.querySelector('.btn-primary'))) {
         nxtBtn = divNxtBck.querySelector('.btn-primary')
@@ -18,24 +19,22 @@ arrsection.forEach(section=> {
         nxtBtn.addEventListener('click', () => {
             nextSection(secCounter)
             secCounter++
-            console.log(seCurrent)
-            console.log(secCounter , "avanza");
-    
+            console.log(secCounter, "avanza");
+
         })
     }
     bckBtn = divNxtBck.querySelector(".btn-secondary")
-    
+
     bckBtn.addEventListener('click', () => {
         prevSection(secCounter)
         secCounter--
-        console.log(seCurrent)
-        console.log(secCounter,"retrocede");
+        console.log(secCounter, "retrocede");
 
     })
 });
 
 
-export function nextSection(currentSection) {
+function nextSection(currentSection) {
     currentSection = Number(currentSection)
     const section = document.querySelector(`#section${currentSection}`)
     if (validateSection(section)) {
@@ -50,13 +49,12 @@ export function nextSection(currentSection) {
                 nextSection.classList.remove('slide-in-right')
             }, { once: true })
         }, { once: true })
-
     }
 
 }
 
 
-export function prevSection(currentSection) {
+function prevSection(currentSection) {
     currentSection = Number(currentSection)
     const section = document.querySelector(`#section${currentSection}`)
     section.classList.add('slide-out-right')
