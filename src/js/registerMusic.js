@@ -19,7 +19,6 @@ arrsection.forEach(section => {
         nxtBtn.addEventListener('click', () => {
             nextSection(secCounter)
             secCounter++
-            console.log(seCurrent)
             console.log(secCounter, "avanza");
 
         })
@@ -29,7 +28,6 @@ arrsection.forEach(section => {
     bckBtn.addEventListener('click', () => {
         prevSection(secCounter)
         secCounter--
-        console.log(seCurrent)
         console.log(secCounter, "retrocede");
 
     })
