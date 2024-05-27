@@ -24,11 +24,11 @@
 
 <body class="bg-bg-pg text-light">
     <header class="">
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1 mb-5" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark  p-1 mb-5" id="navbar">
             <div class="overlay"></div> <!-- Div para la transparencia -->
             <section class="container">
                 <a href="/">
-                <img src="/public/icon/logo.webp" alt="logo" class="logo">
+                <img  src="../../../public/icon/logo.webp" alt="logo" class="logo">
                 </a>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
                 aria-label="Toggle navigation" aria-controls="navbar-start" aria-expanded="false">
@@ -42,22 +42,9 @@
                     </a>
                     </li>
                     <li>
-                    <a href="./src/pages/auth/login.html" class="nav-link">Ingresar</a>
+                    <a href="./login.html" class="nav-link">Ingresar</a>
                     </li>
-                    <div class="collapse navbar-collapse" id="dropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Registrarse
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./src/pages/auth/music_register.html">Artista</a></li>
-                            <li><a class="dropdown-item" href="./src/pages/auth/user_register.html">Cliente</a></li>
-                        </ul>
-                        </li>
-                    </ul>
-                    </div>
+                    
                 </ul>
                 </div>
             </section>
@@ -122,10 +109,10 @@
         
                         <div class="band-image">
                             <figure class="w-25 h-75">
-                                <img id="imagePreview" src="" alt="">
+                                <img class=".bandPhoto" id="imagePreview" src="" alt="">
                             </figure>
                             <div class="mb-3">
-                                <label for="imageUpload" class="form-label">Default file input example</label>
+                                <label for="imageUpload" class="form-label">Agrega tu imagen imagen</label>
                                 <input class="form-control" type="file" accept="image/png, image/jpeg" id="imageUpload">
                             </div>
                         </div>
@@ -254,7 +241,7 @@
         </div>
     </main>
 
-    <footer class=" footer text-center text-lg-start">
+    <footer class=" footer text-center fixed-bottom text-lg-start">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
