@@ -31,7 +31,7 @@ function manejarEncabezado() {
         // Limpiar localStorage y recargar la página para simular un cierre de sesión
         localStorage.removeItem("userOnline");
         location.reload();
-        window.location.href = "./src/pages/auth/login.html"
+        window.location.href = "/"
       });
     }
   }
