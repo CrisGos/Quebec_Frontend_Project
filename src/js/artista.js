@@ -98,6 +98,7 @@ async function cargarPerfilArtista() {
         <section id="contratar" class="w-100 text-center">
             <h3>Formulario de Contratación</h3>
             <!-- Formulario de contratación aquí -->
+            
         </section>
     `
 }
