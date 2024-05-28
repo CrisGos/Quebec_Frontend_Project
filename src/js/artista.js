@@ -83,13 +83,21 @@ window.addEventListener('DOMContentLoaded', async () => {
         <section class="w-100 d-flex justify-content-center">
             <div id="artista-video">${artista.video}</div>
         </section>
+    `;
 
-        <!-- Quinta Sección -->
-        <section class="w-100 text-center">
-            <h3>Redes Sociales</h3>
-            ${socialLinks}
-        </section>
+        // Agregar la Quinta Sección solo si el usuario está logueado
+        const userOnline = localStorage.getItem("userOnline");
+        if (userOnline) {
+            perfilContainer.innerHTML += `
+            <!-- Quinta Sección -->
+            <section class="w-100 text-center">
+                <h3>Redes Sociales</h3>
+                ${socialLinks}
+            </section>
+            `;
+        }
 
+        perfilContainer.innerHTML += `
         <!-- Sexta Sección -->
         <section id="contratar" class="w-100 text-center">
             <h3>Formulario de Contratación</h3>
@@ -171,8 +179,8 @@ window.addEventListener('DOMContentLoaded', async () => {
                 return;
             }
 
-            const message = `Hola, estoy interesado en tu servicio. Aquí está la información del evento:\nTipo de evento: ${eventType}\nFecha: ${eventDate}\nDescripción: ${eventDescription}\nNúmero de asistentes:${attendeesNumber}\nHora: ${eventTime}`;
-            const whatsappLink = `https://wa.me/573041117216?text=${encodeURIComponent(message)}`;
+            const message = `Hola ${artista.nombre}! te contacto de Music Market, estoy interesado(a) en tu servicio. Aquí está la información del evento:\nTipo de evento: ${eventType}\nFecha: ${eventDate}\nDescripción: ${eventDescription}\nNúmero de asistentes:${attendeesNumber}\nHora: ${eventTime}`;
+            const whatsappLink = `https://wa.me/57${artista.celular}?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
             clearForm();
         });
@@ -193,13 +201,14 @@ window.addEventListener('DOMContentLoaded', async () => {
                 return;
             }
 
-            const message = `Hola, estoy interesado en tu servicio. Aquí está la información del evento:\nTipo de evento: ${eventType}\nFecha: ${eventDate}\nDescripción: ${eventDescription}\nNúmero de asistentes:${attendeesNumber}\nHora: ${eventTime}`;
-            const whatsappLink = `https://wa.me/573041117216?text=${encodeURIComponent(message)}`;
+            const message = `Hola ${artista.nombre}! te contacto de Music Market, estoy interesado(a) en tu servicio. Aquí está la información del evento:\nTipo de evento: ${eventType}\nFecha: ${eventDate}\nDescripción: ${eventDescription}\nNúmero de asistentes: ${attendeesNumber}\nHora: ${eventTime}`;
+            const whatsappLink = `https://wa.me/57${artista.celular}?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
             clearForm();
         });
-    };
+    }
 
     cargarPerfilArtista();
 });
 
+export default perfilContainer;
