@@ -16,8 +16,9 @@ arrsection.forEach(section => {
     if (divNxtBck.contains(divNxtBck.querySelector('.btn-primary'))) {
         nxtBtn = divNxtBck.querySelector('.btn-primary')
         nxtBtn.addEventListener('click', () => {
+            acceptance(secCounter)
             nextSection(secCounter)
-            if(validateSection(section)== true){secCounter++
+            if(validateSection(section)){secCounter++
                 console.log(secCounter, "retrocede");}
             
             console.log(secCounter, "avanza");
@@ -28,18 +29,13 @@ arrsection.forEach(section => {
 
     bckBtn.addEventListener('click', () => {
         prevSection(secCounter)
-        if(validateSection(section)== true){secCounter--
-            console.log(secCounter, "retrocede");}
+        secCounter--
+
+        console.log(secCounter, "retrocede")
         
 
     })
 });
-// let divNxtBck = seCurrent.querySelector('.nxt-bck-btn')
-// let nxtBtn = divNxtBck.querySelector('.btn-primary')
-// let bckBtn = divNxtBck.querySelector(".btn-secondary")
-
-
-
 
 
 function nextSection(currentSection) {
@@ -80,7 +76,7 @@ function prevSection(currentSection) {
 }
 
 function validateSection(section) {
-    const inputs = section.querySelectorAll('input')
+    const inputs = section.querySelectorAll('input[required]')
     for (let input of inputs) {
         if (!input.checkValidity()) {
             input.reportValidity()
@@ -111,3 +107,25 @@ document.querySelector('#imageUpload').addEventListener('change', function (even
         alert('Por favor, seleccione una imagen en formato JPG.')
     }
 })
+
+// acceptacion
+function acceptance(secCounter) {
+    //section1
+    if (secCounter==1) {
+        console.log(secCounter);
+    }
+    //section2
+    if (secCounter==2) {
+        
+    }
+    //section3
+    if (secCounter==3) {
+        
+    }
+    //section4
+    if (secCounter==4) {
+        
+    }
+
+    
+}

@@ -84,13 +84,13 @@
     <br>
     <main >
         <h1>Queremos conocerte</h1>
-        <div class="container-md m-2">
+        <div class="container  m-2">
             <form id="multiStepForm" method="post">
                 <!-- Sección 1 -->
-                <section id="section1" class="contianer vsbl">
+                <section id="section1" class="contianer w-50 vsbl">
                     <h2>Hablanos de tu banda</h2>
                     <!-- radiobuttons -->
-                    <article class="row">
+                    <article class="d-flex flex-row justify-content-evenly ">
 
 
                         <div class="form-check col-1 ">
@@ -109,35 +109,54 @@
                         </div>
                     </article>
                     <!-- band info -->
-
                     <article class="d-flex flex-row">
                         <div class="me-5 ">
+                        <!-- band name -->
                             <div class="form-group my-3 ">
                                 <label for="name">Nombre Artistico</label>
                                 <input type="text" class="form-control" id="name" placeholder="Nombre Artisitico"
                                     required>
                             </div>
+                        <!-- genre -->
                             <div class="form-floating my-3">
-                                <select class="form-select" id="floatingSelect"
-                                    aria-label="Floating label select example">
-                                    <option selected>tipo de grupo</option>
-                                    <option value="smll">Pequeño(2 a 5 integrantes)</option>
-                                    <option value="md">Mediano(6 a 9 integrantes)</option>
-                                    <option value="lg">Grande(10 o mas integrantes)</option>
-                                </select>
-                                <label for="floatingSelect">Cantiada de integrantes</label>
-                            </div>
-                            <div class="form-floating my-3">
-                                <select class="form-select" id="floatingSelect"
-                                    aria-label="Floating label select example">
-                                    <option selected>Genero</option>
-                                    <option value="1">Urbano</option>
-                                    <option value="2">Pop</option>
-                                    <option value="3">Popular</option>
+                                <select  class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example" required>
+                                    <option itemid="void" selected >Genero</option>
+                                    <option value="urbano">Urbano</option>
+                                    <option value="pop">Pop</option>
+                                    <option value="popular">Popular</option>
                                     <option value="3">Rock</option>
                                     <option value="3">Electronica</option>
                                 </select>
-                                <label for="floatingSelect">Works with selects</label>
+                                <label for="floatingSelect">Genero Musical principal</label>
+                            </div>
+                        <!-- genre2 -->
+                            <div class="form-floating my-3">
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option value="" selected>Genero 2</option>
+                                    <option value="">No</option>
+                                    <option value="urbano">Urbano</option>
+                                    <option value="pop">Pop</option>
+                                    <option value="popular">Popular</option>
+                                    <option value="3">Rock</option>
+                                    <option value="3">Electronica</option>
+                                </select>
+                                <label for="floatingSelect">Genero 3</label>
+                            </div>
+                        <!-- genre3 -->
+                            <div class="form-floating my-3">
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option value="" selected>Genero 3</option>
+                                    <option value="">No</option>
+                                    <option value="urbano">Urbano</option>
+                                    <option value="pop">Pop</option>
+                                    <option value="popular">Popular</option>
+                                    <option value="3">Rock</option>
+                                    <option value="3">Electronica</option>
+                                </select>
+                                <label for="floatingSelect">Genero 2</label>
                             </div>
                         </div>
 
@@ -151,7 +170,7 @@
                             </div>
                         </div>
                     </article>
-
+                <!-- to next section -->
                     <div class="nxt-bck-btn  d-flex justify-content-end">
                         <button type="button" btn-sec="2" class="btn btn-secondary rounded-5 hidden">Anterior</button>
                         <button type="button" btn-sec="1" class="btn btn-primary rounded-5">Siguiente</button>
@@ -160,33 +179,34 @@
                 
                 <!-- Sección 2 -->
                 <section id="section2" class="hidden container m-2 w-50 ">
+                    <!-- description of the band -->
                     <h2>Sobre tu banda</h2>
-                
+                <!-- 720 char paragraph for the band -->
                     <div class="mb-3 ">
                         <label for="music-description" class="form-label">Descripcion de la banda</label>
                         <textarea class="form-control" id="music-description" rows="3" maxlength="720"
                             placeholder="Una breve descripcion de tu banda(maximo: 720 caracteres)"></textarea>
                     </div>
-                
+                <!-- validation of medellin address -->
                     <div class="form-group">
                         <label for="address">Dirección de recidencia en Medellín</label>
                         <input type="text" class="form-control" id="address" placeholder="calle,cra ..." required>
                     </div>
-                    <!-- youtube-iframe -->
+                <!-- youtube-iframe -->
                     <article id="youtube-iframe" class="d-flex">
                         <div class="form-group">
                             <label for="name">Iframe de youtube</label>
                             <input type="text" class="form-control" id="name" required>
                         </div>
                 
-                        <!-- Button trigger modal -->
+                    <!-- Button trigger modal helps -->
                         <button type="button" class="btn bi bi-info-circle rounded-5" data-bs-toggle="modal"
                             data-bs-target="#steps-for-iframe" title="Como conseguir un Iframe">
                 
                         </button>
                 
                         <!-- Modal -->
-                                <div class="modal fade text-dark" id="steps-for-iframe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade " id="steps-for-iframe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                     <div class="modal-content">
                                 <!-- modal header -->
@@ -219,7 +239,7 @@
                             </div>
                         </div>
                     </article>
-                
+                <!-- to next section -->
                     <div class="nxt-bck-btn  d-flex justify-content-end">
                         <button type="button" btn-sec="2" class="btn btn-secondary rounded-5">Anterior</button>
                         <button type="button" btn-sec="2" class="btn btn-primary rounded-5">Siguiente</button>
@@ -228,6 +248,7 @@
 
                 <!-- Sección 3 -->
                 <section id="section3" class="hidden container m-2 w-50 ">
+                <!-- about social networks -->
                     <h2>Tus redes sociales</h2>
                 <!-- Musicican social media links -->
                     <article>
@@ -235,23 +256,23 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="bi bi-instagram"></i></i></span>
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                                <label for="floatingInputGroup1">URL</label>
+                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="URL" required>
+                                <label for="floatingInputGroup1" aceptan>URL</label>
                             </div>
                         </div>
                     <!-- spotify -->
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="bi bi-spotify"></i></span>
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="URL">
                                 <label for="floatingInputGroup1">URL</label>
                             </div>
                         </div>
                     <!-- twiter -->
                         <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-twitter-x"></i></span>
+                            <span class="input-group-text"><i class="bi bi-tiktok"></i></span>
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="URL">
                                 <label for="floatingInputGroup1">URL</label>
                             </div>
                         </div>
@@ -259,12 +280,12 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="bi bi-facebook"></i></span>
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="URL">
                                 <label for="floatingInputGroup1">URL</label>
                             </div>
                         </div>
                     </article>
-
+                <!-- to next section -->
                     <div class="nxt-bck-btn  d-flex justify-content-end">
                         <button type="button" btn-sec="3" class="btn btn-secondary rounded-5">Anterior</button>
                         <button type="button" btn-sec="3" class="btn btn-primary rounded-5">Siguiente</button>
@@ -273,56 +294,71 @@
 
                 <!-- Sección 4 -->
                 <section id="section4" class="hidden container m-2 w-50">
+                    <!-- account and payment -->
                     <h2>Datos de la cuenta</h2>
                     <article id="payment-options">
                         <h3>Metodos de pago</h3>
+                    <!-- payment -->
                         <div id="opciones-pago" class="border border-primary rounded-4">
                             <h4>Suscripcion al servicio: <strong>$10.000 </strong>cop</h4>
-                            <button type="button" class="btn btn-primary rounded-5">Nequi</button>
-                            <button type="button" class="btn btn-primary rounded-5">Tarjeta de Credito</button>
-                            <button type="button" class="btn btn-primary rounded-5">Tarjeta Debito</button>
+                        <!-- paymet ways -->
+                            <a href="https://youtu.be/dQw4w9WgXcQ?si=LcHLwsJ5zAGIu3ZM"  target="_blank"><button type="button" class="btn btn-primary rounded-5">Nequi</button></a>
+                            <a href="https://youtu.be/dQw4w9WgXcQ?si=LcHLwsJ5zAGIu3ZM" target="_blank"><button type="button" class="btn btn-primary rounded-5">Tarjeta de Credito</button></a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ?si=LcHLwsJ5zAGIu3ZM" target="_blank"><button type="button" class="btn btn-primary rounded-5">Tarjeta Debito</button></a>
                         </div>
                     </article>
+                <!-- account data -->
                     <article id="data-acount">
                         <h3>Datos de la cuenta</h3>
+                    <!-- User Name -->
+                        <div class="form-group my-3">
+                            <label for="nickname">Nombre Artistico</label>
+                            <input type="text" class="form-control" id="nickname" placeholder="Nombre de usuario" required>
+                        </div>
+                    <!-- WhatsApp -->
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">WhatsApp</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                            <input type="tel" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="WhatsApp">
                             <div id="emailHelp" class="form-text">Por este numero te podran contactar
                             </div>
                         </div>
+                    <!-- email -->
                         <div id="email-verification">
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <label for="exampleInputEmail1" class="form-label">Correo
+                                </label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                <div id="emailHelp" class="form-text">Este correo sera privado
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <label for="exampleInputEmail1" class="form-label">Verificar Correo</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp">
 
                             </div>
                         </div>
-                        <div id="pssw-validation" class="d-flex">
+                    <!-- password -->
+                        <div id="pssw-validation" class="d-flex justify-content-evenly">
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <label for="psw-verifier" class="form-label">Confirmar Contraseña</label>
+                                <input type="password" class="form-control" id="psw-verifier">
                             </div>
                         </div>
+                    <!-- privacy aggrement-->
                         <div class="mb-3 form-check">
                             <h5>Politicas de privacidad y condiciones del servicio</h5>
                             <input type="checkbox" class="form-check-input" id="term-condi-service" required>
                             <label class="form-check-label" for="term-condi-service">acepto los <a href="">Terminos y
                                     condiciones</a> del servicio</label>
                         </div>
+                    <!-- submition -->
                         <div class="nxt-bck-btn  d-flex justify-content-end">
                             <button type="button" btn-sec="4" class="btn btn-secondary rounded-5">Anterior</button>
                             <button type="submit" class="btn btn-success rounded-5">Enviar</button>
