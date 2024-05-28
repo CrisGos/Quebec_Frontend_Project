@@ -8,14 +8,14 @@ window.addEventListener('DOMContentLoaded', async () => {
     async function displayArtistProfile() {
         // Code to get the name of the artist selected
         const urlParams = new URLSearchParams(window.location.search);
-        const artistName = urlParams.get('name');
+        const artistId = urlParams.get('id');
 
         // calling the data base
         const response = await fetch(`${URL_DATABASE}/artists`);
         const artistsDatabase = await response.json();
 
         // finding the position of the artist into de database (json file)
-        const artist = artistsDatabase.find(artist => artist.mainInfo.name === artistName);
+        const artist = artistsDatabase.find(artist => artist.id === artistId);
 
 
         // here the program checks the social media that the artist have
