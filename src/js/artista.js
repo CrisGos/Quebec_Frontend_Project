@@ -104,9 +104,9 @@ window.addEventListener('DOMContentLoaded', async () => {
                 ${socialLinks}
             </section>
             `;
-        }
-         // Continue printting
-        profileContainer.innerHTML += `
+
+            // Continue printting
+            profileContainer.innerHTML += `
         <!-- Sexta Sección -->
         <section id="contratar" class="w-100 text-center">
             <h3>Formulario de Contratación</h3>
@@ -114,8 +114,8 @@ window.addEventListener('DOMContentLoaded', async () => {
         </section>
     `;
 
-        // Add contact form at the end of the artist profile
-        profileContainer.innerHTML += `
+            // Add contact form at the end of the artist profile
+            profileContainer.innerHTML += `
         <!-- Formulario de contratación aquí -->
         <div class="container mt-4 pb-5">
             <div class="card bg-dark text-white">
@@ -164,6 +164,7 @@ window.addEventListener('DOMContentLoaded', async () => {
             </div>
         </div>
     `;
+        }
 
         // Logic of the contact form
         const clearForm = () => {
