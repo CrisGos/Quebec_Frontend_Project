@@ -6,16 +6,15 @@ import * as bootstrap from 'bootstrap'
 let formRegister = document.querySelector("form")
 let secCounter = 1
 let seCurrent = formRegister.querySelector(`#section${secCounter}`)
-let divNxtBck = seCurrent.querySelector('.nxt-bck-btn')
-let nxtBtn = divNxtBck.querySelector('.btn-primary')
-let bckBtn = divNxtBck.querySelector(".btn-secondary")
 let arrsection = formRegister.querySelectorAll('section')
 
 arrsection.forEach(section => {
-    divNxtBck = section.querySelector('.nxt-bck-btn')
+    let divNxtBck = section.querySelector('.nxt-bck-btn')
+    let nxtBtn = divNxtBck.querySelector('.btn-primary')
+    let bckBtn = divNxtBck.querySelector(".btn-secondary")
+    
     if (divNxtBck.contains(divNxtBck.querySelector('.btn-primary'))) {
         nxtBtn = divNxtBck.querySelector('.btn-primary')
-
         nxtBtn.addEventListener('click', () => {
             nextSection(secCounter)
             secCounter++
@@ -32,6 +31,12 @@ arrsection.forEach(section => {
 
     })
 });
+// let divNxtBck = seCurrent.querySelector('.nxt-bck-btn')
+// let nxtBtn = divNxtBck.querySelector('.btn-primary')
+// let bckBtn = divNxtBck.querySelector(".btn-secondary")
+
+
+
 
 
 function nextSection(currentSection) {
@@ -82,6 +87,7 @@ function validateSection(section) {
     return true
 }
 
+
 // Prevent form submission for demo purposes
 document.querySelector('#multiStepForm').addEventListener('submit', function (event) {
     event.preventDefault()
@@ -89,7 +95,7 @@ document.querySelector('#multiStepForm').addEventListener('submit', function (ev
 })
 
 
-//image validator and dys
+//image validator and dysplay
 document.querySelector('#imageUpload').addEventListener('change', function (event) {
     const file = event.target.files[0]
     if (file && file.type === 'image/jpeg' || file && file.type === 'image/png') {
