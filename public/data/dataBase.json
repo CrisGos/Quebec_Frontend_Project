@@ -13,6 +13,13 @@
       "fullName": "alexis soto barreiro",
       "email": "soto.alexis.8810@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "887b",
+      "username": "cristian",
+      "fullName": "ortega",
+      "email": "cristian@gmail.com",
+      "password": "1234"
     }
   ],
   "generosCategorias": [
@@ -47,18 +54,30 @@
       "idGenre": "genero-6"
     }
   ],
-  "artistas": [
+  "artists": [
     {
-      "nombre": "Laura Escobar",
-      "fotografia": "../../public/img/laura_escobar.webp",
-      "biografia": "Laura Escobar nacio como cantante en 2015 en el colegio de la UPB, ha participado en eventos en multiples ciudades de Colombia y España, ha sido solista y ha pertenecido a grupos, tiene un repertorio muy versatil con multiples generos",
-      "genero1": "Pop",
-      "genero2": "Popular",
-      "genero3": "Tropical",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/1kuBsrOYu7s?si=IuskP8jGwheLae6l' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "https://www.instagram.com/lauraescobarbedoya/",
-      "celular": "3043667332",
-      "redes": {
+      "id": "586f89a3-ef61-4f51-9c4c-1e7024f6e107",
+      "logInfo": {
+        "username": "LauraEscobar",
+        "email": "LauraEscobar@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "Laura Escobar",
+        "photo": "../../public/img/laura_escobar.webp",
+        "biography": "Laura Escobar nació como cantante en 2015 en el colegio de la UPB, ha participado en eventos en múltiples ciudades de Colombia y España, ha sido solista y ha pertenecido a grupos. Tiene un repertorio muy versátil con múltiples géneros."
+      },
+      "genres": {
+        "genre1": "Pop",
+        "genre2": "Popular",
+        "genre3": "Tropical"
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/1kuBsrOYu7s?si=IuskP8jGwheLae6l' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3043667332"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/lauraescobarbedoya/",
         "facebook": "https://www.facebook.com/lauris.escobar96",
         "spotify": "",
         "tiktok": "",
@@ -66,16 +85,28 @@
       }
     },
     {
-      "nombre": "Chazz Dj",
-      "fotografia": "../../public/img/chazz-dj.webp",
-      "biografia": "Dj crossover/top 40. músico apasionado desde niño, con formación académica y con aprendizaje de varios instrumentos durante mi vida. en la actualidad dedicado a la estructuración musical y performance de eventos privados, en su gran mayoría bodas, donde el objetivo es reflejar la personalidad del cliente y lograr un show único. 16 años de experiencia. sets en discotecas y bares de medellín y brisbane. más de 100 eventos privados y bodas. especializado en bodas de destino. hablo inglés fluido.",
-      "genero1": "Electronica",
-      "genero2": "",
-      "genero3": "",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/_R5OKfXX3zU?si=AyzVcLdADV-mC5_a' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "instagram.com/chazz_dj",
-      "celular": "3233381747",
-      "redes": {
+      "id": "a1350f22-3c8f-4a2d-9de5-75cde8604c7c",
+      "logInfo": {
+        "username": "ChazzDj",
+        "email": "ChazzDj@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "Chazz Dj",
+        "photo": "../../public/img/chazz-dj.webp",
+        "biography": "Dj crossover/top 40. Músico apasionado desde niño, con formación académica y aprendizaje de varios instrumentos durante su vida. En la actualidad dedicado a la estructuración musical y performance de eventos privados, en su gran mayoría bodas. Habla inglés fluido."
+      },
+      "genres": {
+        "genre1": "Electrónica",
+        "genre2": "",
+        "genre3": ""
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/_R5OKfXX3zU?si=AyzVcLdADV-mC5_a' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3233381747"
+      },
+      "socialMedia": {
+        "instagram": "instagram.com/chazz_dj",
         "facebook": "",
         "spotify": "",
         "tiktok": "https://www.tiktok.com/@chazz_dj?_t=8mg7V5PhQyz&_r=1",
@@ -83,16 +114,28 @@
       }
     },
     {
-      "nombre": "Nar Marina",
-      "fotografia": "../../public/img/nar_marina.webp",
-      "biografia": "Nar marina es una cantautora colombiana del Urabá Antioqueño, su propuesta musical combina músicas del mundo con Soul, R&B y un poco de jazz, escribe canciones que luego interpreta acompañándose con su guitarra, algunas de sus letras están inspiradas en las luchas femeninas, el amor y sus raíces afrocolombianas presenta su música en festivales municipales como la Feria del Banano en Apartadó Antioquia (2021) y las fiestas del papagayo en Carepa Antioquia (2022) Este año, sacará su primer Ep, que contiene 5 canciones .Estudió música de la Universidad de Antioquia",
-      "genero1": "Pop",
-      "genero2": "",
-      "genero3": "",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/RgCFOGZRDhI?si=7TbCEX49NuLysEhS' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "https://www.instagram.com/soynarmarina/",
-      "celular": "3014552334",
-      "redes": {
+      "id": "7d68e9aa-c3a4-4ea6-bf22-9a5bf8d8b7cf",
+      "logInfo": {
+        "username": "NarMarina",
+        "email": "NarMarina@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "Nar Marina",
+        "photo": "../../public/img/nar_marina.webp",
+        "biography": "Nar Marina es una cantautora colombiana del Urabá Antioqueño, su propuesta musical combina músicas del mundo con Soul, R&B y un poco de jazz. Escribe canciones que luego interpreta acompañándose con su guitarra, algunas de sus letras están inspiradas en las luchas femeninas, el amor y sus raíces afrocolombianas."
+      },
+      "genres": {
+        "genre1": "Pop",
+        "genre2": "",
+        "genre3": ""
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/RgCFOGZRDhI?si=7TbCEX49NuLysEhS' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3014552334"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/soynarmarina/",
         "facebook": "https://www.facebook.com/soynarmarina",
         "spotify": "",
         "tiktok": "https://www.tiktok.com/@chazz_dj?_t=8mg7V5PhQyz&_r=1",
@@ -100,16 +143,28 @@
       }
     },
     {
-      "nombre": "Seone",
-      "fotografia": "../../public/img/seone.webp",
-      "biografia": "Seone es un artista y compositor del genero urbano (reggaeton, trap, drill, etc) dando a la creacion del genero urbano alternativo, con un recorrido en televisión, radio, etc. no lo pienses más, es tu mejor opción para tus eventos.",
-      "genero1": "Urbano",
-      "genero2": "",
-      "genero3": "",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/DzI6MbGHk68?si=fOtcKV8NDlTxm76E' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "https://www.instagram.com/seone_pl/",
-      "celular": "3224495321",
-      "redes": {
+      "id": "61b75875-071d-494d-aa1e-75fca7a48d08",
+      "logInfo": {
+        "username": "Seone",
+        "email": "Seone@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "Seone",
+        "photo": "../../public/img/seone.webp",
+        "biography": "Seone es un artista y compositor del género urbano (reguetón, trap, drill, etc.), dando a la creación del género urbano alternativo. Con un recorrido en televisión, radio, etc."
+      },
+      "genres": {
+        "genre1": "Urbano",
+        "genre2": "",
+        "genre3": ""
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/DzI6MbGHk68?si=fOtcKV8NDlTxm76E' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3224495321"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/seone_pl/",
         "facebook": "",
         "spotify": "https://open.spotify.com/intl-es/artist/0TcyoWwPWqhulBUOqb15Xb",
         "tiktok": "https://www.tiktok.com/@seone_pl",
@@ -117,16 +172,28 @@
       }
     },
     {
-      "nombre": "La Combi Orquesta",
-      "fotografia": "../../public/img/combi_orquesta.webp",
-      "biografia": "Vive una experiencia crossover inolvidable, agrupación con 10 años de experiencia en eventos de ciudad, matrimonios y fiestas empresariales.",
-      "genero1": "Tropical",
-      "genero2": "",
-      "genero3": "",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/Y5ge-QaY720?si=MG6VHFXjC0mPlYCn' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "https://www.instagram.com/lacombiorquesta/",
-      "celular": "3043667332",
-      "redes": {
+      "id": "d10b8406-bae7-4850-8e6e-d4a1432cf4ef",
+      "logInfo": {
+        "username": "LaCombiOrquesta",
+        "email": "LaCombiOrquesta@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "La Combi Orquesta",
+        "photo": "../../public/img/combi_orquesta.webp",
+        "biography": "Vive una experiencia crossover inolvidable. Agrupación con 10 años de experiencia en eventos de ciudad, matrimonios y fiestas empresariales."
+      },
+      "genres": {
+        "genre1": "Tropical",
+        "genre2": "",
+        "genre3": ""
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/Y5ge-QaY720?si=MG6VHFXjC0mPlYCn' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3043667332"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/lacombiorquesta/",
         "facebook": "https://www.facebook.com/LaCombiOrquesta",
         "spotify": "https://open.spotify.com/intl-es/artist/33jNPjRPZq0I3wxTcz8iiV",
         "tiktok": "",
@@ -134,16 +201,28 @@
       }
     },
     {
-      "nombre": "Los del Solar de Ruben",
-      "fotografia": "../../public/img/solar_ruben.webp",
-      "biografia": "Es una agrupación que rinde tributo al la obra del maestro rubén blades y la salsa clásica. cuenta con excelentes interpretes y un formato novedoso que incluye guitarra eléctrica y violín, interpretando los temas mas importantes de la obra del maestro rubén y los clásicos dela salsa",
-      "genero1": "Tropical",
-      "genero2": "",
-      "genero3": "",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/qHPV62l9-Eg?si=YIJ2BHRmLfS-YcsH' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "https://www.instagram.com/losdelsolarderuben/",
-      "celular": "3233381747",
-      "redes": {
+      "id": "2df3eb85-69c5-4d94-87ff-c7c586792fe5",
+      "logInfo": {
+        "username": "LosdelSolardeRuben",
+        "email": "LosdelSolardeRuben@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "Los del Solar de Ruben",
+        "photo": "../../public/img/solar_ruben.webp",
+        "biography": "Es una agrupación que rinde tributo a la obra del maestro Rubén Blades y la salsa clásica. Cuenta con excelentes intérpretes y un formato novedoso que incluye guitarra eléctrica y violín."
+      },
+      "genres": {
+        "genre1": "Tropical",
+        "genre2": "",
+        "genre3": ""
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/qHPV62l9-Eg?si=YIJ2BHRmLfS-YcsH' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3233381747"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/losdelsolarderuben/",
         "facebook": "",
         "spotify": "",
         "tiktok": "",
@@ -151,16 +230,28 @@
       }
     },
     {
-      "nombre": "Intemperie",
-      "fotografia": "../../public/img/intemperie.webp",
-      "biografia": "somos una agrupación de rock en español con temas de nuestra propia autoría, también contamos con repertorio extenso de rock en español clásico de colombia, españa y argentina. temas de sodaestereo, andrés calamaro, fito paez, luis alberto spinetta, héroes del silencio, entre otras agrupaciones de la escena del rock.",
-      "genero1": "Rock",
-      "genero2": "",
-      "genero3": "",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/K8FFVoZ4iQ0?si=SLfQ-J75jws1aUtT' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "https://www.instagram.com/intemperie_oficial/",
-      "celular": "3224495321",
-      "redes": {
+      "id": "fc0c1c07-0d86-4660-ae82-9264e2d0b68f",
+      "logInfo": {
+        "username": "Intemperie",
+        "email": "Intemperie@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "Intemperie",
+        "photo": "../../public/img/intemperie.webp",
+        "biography": "Somos una agrupación de rock en español con temas de nuestra propia autoría, también contamos con un repertorio extenso de rock en español clásico de Colombia, España y Argentina."
+      },
+      "genres": {
+        "genre1": "Rock",
+        "genre2": "",
+        "genre3": ""
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/K8FFVoZ4iQ0?si=SLfQ-J75jws1aUtT' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3224495321"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/intemperie_oficial/",
         "facebook": "https://www.facebook.com/profile.php?id=100086862940841",
         "spotify": "",
         "tiktok": "",
@@ -168,16 +259,28 @@
       }
     },
     {
-      "nombre": "Mariachi Medellín show",
-      "fotografia": "../../public/img/mariachi_medellin_show.webp",
-      "biografia": "Mariachi Medellin Show nacio hace 10 años, teniendo un gran recorrido en el ambito musical, somo un grupo de 10 personas con un amplio repertorio, daremos a tus serenatas, eventos y reuniones un gran espectaculo.",
-      "genero1": "Popular",
-      "genero2": "",
-      "genero3": "",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/twMqrLWM8dk?si=YjlQqI6mDrANRh3_' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "https://www.instagram.com/mariachimedellinshow/",
-      "celular": "3014552334",
-      "redes": {
+      "id": "1b5989b4-178e-45b5-b6d1-348221a497f2",
+      "logInfo": {
+        "username": "MariachiMedellinShow",
+        "email": "MariachiMedellinShow@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "Mariachi Medellín show",
+        "photo": "../../public/img/mariachi_medellin_show.webp",
+        "biography": "Mariachi Medellín Show nació hace 10 años, teniendo un gran recorrido en el ámbito musical. Somos un grupo de 10 personas con un amplio repertorio, daremos a tus serenatas, eventos y reuniones un gran espectáculo."
+      },
+      "genres": {
+        "genre1": "Popular",
+        "genre2": "",
+        "genre3": ""
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/twMqrLWM8dk?si=YjlQqI6mDrANRh3_' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3014552334"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/mariachimedellinshow/",
         "facebook": "https://www.facebook.com/profile.php?id=100041448986493",
         "spotify": "",
         "tiktok": "",
@@ -185,16 +288,28 @@
       }
     },
     {
-      "nombre": "BERA",
-      "fotografia": "../../public/img/bera.webp",
-      "biografia": "Soy Bera la reina del despecho, una cantante apasionada por transmitir emociones por medio de la música. me considero una artista versátil que se apodera de los géneros de la música popular, romántica, tropical y pop. mi objetivo siempre será amenizar tus eventos especiales para que sean inolvidables, a través de mis canciones con mi carisma y mi presencia en el escenario. me emocionaría mucho poder compartir mi música contigo y acompañarte en tus mejores momentos.",
-      "genero1": "Popular",
-      "genero2": "",
-      "genero3": "",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/JkMi-NLvi1w?si=3LFd-p93vHhf62gt' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "https://www.instagram.com/beralareinadeldespecho/",
-      "celular": "3043667332",
-      "redes": {
+      "id": "1eac2d76-2283-4669-a1e6-686fc85540b4",
+      "logInfo": {
+        "username": "BERA",
+        "email": "BERA@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "BERA",
+        "photo": "../../public/img/bera.webp",
+        "biography": "Soy Bera la reina del despecho, una cantante apasionada por transmitir emociones por medio de la música. Me considero una artista versátil que se apodera de los géneros de la música popular, romántica, tropical y pop."
+      },
+      "genres": {
+        "genre1": "Popular",
+        "genre2": "",
+        "genre3": ""
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/JkMi-NLvi1w?si=3LFd-p93vHhf62gt' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3043667332"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/beralareinadeldespecho/",
         "facebook": "https://www.facebook.com/beralareinadeldespecho?locale=es_LA",
         "spotify": "https://open.spotify.com/intl-es/artist/5i5OrjRNnIdqNs1YPH8uuG?si=Saf_12H9TOy1sm0fxmhNJg",
         "tiktok": "https://www.tiktok.com/@beraypistolita",
@@ -202,16 +317,28 @@
       }
     },
     {
-      "nombre": "Marcela Reyes Dj",
-      "fotografia": "../../public/img/marcela_reyes.webp",
-      "biografia": "Reyes se caracteriza por fusionar, es decir mezclar, ritmos electrónicos con varios éxitos consolidados en Colombia. Junto a su sello discográfico High Beats Records, ha lanzado diferentes temas que muchos bailan en las discotecas: ‘Lo malo se fue’, ‘Sentimiento’, ‘Pico y chao’ y ‘No te vayas’. Además ha compartido tarima con otros artistas como la cantante de música popular Paola Jara.",
-      "genero1": "Electronica",
-      "genero2": "",
-      "genero3": "",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/rvoFa0CNXGQ?si=UPdfW887zQyQHImB' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "https://www.instagram.com/marcelareyes/",
-      "celular": "3224495321",
-      "redes": {
+      "id": "e1163c06-8850-429a-891e-8367e4a279d0",
+      "logInfo": {
+        "username": "MarcelaReyesDj",
+        "email": "MarcelaReyesDj@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "Marcela Reyes Dj",
+        "photo": "../../public/img/marcela_reyes.webp",
+        "biography": "Reyes se caracteriza por fusionar, es decir mezclar, ritmos electrónicos con varios éxitos consolidados en Colombia. Junto a su sello discográfico High Beats Records, ha lanzado diferentes temas que muchos bailan en las discotecas."
+      },
+      "genres": {
+        "genre1": "Electronica",
+        "genre2": "",
+        "genre3": ""
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/rvoFa0CNXGQ?si=UPdfW887zQyQHImB' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3224495321"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/marcelareyes/",
         "facebook": "https://www.facebook.com/marcelareyesoficial?locale=es_LA",
         "spotify": "https://open.spotify.com/intl-es/artist/2a3lL5m6feAyGUR1PI2osJ",
         "tiktok": "https://www.tiktok.com/@marce_50?lang=es",
@@ -219,16 +346,28 @@
       }
     },
     {
-      "nombre": "Evann Soto",
-      "fotografia": "../../public/img/evan_soto.webp",
-      "biografia": "Evann, un artista urbano nacido en la vibrante ciudad de Medellín, Colombia, no solo se destaca como compositor de sus propias canciones, sino que también deslumbra como talentoso bailarín. ",
-      "genero1": "Urbano",
-      "genero2": "Pop",
-      "genero3": "",
-      "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/znkr10hxNUk?si=mB35-ADa7exRDYDJ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
-      "instagram": "https://www.instagram.com/evannsoto_/",
-      "celular": "3233381747",
-      "redes": {
+      "id": "69b4c4c5-5be7-4872-b5d4-aa499a1b2786",
+      "logInfo": {
+        "username": "EvannSoto",
+        "email": "EvannSoto@gmail.com",
+        "password": "1234"
+      },
+      "mainInfo": {
+        "name": "Evann Soto",
+        "photo": "../../public/img/evan_soto.webp",
+        "biography": "Evann, un artista urbano nacido en la vibrante ciudad de Medellín, Colombia, no solo se destaca como compositor de sus propias canciones, sino que también deslumbra como talentoso bailarín."
+      },
+      "genres": {
+        "genre1": "Urbano",
+        "genre2": "Pop",
+        "genre3": ""
+      },
+      "info": {
+        "video": "<iframe width='560' height='315' src='https://www.youtube.com/embed/znkr10hxNUk?si=mB35-ADa7exRDYDJ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+        "phoneNumber": "3233381747"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/evannsoto_/",
         "facebook": "https://www.facebook.com/jers.oficial1",
         "spotify": "https://open.spotify.com/intl-es/artist/62LsarroX3lJO9PmNbQkLa?si=Cx8nbhagQ5qEI2blMOXPZA",
         "tiktok": "https://www.tiktok.com/@evannsoto_?_t=8kDVBF3302I&_r=1Letra%3A",

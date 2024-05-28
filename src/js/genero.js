@@ -10,19 +10,19 @@ async function cargarArtistasPorGenero() {
   
   
   artistasDatabase.filter(artista => 
-    artista.genero1 === tipoMusica || 
-    artista.genero2 === tipoMusica || 
-    artista.genero3 === tipoMusica
+    artista.genres.genre1 === tipoMusica || 
+    artista.genres.genre2 === tipoMusica || 
+    artista.genres.genre3 === tipoMusica
   ).forEach(artista => {
     artistasContainer.innerHTML += `
     <article class="text-center">
-        <a class="artista" href="./artistaProfile.html?nombre=${artista.nombre}">
+        <a class="artista" href="./artistaProfile.html?nombre=${artista.mainInfo.name}">
             <div class="card custom-card mb-3">
-                <img src="${artista.fotografia}" class="card-img-top custom-img" alt="${artista.nombre}">
+                <img src="${artista.mainInfo.photo}" class="card-img-top custom-img" alt="${artista.mainInfo.name}">
                 <div class="card-body">
-                <h5 class="card-title">${artista.nombre}</h5>
-                <p class="card-text biografia-text">${artista.biografia}</p>
-                <p class="card-text"><small class="text-body-secondary">${artista.genero1} ${artista.genero2} ${artista.genero3}</small></p>
+                <h5 class="card-title">${artista.mainInfo.name}</h5>
+                <p class="card-text biografia-text">${artista.mainInfo.biography}</p>
+                <p class="card-text"><small class="text-body-secondary">${artista.genres.genre1} ${artista.genres.genre2} ${artista.genres.genre3}</small></p>
                 </div>
             </div>
         </a>
