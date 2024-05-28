@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8" />
@@ -22,33 +22,63 @@
     <title>Document</title>
 </head>
 
-<body class="bg-bg-pg text-light">
+<body>
     <header class="">
-        <nav class="navbar navbar-expand-lg navbar-dark  p-1 mb-5" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1" id="navbar">
             <div class="overlay"></div> <!-- Div para la transparencia -->
             <section class="container">
-                <a href="/">
-                <img  src="../../../public/icon/logo.webp" alt="logo" class="logo">
-                </a>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
+              <a href="/">
+                <img src="/public/icon/logo.webp" alt="logo" class="logo">
+              </a>
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
                 aria-label="Toggle navigation" aria-controls="navbar-start" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-start">
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-start">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                    <a href="./src/page/quienes.html" class="nav-link active">
-                        Quienes Somos
+                  <li class="nav-item">
+                    <a href="../quienes.html" class="nav-link active">
+                      Quienes Somos
                     </a>
-                    </li>
-                    <li>
-                    <a href="./login.html" class="nav-link">Ingresar</a>
-                    </li>
-                    
-                </ul>
-                </div>
+                  </li>
+                  <li>
+                    <a href="./login.html" class="nav-link" id="login">Ingresar</a>
+                  </li>
+                  <ul class="navbar-nav" >
+                    <div class="collapse navbar-collapse" >
+                      <ul class="navbar-nav" id="dropdown" >
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Registrarse
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./music_register.html">Artista</a></li>
+                            <li><a class="dropdown-item" href="./user_register.html">Cliente</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+      
+                    <div class="collapse navbar-collapse ">
+                      <ul class="navbar-nav" id="user-dropdown" style="display:none;">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Cuenta</a></li>
+                            <li><a class="dropdown-item" id="logout" href="#">Cerrar sesión</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </ul>
+              </div>
+      
             </section>
-            </nav>
+          </nav>
         
     </header>
     <br>
@@ -150,7 +180,7 @@
                             </button>                           
                                 
                         <!-- Modal -->
-                                <div class="modal fade" id="steps-for-iframe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal fade text-dark" id="steps-for-iframe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                     <div class="modal-content">
                                 <!-- modal header -->
@@ -159,19 +189,19 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                 <!-- modal body -->
-                                        <div class="modal-body">
+                                        <div class="modal-body ">
                                         <ol>
                                             <li>dirijete a tu video de youtube</li>
                                             <li>Oprimite el boton de compartir
-                                                <img src="" alt="">
+                                                <img src="../../../public/img/iframe-tuto/stp1.png" alt="">
                                             </li>
                                             <li>
                                                 elije la opcion  de "insertar"
-                                                <img src="" alt="">
+                                                <img src="../../../public/img/iframe-tuto/stp2.png" alt="">
                                             </li>
                                             <li>
                                                 oprime el boton de copiar y pegalo
-                                                <img src="" alt="">
+                                                <img src="../../../public/img/iframe-tuto/stp3.png" alt="">
                                             </li>
                                         </ol>
                                         </div>
@@ -241,7 +271,7 @@
         </div>
     </main>
 
-    <footer class=" footer text-center fixed-bottom text-lg-start">
+    <footer class=" footer text-center text-lg-start">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
@@ -303,7 +333,9 @@
         </div>
         <!-- Copyright -->
         </footer>
+    <script type="module" src="../../js/main.js"></script>
     <script type="module" src="../../js/registerMusic.js"></script>
+    <script type="module" src="../../js/logout.js"></script>
 
 
 

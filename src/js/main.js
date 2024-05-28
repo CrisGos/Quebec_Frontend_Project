@@ -9,16 +9,11 @@ const URL_DATABASE = 'http://localhost:3000'
 const generos = document.getElementById("generos-musica")
 
 
-// dandole clases a la seccion
-generos.classList.add("gap-5")
 
 
 // botonGeneros.addEventListener('submit', async (event) => {
 //     event.preventDefault()    
 // })
-
-
-
 
 
 // funcion para imprimir el contenido
@@ -40,7 +35,6 @@ async function categorias(generos) {
         `
     }
 }
-
 
 // llamado de la funcion
 categorias(generos)

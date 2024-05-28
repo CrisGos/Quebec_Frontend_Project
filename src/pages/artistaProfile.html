@@ -42,32 +42,51 @@
                 <div class="collapse navbar-collapse" id="navbar-start">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="./src/page/quienes.html" class="nav-link active">
+                            <a href="../pages/quienes.html" class="nav-link active">
                                 Quienes Somos
                             </a>
                         </li>
                         <li>
-                            <a href="./src/pages/auth/login.html" class="nav-link">Ingresar</a>
+                            <a href="../pages/auth/login.html" class="nav-link" id="login">Ingresar</a>
                         </li>
-                        <div class="collapse navbar-collapse" id="dropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Registrarse
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark"
-                                        aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <li><a class="dropdown-item"
-                                                href="./src/pages/auth/music_register.html">Artista</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="./src/pages/auth/user_register.html">Cliente</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </ul>
+                        <ul class="navbar-nav">
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav" id="dropdown">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Registrarse
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-dark"
+                                            aria-labelledby="navbarDarkDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="./auth/music_register.html">Artista</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./auth/user_register.html">Cliente</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="collapse navbar-collapse ">
+                                <ul class="navbar-nav" id="user-dropdown" style="display:none;">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-dark"
+                                            aria-labelledby="navbarDarkDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Perfil</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Cuenta</a></li>
+                                            <li><a class="dropdown-item" id="logout" href="#">Cerrar sesión</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
                 </div>
+
             </section>
         </nav>
 
@@ -81,7 +100,7 @@
     </main> -->
 
     <main class="d-flex flex-column gap-5 align-items-center justify-content-center main-artista" id="perfil-artista">
-       
+
     </main>
 
 
@@ -147,11 +166,12 @@
         </div>
         <!-- Copyright -->
     </footer>
-
+    <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/artista.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="../js/logout.js"></script>
 </body>
 
 </html>
