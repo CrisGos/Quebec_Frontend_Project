@@ -120,6 +120,7 @@ const insta=formRegister.querySelector('#insta')
 const spoty=formRegister.querySelector('#spoty')
 const face=formRegister.querySelector('#face')
 const tik=formRegister.querySelector('#tik')
+const ytb=formRegister.querySelector('#ytb')
 //nick
 const nik=formRegister.querySelector('#nickname')
 //email
@@ -129,12 +130,60 @@ const mailConfi=formRegister.querySelector('#confi-mail')
 const psw=formRegister.querySelector('#psw')
 const pswConfi=formRegister.querySelector('#psw-verifier')
 
+function lookForDefault(section) {
+    if(section.value=== null || section.value=== undefined){
+
+    }
+
+}
 
 
 
 // creacion json
 formRegister.addEventListener('submit',async(event)=>{
     event.preventDefault()
-
+    console.log(name,genrero,genrero2,genrero3,img,bandDesc,iframe,insta,spoty,nik,mail,psw)
+    // await registerUser(username, fullName, email, password)
+    //     window.location.href="./login.html"
 
 })
+
+// async function registerMusician(username, email, password, bandName, photo,biography,g1,g2,g3,iframe,phone,insta,spoty,face,tik, ) {
+//     const newMusician = {
+        
+//         username: username.value,
+//         logInfo: {
+//             email: email.value,
+//             password: password.value
+//         },
+//         mainInfo: {
+//             name:bandName,
+//             photo: ,
+//             biography: 
+//         },
+//         genres: {
+//             genre1: ,
+//             genre2: ,
+//             genre3: 
+//         },
+//         info: {
+//             video: ,
+//             phoneNumber: 
+//         },
+//         socialMedia: {
+//         instagram: ,
+//         facebook: ,
+//         spotify: ,
+//         tiktok: ,
+//         youtube: 
+//     }
+
+// }
+//     await fetch("http://localhost:3000/artists", {
+//         method: 'POST',
+//         headers: {
+//             "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify(newMusician),
+//     })
+// }
