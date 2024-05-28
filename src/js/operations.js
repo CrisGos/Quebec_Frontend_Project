@@ -22,16 +22,7 @@ window.addEventListener('scroll', ()=>{
 }) 
 
 
-// function arist by genre
-const buttonSearchGenre = document.getElementById("genre-select")
-const buttonHow = document.getElementById("funciona")
-buttonSearchGenre.addEventListener('click', function(){
-  window.location.href = "/src/pages/genero.html"
-})
 
-buttonHow.addEventListener('click', function(){
- window.location.href = "/src/pages/funciona.html"
-})
 
 
 

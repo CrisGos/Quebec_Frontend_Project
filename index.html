@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -25,12 +25,13 @@
   <title>Market Music</title>
 </head>
 
-<body class="text-light ">
+<body class="text-light body">
 
   <!-- star header -->
 
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1 mb-5" id="navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1" id="navbar">
       <div class="overlay"></div> <!-- Div para la transparencia -->
       <section class="container">
         <a href="/">
@@ -43,85 +44,85 @@
         <div class="collapse navbar-collapse" id="navbar-start">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="./src/page/quienes.html" class="nav-link active">
+              <a href="./src/pages/quienes.html" class="nav-link active">
                 Quienes Somos
               </a>
             </li>
             <li>
-              <a href="./src/pages/auth/login.html" class="nav-link">Ingresar</a>
+              <a href="./src/pages/auth/login.html" class="nav-link" id="login">Ingresar</a>
             </li>
-            <div class="collapse navbar-collapse" id="dropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Registrarse
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href="./src/pages/auth/music_register.html">Artista</a></li>
-                    <li><a class="dropdown-item" href="./src/pages/auth/user_register.html">Cliente</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </ul>
+            <ul class="navbar-nav">
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav" id="dropdown">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Registrarse
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./src/pages/auth/music_register.html">Artista</a></li>
+                      <li><a class="dropdown-item" href="./src/pages/auth/user_register.html">Cliente</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="collapse navbar-collapse ">
+                <ul class="navbar-nav" id="user-dropdown" style="display:none;">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./src/pages/artistaProfile.html">Perfil</a></li>
+                      <li><a class="dropdown-item" href="#">Cuenta</a></li>
+                      <li><a class="dropdown-item" id="logout" href="#">Cerrar sesión</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </ul>
         </div>
+
       </section>
     </nav>
 
 
-    
-      <div class="container mt-5">
-        <div class="row mt-5">
-              <article class="col-sm-6 mt-5 ">
-                <!-- <select class="form-select estyl-select w-50 text-center m-5" aria-label="Default select example">
+
+    <div class="container mt-5">
+      <div class="row mt-5">
+        <article class="col-sm-6 mt-5 ">
+          <!-- <select class="form-select estyl-select w-50 text-center m-5" aria-label="Default select example">
                   <option selected class="text-center w-25">Buscar artista por genero</option>
                   <option value="1">Urbano</option>
                   <option value="2">Pop</option>
                   <option value="3">Popular</option>
+
                   <option value="4">Rock</option>
                   <option value="5">Electronica</option>
                 </select> -->
-                <input class="btn  artist-genre" value="Ver artistas por genero" type="submit" id="genre-select" class="artist-genre"></input>
-              </article>
-              <div class=" col-sm-6 mt-5">
-                <h1 class="title mb-5">Dale un impulso a tu negocio con el mejor talento de Medellín</h1>
-                <h3 class="subtitle mb-5">Realiza tus contrataciones de manera segura. <br>
-                  Te conectamos con el mejor talento de Medellín.</h3>
-                  <div class="container d-flex justify-content-center gap-2">
-                    <a href="./src/pages/auth/user_register.html"><button class="btn btn-style  w-25">Quiero contratar</button></a>
-                    <a href="./src/pages/auth/music_register.html"><button class="btn  btn-style w-25">Soy artista</button></a>
-                  </div>
-              </div>
-  
+          <a href="./src/pages/genero.html"><input class="btn  artist-genre" value="Ver artistas por genero"
+              type="submit" id="genre-select" class="artist-genre"></input></a>
+
+        </article>
+        <div class=" col-sm-6 mt-5">
+          <h1 class="title mb-5">Dale un impulso a tu negocio con el mejor talento de Medellín</h1>
+          <h3 class="subtitle mb-5">Realiza tus contrataciones de manera segura. <br>
+            Te conectamos con el mejor talento de Medellín.</h3>
+          <div class="container d-flex justify-content-center gap-2">
+            <button class="btn btn-style  w-25">Quiero contratar</button>
+            <button class="btn  btn-style w-25">Soy artista</button>
+          </div>
+        </div>
+
       </div>
     </div>
   </header>
 
-  <!-- here start main -->
-
+  <!-- Start main -->
   <main class="main">
-
-
-    <!-- start section -->
-    
-        <!-- right side -->
-
-        <article class="rigth text-light col-sm-6">
-
-
-
-
-        </article>
-      </div>
-
-    </section>
-
-    <!-- start carousel image -->
-
-    <!-- how it works section -->
-
-    <article class="artist w-70 p-5 ">
+    <!-- Start carousel image -->
+    <article class="artist w-70 p-5">
       <div id="carouselExampleAutoplaying justify-content-center " class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active d-flex flex-wrap">
@@ -140,45 +141,41 @@
             <img src="..." class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev"  id="carouselExampleAutoplaying">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev" id="carouselExampleAutoplaying">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next"  id="carouselExampleAutoplaying">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next" id="carouselExampleAutoplaying">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-  </article>
+    </article>
 
-
-    <section class="two-parts p-3 container">
+    <section class="two-parts p-3 container ">
       <div class="row">
-        <article class="rigth col-sm-6 p-5">
+        <article class="right col-sm-6 p-5 how">
           <h2 class="title mt-5">Como
             <span class="funcionar">funciona?</span>
           </h2>
           <p class="subtitle">
             Te ayudamos a conectar tu talento con contratantes a nivel local.</p>
-            <p>Te concectamos con músicos profesionales de Medellin
-              Queremos ser parte del crecimiento de tu negocio o evento músical</p></p>
-          <button  class=" btn btn-conocer" id="funciona">Conocer Más</button>
-          
+          <p>Te conectamos con músicos profesionales de Medellín.
+            Queremos ser parte del crecimiento de tu negocio o evento musical.</p>
+          <a class="btn btn-conocer" type="button" href="/src/pages/funciona.html">Conocer Más</a>
         </article>
 
-        <article class="left col-sm-6 ">
-          <img src="./public/img/ilustracion.webp" alt="ilustracion">
+        <article class="left col-sm-6">
+          <img src="./public/img/ilustracion.webp" alt="ilustracion" class="img-fluid">
         </article>
       </div>
     </section>
-
-    <!-- browse and quote section -->
-  
-
   </main>
 
   <!--start footer -->
- 
+
   <footer class=" footer text-center text-lg-start">
     <!-- Grid container -->
     <div class="container p-4">
@@ -190,10 +187,10 @@
 
           <ul class="list-unstyled">
             <li>
-              <a href="/src/pages/auth/music_register.html" class="text-body"><span>Promociona tu talento</span></a>
+              <a href="./src/pages/auth/music_register.html" class="text-body"><span>Promociona tu talento</span></a>
             </li>
             <li>
-              <a href="/src/pages/auth/music_register.html" class="text-body"><span>Registrate</span></a>
+              <a href="./src/pages/auth/music_register.html" class="text-body"><span>Registrate</span></a>
             </li>
           </ul>
         </div>
@@ -230,20 +227,20 @@
         <!--Grid column-->
       </div>
       <!-- Copyright -->
-      
+
     </div>
     <!-- Grid container -->
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2024 Copyright:
-      <a class="text-body" href="#">Quebec group</a>
-    </div>
-    <!-- Copyright -->
+      <a class="text-body" href="#"><span>Quebec group</span></a>
+      <!-- Copyright -->
   </footer>
 
   <script type="module" src="./src/js/main.js"></script>
   <script type="module" src="./src/js/operations.js"></script>
+  <script type="module" src="./src/js/logout.js"></script>
 
 </body>
 

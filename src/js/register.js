@@ -2,7 +2,7 @@
 const form = document.getElementById("register-form")
 //sacar los input
 const username = document.getElementById("username")
-const lastName = document.getElementById("last-name")
+const fullName = document.getElementById("fullname")
 const email = document.getElementById("email")
 const password = document.getElementById("password")
 const confirmPasword = document.getElementById("confirm-password")
@@ -14,7 +14,7 @@ form.addEventListener("submit", async (event) => {
 
     if (checkPasswords === true && checkEmail == true) {
         //acá llamamos a la función que nos guarda un nuevo usuario
-        await registerUser(username, lastName, email, password)
+        await registerUser(username, fullName, email, password)
         window.location.href="./login.html"
     }
 })
@@ -40,10 +40,10 @@ async function validateEmail(email) {
 
 }
 
-async function registerUser(username, lastName, email, password) {
+async function registerUser(username, fullName, email, password) {
     const newUser = {
         username: username.value.toLowerCase(),
-        lastName: lastName.value.toLowerCase(),
+        fullName: fullName.value.toLowerCase(),
         email: email.value,
         password: password.value
     }
