@@ -85,13 +85,12 @@
     <main >
         <h1>Queremos conocerte</h1>
         <div class="container  m-2">
-            <form id="multiStepForm" method="post">
-                <!-- Sección 1 -->
+            <form id="multiStepForm" method="post" action="/public/img/users-img/">
+<!-- Sección 1 -->
                 <section id="section1" class="contianer w-50 vsbl">
                     <h2>Hablanos de tu banda</h2>
                     <!-- radiobuttons -->
                     <article class="d-flex flex-row justify-content-evenly ">
-
 
                         <div class="form-check col-1 ">
                             <input class="form-check-input" music-type="solo" type="radio" name="flexRadioDefault"
@@ -114,12 +113,12 @@
                         <!-- band name -->
                             <div class="form-group my-3 ">
                                 <label for="name">Nombre Artistico</label>
-                                <input type="text" class="form-control" id="artistic-Name" placeholder="Nombre Artisitico"
+                                <input type="text" class="form-control" id="artistic-name" placeholder="Nombre Artisitico"
                                     required>
                             </div>
                         <!-- genre -->
                             <div class="form-floating my-3">
-                                <select  class="form-select" id="floatingSelect"
+                                <select  class="form-select" id="artis-genre-name"
                                     aria-label="Floating label select example" required>
                                     <option itemid="void" selected >Genero</option>
                                     <option value="urbano">Urbano</option>
@@ -132,7 +131,7 @@
                             </div>
                         <!-- genre2 -->
                             <div class="form-floating my-3">
-                                <select class="form-select" id="floatingSelect"
+                                <select class="form-select" id="artistic-genre-2"
                                     aria-label="Floating label select example">
                                     <option value="" selected>Genero 2</option>
                                     <option value="">No</option>
@@ -146,7 +145,7 @@
                             </div>
                         <!-- genre3 -->
                             <div class="form-floating my-3">
-                                <select class="form-select" id="floatingSelect"
+                                <select class="form-select" id="artistic-genre-3"
                                     aria-label="Floating label select example">
                                     <option value="" selected>Genero 3</option>
                                     <option value="">No</option>
@@ -165,7 +164,7 @@
                                 <img class="object-fit-fill border rounded" id="imagePreview" src="" alt="">
                             </figure>
                             <div class="mb-3">
-                                <label for="imageUpload" class="form-label">Agrega tu imagen imagen</label>
+                                <label for="imageUpload" class="form-label">Agrega tu imagen imagen (Formato horizontal)</label>
                                 <input class="form-control" type="file" accept="image/png, image/jpeg" id="imageUpload">
                             </div>
                         </div>
@@ -177,7 +176,7 @@
                     </div>
                 </section>
                 
-                <!-- Sección 2 -->
+<!-- Sección 2 -->
                 <section id="section2" class="hidden container m-2 w-50 ">
                     <!-- description of the band -->
                     <h2>Sobre tu banda</h2>
@@ -196,7 +195,7 @@
                     <article id="youtube-iframe" class="d-flex">
                         <div class="form-group">
                             <label for="name">Iframe de youtube</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <input type="text" class="form-control" id="iframe" required>
                         </div>
                 
                     <!-- Button trigger modal helps -->
@@ -246,7 +245,7 @@
                     </div>
                 </section>
 
-                <!-- Sección 3 -->
+<!-- Sección 3 -->
                 <section id="section3" class="hidden container m-2 w-50 ">
                 <!-- about social networks -->
                     <h2>Tus redes sociales</h2>
@@ -256,7 +255,7 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="bi bi-instagram"></i></i></span>
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="URL" required>
+                                <input type="text" class="form-control" id="insta" placeholder="URL" required>
                                 <label for="floatingInputGroup1" aceptan>URL</label>
                             </div>
                         </div>
@@ -264,7 +263,7 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="bi bi-spotify"></i></span>
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="URL">
+                                <input type="text" class="form-control" id="spoty" placeholder="URL">
                                 <label for="floatingInputGroup1">URL</label>
                             </div>
                         </div>
@@ -272,7 +271,7 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="bi bi-tiktok"></i></span>
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="URL">
+                                <input type="text" class="form-control" id="tik" placeholder="URL">
                                 <label for="floatingInputGroup1">URL</label>
                             </div>
                         </div>
@@ -280,7 +279,7 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text"><i class="bi bi-facebook"></i></span>
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="URL">
+                                <input type="text" class="form-control" id="face" placeholder="URL">
                                 <label for="floatingInputGroup1">URL</label>
                             </div>
                         </div>
@@ -312,7 +311,7 @@
                         <h3>Datos de la cuenta</h3>
                     <!-- User Name -->
                         <div class="form-group my-3">
-                            <label for="nickname">Nombre Artistico</label>
+                            <label for="nickname">NOmbre de usuario(Diferente a el nombre de banda)</label>
                             <input type="text" class="form-control" id="nickname" placeholder="Nombre de usuario" required>
                         </div>
                     <!-- WhatsApp -->
@@ -326,16 +325,15 @@
                     <!-- email -->
                         <div id="email-verification">
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Correo
+                                <label for="mail" class="form-label">Correo electronico
                                 </label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                <input type="email" class="form-control" id="mail"
                                     aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">Este correo sera privado
-                                </div>
+                                <div id="emailHelp" class="form-text">Este correo sera privado</div>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Verificar Correo</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                <label for="confi-mail" class="form-label">Verificar Correo</label>
+                                <input type="email" class="form-control" id="confi-mail"
                                     aria-describedby="emailHelp">
 
                             </div>
@@ -343,8 +341,8 @@
                     <!-- password -->
                         <div id="pssw-validation" class="d-flex justify-content-evenly">
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <label for="psw" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="psw">
                             </div>
                             <div class="mb-3">
                                 <label for="psw-verifier" class="form-label">Confirmar Contraseña</label>

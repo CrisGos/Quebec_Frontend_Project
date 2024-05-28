@@ -1,6 +1,7 @@
 // Import our custom CSS
 import '../scss/registerMusic.scss'
-import {validatePassword, validateEmail} from './register'
+
+
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 let formRegister = document.querySelector("form")
@@ -15,10 +16,9 @@ arrsection.forEach(section => {
     if (divNxtBck.contains(divNxtBck.querySelector('.btn-primary'))) {
         nxtBtn = divNxtBck.querySelector('.btn-primary')
         nxtBtn.addEventListener('click', () => {
-            acceptance(secCounter)
+
             nextSection(secCounter)
-            if(validateSection(section)){secCounter++
-                console.log(secCounter, "retrocede");}
+            if(validateSection(section)){secCounter++}
             
             console.log(secCounter, "avanza");
 
@@ -87,13 +87,6 @@ function validateSection(section) {
 }
 
 
-// Prevent form submission for demo purposes
-document.querySelector('#multiStepForm').addEventListener('submit', function (event) {
-    event.preventDefault()
-    alert('Formulario enviado correctamente!')
-})
-
-
 //image validator and dysplay
 document.querySelector('#imageUpload').addEventListener('change', function (event) {
     const file = event.target.files[0]
@@ -110,11 +103,38 @@ document.querySelector('#imageUpload').addEventListener('change', function (even
 
 
 //variblesForJason
-const name=formRegister.querySelector('#artistic-Name')
-const var1=formRegister.querySelector('#artistic-Name')
+//artist
+const name=formRegister.querySelector('#artistic-name')
+// genres
+const genrero=formRegister.querySelector('#artistic-genre')
+const genrero2=formRegister.querySelector('#artistic-genre-2')
+const genrero3=formRegister.querySelector('#artistic-genre-3')
+//image
+const img=formRegister.querySelector('#imageUpload') // la ultima en organizar
+//description
+const bandDesc=formRegister.querySelector('#music-description')
+//iframe
+const iframe=formRegister.querySelector('#iframe')
+//networks
+const insta=formRegister.querySelector('#insta')
+const spoty=formRegister.querySelector('#spoty')
+const face=formRegister.querySelector('#face')
+const tik=formRegister.querySelector('#tik')
+//nick
+const nik=formRegister.querySelector('#nickname')
+//email
+const mail=formRegister.querySelector('#mail')
+const mailConfi=formRegister.querySelector('#confi-mail')
+
+const psw=formRegister.querySelector('#psw')
+const pswConfi=formRegister.querySelector('#psw-verifier')
+
+
+
 
 // creacion json
 formRegister.addEventListener('submit',async(event)=>{
     event.preventDefault()
+
 
 })
