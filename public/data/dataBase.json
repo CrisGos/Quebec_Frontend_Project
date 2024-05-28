@@ -22,34 +22,34 @@
       "password": "1234"
     }
   ],
-  "generosCategorias": [
+  "genresCategories": [
     {
-      "tipoMusica": "Urbano",
+      "musicGenre": "Urbano",
       "route": "../../public/img/urbano-genre.webp",
       "idGenre": "genero-1"
     },
     {
-      "tipoMusica": "Pop",
+      "musicGenre": "Pop",
       "route": "../../public/img/pop-genre.webp",
       "idGenre": "genero-2"
     },
     {
-      "tipoMusica": "Popular",
+      "musicGenre": "Popular",
       "route": "../../public/img/popular-genre.webp",
       "idGenre": "genero-3"
     },
     {
-      "tipoMusica": "Tropical",
+      "musicGenre": "Tropical",
       "route": "../../public/img/tropical-genre.webp",
       "idGenre": "genero-4"
     },
     {
-      "tipoMusica": "Rock",
+      "musicGenre": "Rock",
       "route": "../../public/img/rock-genre.webp",
       "idGenre": "genero-5"
     },
     {
-      "tipoMusica": "Electronica",
+      "musicGenre": "Electronica",
       "route": "../../public/img/electronica-genre.webp",
       "idGenre": "genero-6"
     }

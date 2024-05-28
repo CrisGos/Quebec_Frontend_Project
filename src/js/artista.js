@@ -1,73 +1,82 @@
+// Definition of the local server constants and the id of the section where the content will be printed.
 const URL_DATABASE = 'http://localhost:3000';
-const perfilContainer = document.getElementById("perfil-artista");
+const profileContainer = document.getElementById("artist-profile");
 
+// Event listener to sync the Dom content loaded when the HTML document has been completely parsed
 window.addEventListener('DOMContentLoaded', async () => {
-    async function cargarPerfilArtista() {
-        // Código para cargar el perfil del artista y agregar el formulario aquí
+    // function to print the content
+    async function displayArtistProfile() {
+        // Code to get the name of the artist selected
         const urlParams = new URLSearchParams(window.location.search);
-        const nombreArtista = urlParams.get('nombre');
+        const artistName = urlParams.get('name');
 
-        const response = await fetch(`${URL_DATABASE}/artistas`);
-        const artistasDatabase = await response.json();
+        // calling the data base
+        const response = await fetch(`${URL_DATABASE}/artists`);
+        const artistsDatabase = await response.json();
 
-        const artista = artistasDatabase.find(artista => artista.nombre === nombreArtista);
+        // finding the position of the artist into de database (json file)
+        const artist = artistsDatabase.find(artist => artist.mainInfo.name === artistName);
 
+
+        // here the program checks the social media that the artist have
         let socialLinks = '';
 
-        if (artista.instagram) {
-            socialLinks += `<a href="${artista.instagram}" target="_blank" class="me-2"><i class="bi bi-instagram"></i></a>`;
+        if (artist.socialMedia.instagram) {
+            socialLinks += `<a href="${artist.socialMedia.instagram}" target="_blank" class="me-2"><i class="bi bi-instagram"></i></a>`;
         }
-        if (artista.redes.facebook) {
-            socialLinks += `<a href="${artista.redes.facebook}" target="_blank" class="me-2"><i class="bi bi-facebook"></i></a>`;
+        if (artist.socialMedia.facebook) {
+            socialLinks += `<a href="${artist.socialMedia.facebook}" target="_blank" class="me-2"><i class="bi bi-facebook"></i></a>`;
         }
-        if (artista.redes.spotify) {
-            socialLinks += `<a href="${artista.redes.spotify}" target="_blank" class="me-2"><i class="bi bi-spotify"></i></a>`;
+        if (artist.socialMedia.spotify) {
+            socialLinks += `<a href="${artist.socialMedia.spotify}" target="_blank" class="me-2"><i class="bi bi-spotify"></i></a>`;
         }
-        if (artista.redes.tiktok) {
-            socialLinks += `<a href="${artista.redes.tiktok}" target="_blank" class="me-2"><i class="bi bi-tiktok"></i></a>`;
+        if (artist.socialMedia.tiktok) {
+            socialLinks += `<a href="${artist.socialMedia.tiktok}" target="_blank" class="me-2"><i class="bi bi-tiktok"></i></a>`;
         }
-        if (artista.redes.youtube) {
-            socialLinks += `<a href="${artista.redes.youtube}" target="_blank" class="me-2"><i class="bi bi-youtube"></i></a>`;
+        if (artist.socialMedia.youtube) {
+            socialLinks += `<a href="${artist.socialMedia.youtube}" target="_blank" class="me-2"><i class="bi bi-youtube"></i></a>`;
         }
 
+        // Here it checks the genres
         let genresArtist = '';
 
-        if (artista.genero1) {
+        if (artist.genres.genre1) {
             genresArtist += `
         <article>
-                <button class="btn btn-secondary" id="genero1-btn">${artista.genero1}</button>
+                <button class="btn btn-secondary" id="genero1-btn">${artist.genres.genre1}</button>
             </article>
         `;
         }
 
-        if (artista.genero2) {
+        if (artist.genres.genre2) {
             genresArtist += `
         <article>
-                <button class="btn btn-secondary" id="genero2-btn">${artista.genero2}</button>
+                <button class="btn btn-secondary" id="genero2-btn">${artist.genres.genre2}</button>
             </article>
         `;
         }
 
-        if (artista.genero3) {
+        if (artist.genres.genre3) {
             genresArtist += `
         <article>
-                <button class="btn btn-secondary" id="genero3-btn">${artista.genero3}</button>
+                <button class="btn btn-secondary" id="genero3-btn">${artist.genres.genre3}</button>
             </article>
         `;
         }
 
-        perfilContainer.innerHTML = `
+        // Here we print the initial content of the artist profile
+        profileContainer.innerHTML = `
         <!-- Primera Sección -->
         <section class="position-relative w-100">
-            <img src="${artista.fotografia}" alt="${artista.nombre}" class="w-100 h-50" id="artista-imagen">
-            <h2 class="position-absolute bottom-0 start-0 text-white p-3" id="artista-nombre">${artista.nombre}</h2>
+            <img src="${artist.mainInfo.photo}" alt="${artist.mainInfo.name}" class="w-100 h-50" id="artist-image">
+            <h2 class="position-absolute bottom-0 start-0 text-white p-3" id="artist-name">${artist.mainInfo.name}</h2>
         </section>
 
         <!-- Segunda Sección -->
         <section class="d-flex flex-row flex-wrap gap-5 align-items-center justify-content-center w-100">
             <article class="w-50">
                 <h3>Biografía:</h3>
-                <p id="artista-biografia">${artista.biografia}</p>
+                <p id="artist-biografia">${artist.mainInfo.biography}</p>
             </article>
             <article class="w-25 d-flex justify-content-end">
                 <a href="#contratar" class="btn btn-primary">Contratar</a>
@@ -81,14 +90,14 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         <!-- Cuarta Sección -->
         <section class="w-100 d-flex justify-content-center">
-            <div id="artista-video">${artista.video}</div>
+            <div id="artist-video">${artist.info.video}</div>
         </section>
     `;
 
-        // Agregar la Quinta Sección solo si el usuario está logueado
+        // Add the Fifth Section only if the user is logged in.
         const userOnline = localStorage.getItem("userOnline");
         if (userOnline) {
-            perfilContainer.innerHTML += `
+            profileContainer.innerHTML += `
             <!-- Quinta Sección -->
             <section class="w-100 text-center">
                 <h3>Redes Sociales</h3>
@@ -96,8 +105,8 @@ window.addEventListener('DOMContentLoaded', async () => {
             </section>
             `;
         }
-
-        perfilContainer.innerHTML += `
+         // Continue printting
+        profileContainer.innerHTML += `
         <!-- Sexta Sección -->
         <section id="contratar" class="w-100 text-center">
             <h3>Formulario de Contratación</h3>
@@ -105,8 +114,8 @@ window.addEventListener('DOMContentLoaded', async () => {
         </section>
     `;
 
-        // Agregar el formulario de contacto al final del perfil del artista
-        perfilContainer.innerHTML += `
+        // Add contact form at the end of the artist profile
+        profileContainer.innerHTML += `
         <!-- Formulario de contratación aquí -->
         <div class="container mt-4 pb-5">
             <div class="card bg-dark text-white">
@@ -156,7 +165,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         </div>
     `;
 
-        // Lógica del formulario de contacto
+        // Logic of the contact form
         const clearForm = () => {
             document.getElementById('event-type').value = '';
             document.getElementById('event-date').value = '';
@@ -179,8 +188,8 @@ window.addEventListener('DOMContentLoaded', async () => {
                 return;
             }
 
-            const message = `Hola ${artista.nombre}! te contacto de Music Market, estoy interesado(a) en tu servicio. Aquí está la información del evento:\nTipo de evento: ${eventType}\nFecha: ${eventDate}\nDescripción: ${eventDescription}\nNúmero de asistentes:${attendeesNumber}\nHora: ${eventTime}`;
-            const whatsappLink = `https://wa.me/57${artista.celular}?text=${encodeURIComponent(message)}`;
+            const message = `Hola ${artist.mainInfo.name}! te contacto de Music Market, estoy interesado(a) en tu servicio. Aquí está la información del evento:\nTipo de evento: ${eventType}\nFecha: ${eventDate}\nDescripción: ${eventDescription}\nNúmero de asistentes:${attendeesNumber}\nHora: ${eventTime}`;
+            const whatsappLink = `https://wa.me/57${artist.info.phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
             clearForm();
         });
@@ -201,14 +210,14 @@ window.addEventListener('DOMContentLoaded', async () => {
                 return;
             }
 
-            const message = `Hola ${artista.nombre}! te contacto de Music Market, estoy interesado(a) en tu servicio. Aquí está la información del evento:\nTipo de evento: ${eventType}\nFecha: ${eventDate}\nDescripción: ${eventDescription}\nNúmero de asistentes: ${attendeesNumber}\nHora: ${eventTime}`;
-            const whatsappLink = `https://wa.me/57${artista.celular}?text=${encodeURIComponent(message)}`;
+            const message = `Hola ${artist.mainInfo.name}! te contacto de Music Market, estoy interesado(a) en tu servicio. Aquí está la información del evento:\nTipo de evento: ${eventType}\nFecha: ${eventDate}\nDescripción: ${eventDescription}\nNúmero de asistentes: ${attendeesNumber}\nHora: ${eventTime}`;
+            const whatsappLink = `https://wa.me/57${artist.info.phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
             clearForm();
         });
     }
 
-    cargarPerfilArtista();
+    displayArtistProfile();
 });
 
-export default perfilContainer;
+export default profileContainer;

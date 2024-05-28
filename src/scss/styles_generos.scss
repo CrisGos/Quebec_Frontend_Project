@@ -1,17 +1,13 @@
 @import url(./styles.scss);
 
-.texto-h3-generos {
-    color: antiquewhite;
-}
 
-.a-genero {
-    text-decoration: none !important;
-} 
-
+// giving styles to main
 .main-genero, .main-artistas {
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
+
+
 
 .genre-background, .artistas-background {
     background-image: url("../../public/img/genero_background.webp");
@@ -21,10 +17,14 @@
     background-size: cover;
 }
 
- .generos-musica {
+
+// givinmg margin to categories section
+ .genres-music {
     margin-bottom: 2vh;
  }
 
+
+ // giving properties to the circle (the container) where is every categorie image
 .circle-img-container {
     width: 40vh;
     height: 40vh;
@@ -39,18 +39,23 @@
     transition: 0.5s ease;
 }
 
+
+// creating image container with a specific aspect ratio. 
 .circle-img-container::before {
     content: ""; 
     display: block;
     padding-top: 100%;
 }
 
+
+// giving the dinamycs of the image container
 .circle-img-container:hover {
     border: 4px solid var(--color-thre);
     box-shadow: 10px 5px 5px var(--color-five);
     transform: scale(1.15);
 }
 
+// styles of the image
 .circle-img-container img {
     width: 100%;
     height: 100%;
@@ -63,11 +68,14 @@
     transition: transform 0.3s ease;
 }
 
+
+// giving hoover to the image inside de circle
 .circle-img-container:hover img {
     opacity: 100%;
     transform: scale(0.98);
 }
 
+// propierties of the caption of every container
 .image-caption {
     display: block;
     font-size: 1.9rem;
@@ -77,11 +85,12 @@
     color: var( --color-five);
 }
 
+
 .image-caption:hover {
     text-decoration: none;
 }
 
-
+// giving properties to the card where is the preliminar info of every artist per categorie
 .custom-card {
     width: 500px;
     height: 300px;
@@ -89,44 +98,49 @@
   }
 
 
-  
+
+  //giving styles to the image of every artist, ensuring that it cover the card espace
 .custom-img {
     width: 100%;
-    height: 150px; /* Ajustar la altura de la imagen */
-    object-fit: cover; /* Para que la imagen abarque todo el apartado sin distorsionarse */
+    height: 150px; 
+    object-fit: cover; 
     transition: 0.3s;
 }
 
 
+// giving format to the biography inside the preliminar view
 .biografia-text {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Número de líneas a mostrar */
+    -webkit-line-clamp: 2; /* number of lines to show*/
     -webkit-box-orient: vertical;
-    height: 2.6em; /* Ajusta la altura según el número de líneas */
+    height: 2.6em; /* ajust the height according to the number of lines */
     white-space: normal;
 }
 
-
+// giving hover interaction effect
 .custom-card:hover {
     border: 4px solid var(--color-thre);
     box-shadow: 10px 5px 5px var(--color-five);
     transform: scale(1.05);
 }
 
-#artista-imagen {
+// giving propierties for the artist profile image
+#artist-image {
     height: 25vh;
     object-fit: cover;
 }
-  
-#artista-nombre {
+
+
+// giving style properties for the artist profile name
+#artist-name {
     background: rgba(0, 0, 0, 0.5);
     margin: 0;
 }
 
-
-.main-artista {
+// giving back ground to the artist profile
+.main-artist {
     background-color: var(--gray);
 }
 
@@ -134,11 +148,11 @@
     color: var(--white-color)
 }
 
-.artista {
+.artist {
     text-decoration: none;
 }
 
-
+// giving responsive properties
 @media (max-width:400px){
 
     .artistas-background {
@@ -146,7 +160,7 @@
         background-color: var(--gray) !important;
     }
 
-    .artista {
+    .artist {
         width: 80vh;
     }
 
