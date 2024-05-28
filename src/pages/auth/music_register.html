@@ -24,7 +24,7 @@
 
 <body>
     <header class="">
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark  navbar-scrolled p-1" id="navbar">
             <div class="overlay"></div> <!-- Div para la transparencia -->
             <section class="container">
             <a href="/">
@@ -79,12 +79,12 @@
             
             </section>
             </nav>
-            
+
     </header>
     <br>
-    <main data-bs-theme="dark">
+    <main >
         <h1>Queremos conocerte</h1>
-        <div class="container m-2">
+        <div class="container-md m-2">
             <form id="multiStepForm" method="post">
                 <!-- Sección 1 -->
                 <section id="section1" class="contianer vsbl">
@@ -110,7 +110,7 @@
                     </article>
                     <!-- band info -->
 
-                    <article class="d-flex">
+                    <article class="d-flex flex-row">
                         <div class="me-5 ">
                             <div class="form-group my-3 ">
                                 <label for="name">Nombre Artistico</label>
@@ -142,8 +142,8 @@
                         </div>
 
                         <div class="band-image">
-                            <figure class="w-25 h-75">
-                                <img class=".bandPhoto" id="imagePreview" src="" alt="">
+                            <figure class="w-50 h-75 bandPhoto">
+                                <img class="object-fit-fill border rounded" id="imagePreview" src="" alt="">
                             </figure>
                             <div class="mb-3">
                                 <label for="imageUpload" class="form-label">Agrega tu imagen imagen</label>
@@ -152,12 +152,12 @@
                         </div>
                     </article>
 
-                    <div class="nxt-bck-btn">
+                    <div class="nxt-bck-btn  d-flex justify-content-end">
                         <button type="button" btn-sec="2" class="btn btn-secondary rounded-5 hidden">Anterior</button>
                         <button type="button" btn-sec="1" class="btn btn-primary rounded-5">Siguiente</button>
                     </div>
                 </section>
-
+                
                 <!-- Sección 2 -->
                 <section id="section2" class="hidden container m-2 w-50 ">
                     <h2>Sobre tu banda</h2>
@@ -220,51 +220,52 @@
                         </div>
                     </article>
                 
-                    <div class="nxt-bck-btn">
+                    <div class="nxt-bck-btn  d-flex justify-content-end">
                         <button type="button" btn-sec="2" class="btn btn-secondary rounded-5">Anterior</button>
                         <button type="button" btn-sec="2" class="btn btn-primary rounded-5">Siguiente</button>
                     </div>
                 </section>
+
                 <!-- Sección 3 -->
                 <section id="section3" class="hidden container m-2 w-50 ">
                     <h2>Tus redes sociales</h2>
-                    
+                <!-- Musicican social media links -->
                     <article>
                     <!-- instagram -->
                         <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-twitter-x"></i></span>
+                            <span class="input-group-text"><i class="bi bi-instagram"></i></i></span>
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                                <label for="floatingInputGroup1">Username</label>
+                                <label for="floatingInputGroup1">URL</label>
                             </div>
                         </div>
                     <!-- spotify -->
                         <div class="input-group mb-3">
-                            <span class="input-group-text">@</span>
+                            <span class="input-group-text"><i class="bi bi-spotify"></i></span>
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                                <label for="floatingInputGroup1">Username</label>
+                                <label for="floatingInputGroup1">URL</label>
                             </div>
                         </div>
                     <!-- twiter -->
                         <div class="input-group mb-3">
-                            <span class="input-group-text">@</span>
+                            <span class="input-group-text"><i class="bi bi-twitter-x"></i></span>
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                                <label for="floatingInputGroup1">Username</label>
+                                <label for="floatingInputGroup1">URL</label>
                             </div>
                         </div>
                     <!-- facebook -->
                         <div class="input-group mb-3">
-                            <span class="input-group-text">@</span>
+                            <span class="input-group-text"><i class="bi bi-facebook"></i></span>
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-                                <label for="floatingInputGroup1">Username</label>
+                                <label for="floatingInputGroup1">URL</label>
                             </div>
                         </div>
                     </article>
 
-                    <div class="nxt-bck-btn">
+                    <div class="nxt-bck-btn  d-flex justify-content-end">
                         <button type="button" btn-sec="3" class="btn btn-secondary rounded-5">Anterior</button>
                         <button type="button" btn-sec="3" class="btn btn-primary rounded-5">Siguiente</button>
                     </div>
@@ -284,6 +285,13 @@
                     </article>
                     <article id="data-acount">
                         <h3>Datos de la cuenta</h3>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">WhatsApp</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Por este numero te podran contactar
+                            </div>
+                        </div>
                         <div id="email-verification">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -315,7 +323,7 @@
                             <label class="form-check-label" for="term-condi-service">acepto los <a href="">Terminos y
                                     condiciones</a> del servicio</label>
                         </div>
-                        <div class="nxt-bck-btn">
+                        <div class="nxt-bck-btn  d-flex justify-content-end">
                             <button type="button" btn-sec="4" class="btn btn-secondary rounded-5">Anterior</button>
                             <button type="submit" class="btn btn-success rounded-5">Enviar</button>
                         </div>
