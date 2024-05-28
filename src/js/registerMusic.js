@@ -1,11 +1,10 @@
 // Import our custom CSS
 import '../scss/registerMusic.scss'
-
+import {validatePassword, validateEmail} from './register'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 let formRegister = document.querySelector("form")
 let secCounter = 1
-let seCurrent = formRegister.querySelector(`#section${secCounter}`)
 let arrsection = formRegister.querySelectorAll('section')
 
 arrsection.forEach(section => {
@@ -36,6 +35,7 @@ arrsection.forEach(section => {
 
     })
 });
+
 
 
 function nextSection(currentSection) {
@@ -108,24 +108,13 @@ document.querySelector('#imageUpload').addEventListener('change', function (even
     }
 })
 
-// acceptacion
-function acceptance(secCounter) {
-    //section1
-    if (secCounter==1) {
-        console.log(secCounter);
-    }
-    //section2
-    if (secCounter==2) {
-        
-    }
-    //section3
-    if (secCounter==3) {
-        
-    }
-    //section4
-    if (secCounter==4) {
-        
-    }
 
-    
-}
+//variblesForJason
+const name=formRegister.querySelector('#artistic-Name')
+const var1=formRegister.querySelector('#artistic-Name')
+
+// creacion json
+formRegister.addEventListener('submit',async(event)=>{
+    event.preventDefault()
+
+})
