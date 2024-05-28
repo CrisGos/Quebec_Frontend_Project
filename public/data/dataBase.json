@@ -57,8 +57,8 @@
   "artists": [
     {
       "id": "586f89a3-ef61-4f51-9c4c-1e7024f6e107",
+      "username": "LauraEscobar",
       "logInfo": {
-        "username": "LauraEscobar",
         "email": "LauraEscobar@gmail.com",
         "password": "1234"
       },
@@ -86,8 +86,8 @@
     },
     {
       "id": "a1350f22-3c8f-4a2d-9de5-75cde8604c7c",
+      "username": "ChazzDj",
       "logInfo": {
-        "username": "ChazzDj",
         "email": "ChazzDj@gmail.com",
         "password": "1234"
       },
@@ -115,8 +115,8 @@
     },
     {
       "id": "7d68e9aa-c3a4-4ea6-bf22-9a5bf8d8b7cf",
+      "username": "NarMarina",
       "logInfo": {
-        "username": "NarMarina",
         "email": "NarMarina@gmail.com",
         "password": "1234"
       },
@@ -144,8 +144,8 @@
     },
     {
       "id": "61b75875-071d-494d-aa1e-75fca7a48d08",
+      "username": "Seone",
       "logInfo": {
-        "username": "Seone",
         "email": "Seone@gmail.com",
         "password": "1234"
       },
@@ -173,8 +173,8 @@
     },
     {
       "id": "d10b8406-bae7-4850-8e6e-d4a1432cf4ef",
+      "username": "LaCombiOrquesta",
       "logInfo": {
-        "username": "LaCombiOrquesta",
         "email": "LaCombiOrquesta@gmail.com",
         "password": "1234"
       },
@@ -202,8 +202,8 @@
     },
     {
       "id": "2df3eb85-69c5-4d94-87ff-c7c586792fe5",
+      "username": "LosdelSolardeRuben",
       "logInfo": {
-        "username": "LosdelSolardeRuben",
         "email": "LosdelSolardeRuben@gmail.com",
         "password": "1234"
       },
@@ -231,8 +231,8 @@
     },
     {
       "id": "fc0c1c07-0d86-4660-ae82-9264e2d0b68f",
+      "username": "Intemperie",
       "logInfo": {
-        "username": "Intemperie",
         "email": "Intemperie@gmail.com",
         "password": "1234"
       },
@@ -260,8 +260,8 @@
     },
     {
       "id": "1b5989b4-178e-45b5-b6d1-348221a497f2",
+      "username": "MariachiMedellinShow",
       "logInfo": {
-        "username": "MariachiMedellinShow",
         "email": "MariachiMedellinShow@gmail.com",
         "password": "1234"
       },
@@ -289,8 +289,8 @@
     },
     {
       "id": "1eac2d76-2283-4669-a1e6-686fc85540b4",
+      "username": "BERA",
       "logInfo": {
-        "username": "BERA",
         "email": "BERA@gmail.com",
         "password": "1234"
       },
@@ -318,8 +318,8 @@
     },
     {
       "id": "e1163c06-8850-429a-891e-8367e4a279d0",
+      "username": "MarcelaReyesDj",
       "logInfo": {
-        "username": "MarcelaReyesDj",
         "email": "MarcelaReyesDj@gmail.com",
         "password": "1234"
       },
@@ -347,8 +347,8 @@
     },
     {
       "id": "69b4c4c5-5be7-4872-b5d4-aa499a1b2786",
+      "username": "EvannSoto",
       "logInfo": {
-        "username": "EvannSoto",
         "email": "EvannSoto@gmail.com",
         "password": "1234"
       },

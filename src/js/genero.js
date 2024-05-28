@@ -19,7 +19,7 @@ async function displayArtistsPerGenre() {
   ).forEach(artist => {
     artistsContainer.innerHTML += `
     <article class="text-center">
-        <a class="artist" href="./artistaProfile.html?name=${artist.mainInfo.name}">
+        <a class="artist" href="./artistaProfile.html?id=${artist.id}">
             <div class="card custom-card mb-3">
                 <img src="${artist.mainInfo.photo}" class="card-img-top custom-img" alt="${artist.mainInfo.name}">
                 <div class="card-body">
