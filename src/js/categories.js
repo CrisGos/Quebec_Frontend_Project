@@ -1,27 +1,27 @@
-// Definicion de las constantes del local server y el id del section donde se imprimira el contenido
+// Definition of the local server constants and the id of the section where the content will be printed.
 const URL_DATABASE = 'http://localhost:3000'
-const generos = document.getElementById("generos-musica")
+const genres = document.getElementById("genres-music")
 
 
-// funcion para imprimir el contenido
-async function categorias(generos) {
-    const response = await fetch(`${URL_DATABASE}/generosCategorias`)
-    const generosDatabase = await response.json()
-    for (const genero of generosDatabase) {
+// function to print the content
+async function categories(genres) {
+    const response = await fetch(`${URL_DATABASE}/genresCategories`)
+    const genresDatabase = await response.json()
+    for (const genre of genresDatabase) {
 
-        // impresion de contenido por medio de un innerHTML dentro de un for
-        generos.innerHTML += `
+        // printing of content by means of an innerHTML within a for
+        genres.innerHTML += `
             <article class="text-center">
-                <div class="circle-img-container" value="${genero.idGenre}">
-                    <a class="a-genero" href="./artistasPorGenero.html?tipoMusica=${genero.tipoMusica}">
-                        <img src="${genero.route}" alt="${genero.tipoMusica}" class="img-fluid circle-img" id="${genero.idGenre}">
+                <div class="circle-img-container" value="${genre.idGenre}">
+                    <a class="a-genre" href="./artistasPorGenero.html?musicGenre=${genre.musicGenre}">
+                        <img src="${genre.route}" alt="${genre.musicGenre}" class="img-fluid circle-img" id="${genre.idGenre}">
                     </a>
                 </div>
-                <button type="button" class="btn btn-primary image-caption">${genero.tipoMusica}</button>
+                <button type="button" class="btn btn-primary image-caption">${genre.musicGenre}</button>
             </article>
         `
     }
 }
 
-// llamado de la funcion
-categorias(generos)
+// calling the function
+categories(genres)
