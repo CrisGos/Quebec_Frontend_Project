@@ -81,12 +81,13 @@
             </nav>
 
     </header>
-    <br>
-    <main >
-        <h1>Queremos conocerte</h1>
-        <div class="container  m-2">
-            <form id="multiStepForm" method="post" action="/public/img/users-img/">
-<!-- Sección 1 -->
+
+        <br>
+        <main>
+            <h1>Queremos conocerte</h1>
+            <div class="container m-2">
+                <form id="multiStepForm" method="post">
+                    <!-- Sección 1 -->
                 <section id="section1" class="contianer w-50 vsbl">
                     <h2>Hablanos de tu banda</h2>
                     <!-- radiobuttons -->
@@ -116,48 +117,7 @@
                                 <input type="text" class="form-control" id="artistic-name" placeholder="Nombre Artisitico"
                                     required>
                             </div>
-                        <!-- genre -->
-                            <div class="form-floating my-3">
-                                <select  class="form-select" id="artis-genre-name"
-                                    aria-label="Floating label select example" required>
-                                    <option itemid="void" selected >Genero</option>
-                                    <option value="urbano">Urbano</option>
-                                    <option value="pop">Pop</option>
-                                    <option value="popular">Popular</option>
-                                    <option value="3">Rock</option>
-                                    <option value="3">Electronica</option>
-                                </select>
-                                <label for="floatingSelect">Genero Musical principal</label>
-                            </div>
-                        <!-- genre2 -->
-                            <div class="form-floating my-3">
-                                <select class="form-select" id="artistic-genre-2"
-                                    aria-label="Floating label select example">
-                                    <option value="" selected>Genero 2</option>
-                                    <option value="">No</option>
-                                    <option value="urbano">Urbano</option>
-                                    <option value="pop">Pop</option>
-                                    <option value="popular">Popular</option>
-                                    <option value="3">Rock</option>
-                                    <option value="3">Electronica</option>
-                                </select>
-                                <label for="floatingSelect">Genero 3</label>
-                            </div>
-                        <!-- genre3 -->
-                            <div class="form-floating my-3">
-                                <select class="form-select" id="artistic-genre-3"
-                                    aria-label="Floating label select example">
-                                    <option value="" selected>Genero 3</option>
-                                    <option value="">No</option>
-                                    <option value="urbano">Urbano</option>
-                                    <option value="pop">Pop</option>
-                                    <option value="popular">Popular</option>
-                                    <option value="3">Rock</option>
-                                    <option value="3">Electronica</option>
-                                </select>
-                                <label for="floatingSelect">Genero 2</label>
-                            </div>
-                        </div>
+                        
 
                         <div class="band-image">
                             <figure class="w-50 h-75 bandPhoto">
@@ -175,21 +135,21 @@
                         <button type="button" btn-sec="1" class="btn btn-primary rounded-5">Siguiente</button>
                     </div>
                 </section>
-                
-<!-- Sección 2 -->
+
+                    <!-- Sección 2 -->
                 <section id="section2" class="hidden container m-2 w-50 ">
                     <!-- description of the band -->
                     <h2>Sobre tu banda</h2>
                 <!-- 720 char paragraph for the band -->
                     <div class="mb-3 ">
                         <label for="music-description" class="form-label">Descripcion de la banda</label>
-                        <textarea class="form-control" id="music-description" rows="3" maxlength="720"
-                            placeholder="Una breve descripcion de tu banda(maximo: 720 caracteres)"></textarea>
+                        <textarea class="form-control" id="music-description" rows="3" maxlength="500"
+                            placeholder="Una breve descripcion de tu banda(maximo: 500 caracteres)"></textarea>
                     </div>
                 <!-- validation of medellin address -->
                     <div class="form-group">
                         <label for="address">Dirección de recidencia en Medellín</label>
-                        <input type="text" class="form-control" id="address" placeholder="calle,cra ..." required>
+                        <input type="text" class="form-control" id="address" placeholder="calle,cra ...">
                     </div>
                 <!-- youtube-iframe -->
                     <article id="youtube-iframe" class="d-flex">
@@ -203,223 +163,50 @@
                             data-bs-target="#steps-for-iframe" title="Como conseguir un Iframe">
                 
                         </button>
-                
-                        <!-- Modal -->
-                                <div class="modal fade " id="steps-for-iframe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1" id="navbar">
-                <div class="overlay"></div> <!-- Div para la transparencia -->
-                <section class="container">
-                    <a href="/">
-                        <img src="/public/icon/logo.webp" alt="logo" class="logo">
-                    </a>
-                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbar-start" aria-label="Toggle navigation" aria-controls="navbar-start"
-                        aria-expanded="false">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar-start">
-                        <ul class="navbar-nav ms-auto gap-2">
-                            <li class="nav-item">
-                                <a href="../quienes.html" class="nav-link active">
-                                    Quienes Somos
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="./login.html" class="nav-link" id="login">Ingresar</a>
-                            </li>
-                            <ul class="navbar-nav">
-                                <div class="" id="dropdown">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
-                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Registrarse
-                                            </a>
-                                            <ul class="dropdown-menu dropdown-menu-dark"
-                                                aria-labelledby="navbarDarkDropdownMenuLink">
-                                                <li><a class="dropdown-item"
-                                                        href="../auth/music_register.html">Artista</a></li>
-                                                <li><a class="dropdown-item"
-                                                        href="../auth/user_register.html">Cliente</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="" id="user-dropdown" style="display:none;">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
-                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            </a>
-                                            <ul class="dropdown-menu dropdown-menu-dark"
-                                                aria-labelledby="navbarDarkDropdownMenuLink">
-                                                <li><a class="dropdown-item" href="#" id="profile">Perfil</a></li>
-                                                <li><a class="dropdown-item" href="#" id="account">Cuenta</a></li>
-                                                <li><a class="dropdown-item" id="logout" href="#">Cerrar sesión</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </ul>
+                <!-- Modal -->
+                <div class="modal fade " id="steps-for-iframe" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- modal header -->
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Como obtener el ifrmae
+                                    de tu video </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <!-- modal body -->
+                            <div class="modal-body ">
+                                <ol>
+                                    <li>dirijete a tu video de youtube</li>
+                                    <li>Oprimite el boton de compartir
+                                        <img src="../../../public/img/iframe-tuto/stp1.png" alt="">
+                                    </li>
+                                    <li>
+                                        elije la opcion de "insertar"
+                                        <img src="../../../public/img/iframe-tuto/stp2.png" alt="">
+                                    </li>
+                                    <li>
+                                        oprime el boton de copiar y pegalo
+                                        <img src="../../../public/img/iframe-tuto/stp3.png" alt="">
+                                    </li>
+                                </ol>
+                            </div>
+                            <!-- modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rounded-5" data-bs-dismiss="modal">Listo</button>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                </article>
 
-                </section>
-            </nav>
+<div class="nxt-bck-btn">
+    <button type="button" btn-sec="2" class="btn btn-secondary rounded-5">Anterior</button>
+    <button type="button" btn-sec="2" class="btn btn-primary rounded-5">Siguiente</button>
 
-        </header>
-        <br>
-        <main>
-            <h1>Queremos conocerte</h1>
-            <div class="container m-2">
-                <form id="multiStepForm" method="post">
-                    <!-- Sección 1 -->
-                    <section id="section1" class="contianer vsbl">
-                        <h2>Hablanos de tu banda</h2>
-                        <!-- radiobuttons -->
-                        <article class="row">
+</div>
 
-
-                            <div class="form-check col-1 ">
-                                <input class="form-check-input" music-type="solo" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    solista
-                                </label>
-                            </div>
-                            <div class="form-check col-2 ">
-                                <input class="form-check-input" music-type="band" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    banda
-                                </label>
-                            </div>
-                        </article>
-                        <!-- band info -->
-
-                        <article class="d-flex">
-                            <div class="me-5 ">
-                                <div class="form-group my-3 ">
-                                    <label for="name">Nombre Artistico</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Nombre Artisitico"
-                                        required>
-                                </div>
-                                <div class="form-floating my-3">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>tipo de grupo</option>
-                                        <option value="smll">Pequeño(2 a 5 integrantes)</option>
-                                        <option value="md">Mediano(6 a 9 integrantes)</option>
-                                        <option value="lg">Grande(10 o mas integrantes)</option>
-                                    </select>
-                                    <label for="floatingSelect">Cantiada de integrantes</label>
-                                </div>
-                                <div class="form-floating my-3">
-                                    <select class="form-select" id="floatingSelect"
-                                        aria-label="Floating label select example">
-                                        <option selected>Genero</option>
-                                        <option value="1">Urbano</option>
-                                        <option value="2">Pop</option>
-                                        <option value="3">Popular</option>
-                                        <option value="3">Rock</option>
-                                        <option value="3">Electronica</option>
-                                    </select>
-                                    <label for="floatingSelect">Works with selects</label>
-                                </div>
-                            </div>
-
-                            <div class="band-image">
-                                <figure class="w-25 h-75">
-                                    <img class=".bandPhoto" id="imagePreview" src="" alt="">
-                                </figure>
-                                <div class="mb-3">
-                                    <label for="imageUpload" class="form-label">Agrega tu imagen imagen</label>
-                                    <input class="form-control" type="file" accept="image/png, image/jpeg"
-                                        id="imageUpload">
-                                </div>
-                            </div>
-                        </article>
-
-                        <div class="nxt-bck-btn d-flex">
-                            <button type="button" btn-sec="2"
-                                class="btn btn-secondary rounded-5 hidden">Anterior</button>
-                            <button type="button" btn-sec="1" class="btn btn-primary rounded-5">Siguiente</button>
-                        </div>
-                    </section>
-
-                    <!-- Sección 2 -->
-                    <section id="section2" class="hidden container m-2 w-50 ">
-                        <h2>Sobre tu banda</h2>
-
-                        <div class="mb-3 ">
-                            <label for="music-description" class="form-label">Descripcion de la banda</label>
-                            <textarea class="form-control" id="music-description" rows="3" maxlength="720"
-                                placeholder="Una breve descripcion de tu banda(maximo: 720 caracteres)"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="address">Dirección de recidencia en Medellín</label>
-                            <input type="text" class="form-control" id="address" placeholder="calle,cra ..." required>
-                        </div>
-                        <!-- youtube-iframe -->
-                        <article id="youtube-iframe" class="d-flex">
-                            <div class="form-group">
-                                <label for="name">Iframe de youtube</label>
-                                <input type="text" class="form-control" id="name" required>
-                            </div>
-
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn bi bi-info-circle rounded-5" data-bs-toggle="modal"
-                                data-bs-target="#steps-for-iframe" title="Como conseguir un Iframe">
-
-                            </button>
-
-                            <!-- Modal -->
-                            <div class="modal fade text-dark" id="steps-for-iframe" tabindex="-1"
-                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <!-- modal header -->
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Como obtener el ifrmae
-                                                de tu video </h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <!-- modal body -->
-                                        <div class="modal-body ">
-                                        <ol>
-                                            <li>dirijete a tu video de youtube</li>
-                                            <li>Oprimite el boton de compartir
-                                                <img src="../../../public/img/iframe-tuto/stp1.png" alt="">
-                                            </li>
-                                            <li>
-                                                elije la opcion  de "insertar"
-                                                <img src="../../../public/img/iframe-tuto/stp2.png" alt="">
-                                            </li>
-                                            <li>
-                                                oprime el boton de copiar y pegalo
-                                                <img src="../../../public/img/iframe-tuto/stp3.png" alt="">
-                                            </li>
-                                        </ol>
-                                    </div>
-                                    <!-- modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary rounded-5" data-bs-dismiss="modal">Listo</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                <!-- to next section -->
-                    <div class="nxt-bck-btn  d-flex justify-content-end">
-                        <button type="button" btn-sec="2" class="btn btn-secondary rounded-5">Anterior</button>
-                        <button type="button" btn-sec="2" class="btn btn-primary rounded-5">Siguiente</button>
-                    </div>
-                </section>
+</section>
 
 <!-- Sección 3 -->
                 <section id="section3" class="hidden container m-2 w-50 ">
