@@ -17,7 +17,9 @@ arrsection.forEach(section => {
         nxtBtn = divNxtBck.querySelector('.btn-primary')
         nxtBtn.addEventListener('click', () => {
             nextSection(secCounter)
-            secCounter++
+            if(validateSection(section)== true){secCounter++
+                console.log(secCounter, "retrocede");}
+            
             console.log(secCounter, "avanza");
 
         })
@@ -26,8 +28,9 @@ arrsection.forEach(section => {
 
     bckBtn.addEventListener('click', () => {
         prevSection(secCounter)
-        secCounter--
-        console.log(secCounter, "retrocede");
+        if(validateSection(section)== true){secCounter--
+            console.log(secCounter, "retrocede");}
+        
 
     })
 });
