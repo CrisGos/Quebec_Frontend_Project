@@ -113,8 +113,8 @@
 
                                     <div class="mb-3">
                                         <!-- band name -->
-                                        <label for="name" class="form-label">Nombre Artístico</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Nombre Artístico" required>
+                                        <label for="artistic-name" class="form-label">Nombre Artístico</label>
+                                        <input type="text" class="form-control" id="artistic-name" placeholder="Nombre Artístico" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="floatingSelect" class="form-label">Género</label>
@@ -188,12 +188,17 @@
                             </div>
                             <!-- youtube-iframe -->
                             <div class="mb-3">
-                                <label for="name" class="form-label">Iframe de YouTube</label>
-                                <input type="text" class="form-control" id="name" required>
+                                <label for="iframe" class="form-label">Iframe de YouTube</label>
+                                <input type="text" class="form-control" id="iframe" required>
                             </div>
+                            <!-- Button trigger modal helps -->
+                        <button type="button" class="btn bi bi-info-circle rounded-5" data-bs-toggle="modal"
+                        data-bs-target="#steps-for-iframe" title="Como conseguir un Iframe">
+            
+                    </button>
                             <!-- Modal -->
-                <div class="modal fade " id="steps-for-iframe" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+
+                <div class="modal fade " id="steps-for-iframe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <!-- modal header -->
@@ -226,7 +231,12 @@
                     </div>
                 </div>
             </div>
-                        </section>
+                        <!-- to next section -->
+                        <div class="nxt-bck-btn mt-4">
+                            <button type="button" class="btn btn-secondary rounded-5">Anterior</button>
+                            <button type="button" class="btn btn-primary rounded-5">Siguiente</button>
+                        </div>
+                    </section>
     <!-- Sección 3 -->
     <section id="section3" class="hidden container">
         <!-- about social networks -->
