@@ -145,7 +145,8 @@
 }
 
 .artist-background {
-    color: var(--white-color)
+    color: var(--white-color);
+    border: solid 0.2em red;
 }
 
 .artist {
@@ -155,6 +156,7 @@
 .footer{
     color:var(--white-color);
     font-size: 1em;
+
   }
 
   .footer a span{
@@ -162,11 +164,12 @@
   }
 
 // giving responsive properties
-@media (max-width:400px){
+@media (max-width:560px){
 
     .artistas-background {
         background-image: none;
         background-color: var(--gray) !important;
+      
     }
 
     .artist {
