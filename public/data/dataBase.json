@@ -26,37 +26,42 @@
     {
       "musicGenre": "Urbano",
       "route": "../../public/img/urbano-genre.webp",
-      "idGenre": "genero-1"
+      "idGenre": "genero-1",
+      "id": "5b10"
     },
     {
       "musicGenre": "Pop",
       "route": "../../public/img/pop-genre.webp",
-      "idGenre": "genero-2"
+      "idGenre": "genero-2",
+      "id": "08f7"
     },
     {
       "musicGenre": "Popular",
       "route": "../../public/img/popular-genre.webp",
-      "idGenre": "genero-3"
+      "idGenre": "genero-3",
+      "id": "ad06"
     },
     {
       "musicGenre": "Tropical",
       "route": "../../public/img/tropical-genre.webp",
-      "idGenre": "genero-4"
+      "idGenre": "genero-4",
+      "id": "e50d"
     },
     {
       "musicGenre": "Rock",
       "route": "../../public/img/rock-genre.webp",
-      "idGenre": "genero-5"
+      "idGenre": "genero-5",
+      "id": "0279"
     },
     {
       "musicGenre": "Electronica",
       "route": "../../public/img/electronica-genre.webp",
-      "idGenre": "genero-6"
+      "idGenre": "genero-6",
+      "id": "f109"
     }
   ],
   "artists": [
     {
-      "id": "586f89a3-ef61-4f51-9c4c-1e7024f6e107",
       "username": "LauraEscobar",
       "logInfo": {
         "email": "LauraEscobar@gmail.com",
@@ -82,7 +87,8 @@
         "spotify": "",
         "tiktok": "",
         "youtube": "https://www.youtube.com/@laurita961"
-      }
+      },
+      "id": "586f89a3-ef61-4f51-9c4c-1e7024f6e107"
     },
     {
       "id": "a1350f22-3c8f-4a2d-9de5-75cde8604c7c",
