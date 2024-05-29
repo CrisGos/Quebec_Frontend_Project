@@ -4,6 +4,7 @@ import '../scss/registerMusic.scss'
 
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
+
 let formRegister = document.querySelector("form")
 let secCounter = 1
 let arrsection = formRegister.querySelectorAll('section')
