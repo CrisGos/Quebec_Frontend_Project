@@ -145,19 +145,31 @@
 }
 
 .artist-background {
-    color: var(--white-color)
+    color: var(--white-color);
+    border: solid 0.2em red;
 }
 
 .artist {
     text-decoration: none;
 }
 
+.footer{
+    color:var(--white-color);
+    font-size: 1em;
+
+  }
+
+  .footer a span{
+    color: var(--white-color);
+  }
+
 // giving responsive properties
-@media (max-width:400px){
+@media (max-width:560px){
 
     .artistas-background {
         background-image: none;
         background-color: var(--gray) !important;
+      
     }
 
     .artist {
@@ -172,8 +184,8 @@
 
     .custom-img {
         width: 100%;
-        height: 150px; /* Ajustar la altura de la imagen */
-        object-fit: cover; /* Para que la imagen abarque todo el apartado sin distorsionarse */
+        height: 150px; 
+        object-fit: cover; 
         transition: 0.3s;
         text-align: center;
     }

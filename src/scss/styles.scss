@@ -28,6 +28,8 @@
 }
 
 
+
+// <!-- here start main -->
 .header {
   
 	width: 100%;
@@ -39,22 +41,26 @@
   height: 500px;
   margin-bottom: 2em;
  }
+
+ // class navbar
 #navbar{
  
   height: 5em;
+  text-align: center;
  
 }
 
 .navbar-nav {
   flex-direction: row;
+
 }
-.navbar-nav .nav-item {
-  margin-left: 1rem;
-}
-.navbar-nav .dropdown-menu {
-  position: absolute;
-  transform: translateX(-50%);
-}
+// .navbar-nav .nav-item {
+//   margin-left: 1rem;
+// }
+// .navbar-nav .dropdown-menu {
+//   display: block !important;
+// }
+
 .ms-auto {
   margin-left: auto !important;
 }
@@ -64,6 +70,7 @@
   background:linear-gradient(#008057,#005181);
 }
 
+// styles logo
 .logo{
     width: 6.5em;
     margin-top: 1em;
@@ -74,7 +81,7 @@
 .subtitle{
   font-size: 1em;
 }
-
+ // styles buttom header
 .btn-style,
 .btn-conocer{
   background:linear-gradient(#008057,#005181);
@@ -92,6 +99,7 @@
   background:var(--gray);
 }
 
+//styles slider index
 .artist-genre{
   background-color: var(--color-ilustration);
   opacity: .8;
@@ -105,15 +113,20 @@
 //section about us
 .about-us{
   width: 80%;
+  margin:2em;
+  
 }
-.main-quienes{
+
+//main page whos
+
+.main-whos{
  
   display:flex;
   justify-content: center;
   align-items: center;
 }
 
-//section functions
+// //section functions
 
 .img-fun {
 margin-bottom: 2em;
@@ -147,6 +160,51 @@ background-image: url(/public/img/ilustracion2.png);
 a span{
   color:var(--white-color);
   font-size: 1em;
+}
+
+
+//flip-card
+
+.flip-card {
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+.flip-card-back {
+  background-color: #f8f9fa;
+  color: black;
+  transform: rotateY(180deg);
+}
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-body {
+  padding: 20px;
 }
 
 
@@ -210,3 +268,5 @@ a span{
     max-width: 50%;
   }
 }
+
+
