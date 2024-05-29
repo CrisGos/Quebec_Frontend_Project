@@ -66,29 +66,29 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         // Here we print the initial content of the artist profile
         profileContainer.innerHTML = `
-        <!-- Primera Sección -->
+        <!-- First section -->
         <section class="position-relative w-100">
             <img src="${artist.mainInfo.photo}" alt="${artist.mainInfo.name}" class="w-100 h-50" id="artist-image">
             <h2 class="position-absolute bottom-0 start-0 text-white p-3" id="artist-name">${artist.mainInfo.name}</h2>
         </section>
 
-        <!-- Segunda Sección -->
+        <!-- Second section -->
         <section class="d-flex flex-row flex-wrap gap-5 align-items-center justify-content-center w-100">
             <article class="w-50">
                 <h3>Biografía:</h3>
                 <p id="artist-biografia">${artist.mainInfo.biography}</p>
             </article>
             <article class="w-25 d-flex justify-content-end">
-                <a href="#contratar" class="btn btn-primary">Contratar</a>
+            <a href="#hire"><button type="button" class="btn btn-secondary mx-2" id="btn-hire">Contratar</button></a>
             </article>
         </section>
 
-        <!-- Tercera Sección -->
+        <!-- Third Section -->
         <section class="d-flex flex-row flex-wrap gap-5 align-items-center justify-content-center w-100">
             ${genresArtist}
         </section>
 
-        <!-- Cuarta Sección -->
+        <!-- Fourth Section -->
         <section class="w-100 d-flex justify-content-center">
             <div id="artist-video">${artist.info.video}</div>
         </section>
@@ -98,7 +98,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         const userOnline = localStorage.getItem("userOnline");
         if (userOnline) {
             profileContainer.innerHTML += `
-            <!-- Quinta Sección -->
+            <!-- Fifth Section-->
             <section class="w-100 text-center">
                 <h3>Redes Sociales</h3>
                 ${socialLinks}
@@ -107,8 +107,8 @@ window.addEventListener('DOMContentLoaded', async () => {
 
             // Continue printting
             profileContainer.innerHTML += `
-        <!-- Sexta Sección -->
-        <section id="contratar" class="w-100 text-center">
+        <!-- Sixth Section -->
+        <section id="hire" class="w-100 text-center">
             <h3>Formulario de Contratación</h3>
             <!-- Formulario de contratación aquí -->
         </section>
@@ -116,7 +116,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
             // Add contact form at the end of the artist profile
             profileContainer.innerHTML += `
-        <!-- Formulario de contratación aquí -->
+        <!-- Hiring form here -->
         <div class="container mt-4 pb-5">
             <div class="card bg-dark text-white">
                 <div class="card-body">
@@ -165,6 +165,13 @@ window.addEventListener('DOMContentLoaded', async () => {
         </div>
     `;
         }
+
+        const btnHire = document.getElementById("btn-hire")
+        btnHire.addEventListener("click", () => {
+            if (userOnline == null) {
+                window.location.href = "../pages/auth/login.html"
+            }
+        })
 
         // Logic of the contact form
         const clearForm = () => {

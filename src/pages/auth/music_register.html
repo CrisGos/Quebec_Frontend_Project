@@ -19,361 +19,343 @@
     <meta name="revisit-after" content="15days" />
 
     <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon" />
-    <title>Document</title>
+    <title>Market Music</title>
 </head>
 
 <body>
     <header class="">
-        <nav class="navbar navbar-expand-lg navbar-dark  navbar-scrolled p-1" id="navbar">
-            <div class="overlay"></div> <!-- Div para la transparencia -->
-            <section class="container">
-            <a href="/">
-                <img src="/public/icon/logo.webp" alt="logo" class="logo">
-            </a>
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
-                aria-label="Toggle navigation" aria-controls="navbar-start" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-start">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="../quienes.html" class="nav-link active">
-                            Quienes Somos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./login.html" class="nav-link" id="login">Ingresar</a>
-                    </li>
-                    <ul class="navbar-nav">
-                        <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav" id="dropdown">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Registrarse
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="./music_register.html">Artista</a></li>
-                                        <li><a class="dropdown-item" href="./user_register.html">Cliente</a></li>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1" id="navbar">
+                <div class="overlay"></div> <!-- Div for transparency -->
+                <section class="container">
+                    <a href="/">
+                        <img src="/public/icon/logo.webp" alt="logo" class="logo">
+                    </a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-start" aria-label="Toggle navigation" aria-controls="navbar-start"
+                        aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar-start">
+                        <ul class="navbar-nav ms-auto gap-2">
+                            <li class="nav-item">
+                                <a href="../quienes.html" class="nav-link active">
+                                    Quienes Somos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./login.html" class="nav-link" id="login">Ingresar</a>
+                            </li>
+                            <ul class="navbar-nav">
+                                <div class="" id="dropdown">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Registrarse
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-dark"
+                                                aria-labelledby="navbarDarkDropdownMenuLink">
+                                                <li><a class="dropdown-item"
+                                                        href="../auth/music_register.html">Artista</a></li>
+                                                <li><a class="dropdown-item"
+                                                        href="../auth/user_register.html">Cliente</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>
-                            </ul>
-                        </div>
-            
-                        <div class="collapse navbar-collapse ">
-                            <ul class="navbar-nav" id="user-dropdown" style="display:none;">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">Perfil</a></li>
-                                        <li><a class="dropdown-item" href="#">Cuenta</a></li>
-                                        <li><a class="dropdown-item" id="logout" href="#">Cerrar sesión</a></li>
+                                </div>
+
+                                <div class="" id="user-dropdown" style="display:none;">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-dark"
+                                                aria-labelledby="navbarDarkDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#" id="profile">Perfil</a></li>
+                                                <li><a class="dropdown-item" href="#" id="account">Cuenta</a></li>
+                                                <li><a class="dropdown-item" id="logout" href="#">Cerrar sesión</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>
+                                </div>
                             </ul>
-                        </div>
-                    </ul>
-            </div>
-            
-            </section>
+                    </div>
+
+                </section>
             </nav>
 
     </header>
 
         <br>
         <main>
-            <h1>Queremos conocerte</h1>
-            <div class="container m-2">
-                <form id="multiStepForm" method="post">
-                    <!-- Sección 1 -->
-                <section id="section1" class="contianer w-50 vsbl">
-                    <h2>Hablanos de tu banda</h2>
-                    <!-- radiobuttons -->
-                    <article class="d-flex flex-row justify-content-evenly ">
+            <section class="vh-100 gradient-custom">
+                <div class="container py-4 h-100">
+                    <h1 class="text-center mb-4">Queremos conocerte</h1>
+                    <form id="multiStepForm" method="post">
+                        <!-- Sección 1 -->
+                        <section id="section1" class="container visible">
+                            <h2>Háblanos de tu banda</h2>
+                            <div class="row">
+                                <!-- radiobuttons -->
+                                <div class="col-md-6">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">Solista</label>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">Banda</label>
+                                    </div>
+                        <!-- band info -->
 
-                        <div class="form-check col-1 ">
-                            <input class="form-check-input" music-type="solo" type="radio" name="flexRadioDefault"
-                                id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                solista
-                            </label>
-                        </div>
-                        <div class="form-check col-2 ">
-                            <input class="form-check-input" music-type="band" type="radio" name="flexRadioDefault"
-                                id="flexRadioDefault2" checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                banda
-                            </label>
-                        </div>
-                    </article>
-                    <!-- band info -->
-                    <article class="d-flex f">
-                        <div class="me-5 ">
-                        <!-- band name -->
-                            <div class="form-group my-3 ">
-                                <label for="name">Nombre Artistico</label>
-                                <input type="text" class="form-control" id="artistic-name" placeholder="Nombre Artisitico"
-                                    required>
+                                    <div class="mb-3">
+                                        <!-- band name -->
+                                        <label for="name" class="form-label">Nombre Artístico</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Nombre Artístico" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="floatingSelect" class="form-label">Género</label>
+                                        <select class="form-select" id="artistic-genre" aria-label="Floating label select example" >
+                                            <option value="void" selected disabled>Género</option>
+                                            <option value="">No</option>
+                                            <option value="urbano">Urbano</option>
+                                            <option value="pop">Pop</option>
+                                            <option value="popular">Popular</option>
+                                            <option value="rock">Rock</option>
+                                            <option value="electronica">Electronica</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="floatingSelect" class="form-label">Género</label>
+                                        <select class="form-select" id="artistic-genre-2" aria-label="Floating label select example">
+                                            <option value="" selected disabled>Género</option>
+                                            <option value="">No</option>
+                                            <option value="urbano">Urbano</option>
+                                            <option value="pop">Pop</option>
+                                            <option value="popular">Popular</option>
+                                            <option value="rock">Rock</option>
+                                            <option value="electronica">Electronica</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="floatingSelect" class="form-label">Género</label>
+                                        <select class="form-select" id="artistic-genre-3" aria-label="Floating label select example">
+                                            <option value="" selected disabled>Género</option>
+                                            <option value="">No</option>
+                                            <option value="urbano">Urbano</option>
+                                            <option value="pop">Pop</option>
+                                            <option value="popular">Popular</option>
+                                            <option value="rock">Rock</option>
+                                            <option value="electronica">Electronica</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-center mb-3">
+                                        <figure class="w-50 mx-auto">
+                                            <img class="img-fluid" id="imagePreview" src="" alt="">
+                                        </figure>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="imageUpload" class="form-label">Agrega tu imagen imagen (Formato horizontal)</label>
+                                        <input class="form-control" type="file" accept="image/png, image/jpeg" id="imageUpload">
+                                    </div>
+                                    
+                                </div>
                             </div>
+                            <!-- to next section -->
+                            <div class="nxt-bck-btn mt-4">
+                                <button type="button" class="btn btn-secondary rounded-5">Anterior</button>
+                                <button type="button" class="btn btn-primary rounded-5">Siguiente</button>
+                            </div>
+                        </section>
+                        <!-- Sección 2 -->
+                        <section id="section2" class="container hidden">
+                            <!-- description of the band -->
+                            <h2>Sobre tu banda</h2>
+                             <!-- 500 char paragraph for the band -->
                             <div class="mb-3">
-                                <label for="floatingSelect" class="form-label">Género</label>
-                                <select class="form-select" id="artistic-genre" aria-label="Floating label select example" >
-                                    <option value="void" selected disabled>Género</option>
-                                    <option value="">No</option>
-                                    <option value="urbano">Urbano</option>
-                                    <option value="pop">Pop</option>
-                                    <option value="popular">Popular</option>
-                                    <option value="rock">Rock</option>
-                                    <option value="electronica">Electronica</option>
-                                </select>
+                                <label for="music-description" class="form-label">Descripción de la banda</label>
+                                <textarea class="form-control" id="music-description" rows="3" maxlength="500" placeholder="Una breve descripción de tu banda (máximo: 500 caracteres)"></textarea>
                             </div>
+                            <!-- validation of medellin address -->
                             <div class="mb-3">
-                                <label for="floatingSelect" class="form-label">Género</label>
-                                <select class="form-select" id="artistic-genre-2" aria-label="Floating label select example">
-                                    <option value="" selected disabled>Género</option>
-                                    <option value="">No</option>
-                                    <option value="urbano">Urbano</option>
-                                    <option value="pop">Pop</option>
-                                    <option value="popular">Popular</option>
-                                    <option value="rock">Rock</option>
-                                    <option value="electronica">Electronica</option>
-                                </select>
+                                <label for="address" class="form-label">Dirección de residencia en Medellín</label>
+                                <input type="text" class="form-control" id="address" placeholder="Calle, Cra ..." required>
                             </div>
+                            <!-- youtube-iframe -->
                             <div class="mb-3">
-                                <label for="floatingSelect" class="form-label">Género</label>
-                                <select class="form-select" id="artistic-genre-3" aria-label="Floating label select example">
-                                    <option value="" selected disabled>Género</option>
-                                    <option value="">No</option>
-                                    <option value="urbano">Urbano</option>
-                                    <option value="pop">Pop</option>
-                                    <option value="popular">Popular</option>
-                                    <option value="rock">Rock</option>
-                                    <option value="electronica">Electronica</option>
-                                </select>
+                                <label for="name" class="form-label">Iframe de YouTube</label>
+                                <input type="text" class="form-control" id="name" required>
                             </div>
-                        </div>
-
-                        <div class="band-image">
-                            <figure class="w-50 h-75 bandPhoto">
-                                <img class="object-fit-fill border rounded" id="imagePreview" src="" alt="">
-                            </figure>
-                            <div class="mb-3">
-                                <label for="imageUpload" class="form-label">Agrega tu imagen imagen (Formato horizontal)</label>
-                                <input class="form-control" type="file" accept="image/png, image/jpeg" id="imageUpload">
-                            </div>
-                        </div>
-                    </article>
-                <!-- to next section -->
-                    <div class="nxt-bck-btn  d-flex justify-content-end">
-                        <button type="button" btn-sec="2" class="btn btn-secondary rounded-5 hidden">Anterior</button>
-                        <button type="button" btn-sec="1" class="btn btn-primary rounded-5">Siguiente</button>
-                    </div>
-                </section>
-
-                    <!-- Sección 2 -->
-                <section id="section2" class="hidden container m-2 w-50 ">
-                    <!-- description of the band -->
-                    <h2>Sobre tu banda</h2>
-                <!-- 720 char paragraph for the band -->
-                    <div class="mb-3 ">
-                        <label for="music-description" class="form-label">Descripcion de la banda</label>
-                        <textarea class="form-control" id="music-description" rows="3" maxlength="500"
-                            placeholder="Una breve descripcion de tu banda(maximo: 500 caracteres)"></textarea>
-                    </div>
-                <!-- validation of medellin address -->
-                    <div class="form-group">
-                        <label for="address">Dirección de recidencia en Medellín</label>
-                        <input type="text" class="form-control" id="address" placeholder="calle,cra ...">
-                    </div>
-                <!-- youtube-iframe -->
-                    <article id="youtube-iframe" class="d-flex">
-                        <div class="form-group">
-                            <label for="name">Iframe de youtube</label>
-                            <input type="text" class="form-control" id="iframe" required>
-                        </div>
-                
-                    <!-- Button trigger modal helps -->
-                        <button type="button" class="btn bi bi-info-circle rounded-5" data-bs-toggle="modal"
-                            data-bs-target="#steps-for-iframe" title="Como conseguir un Iframe">
-                
-                        </button>
-                <!-- Modal -->
+                            <!-- Modal -->
                 <div class="modal fade " id="steps-for-iframe" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <!-- modal header -->
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Como obtener el ifrmae
-                                    de tu video </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <!-- modal body -->
-                            <div class="modal-body ">
-                                <ol>
-                                    <li>dirijete a tu video de youtube</li>
-                                    <li>Oprimite el boton de compartir
-                                        <img src="../../../public/img/iframe-tuto/stp1.png" alt="">
-                                    </li>
-                                    <li>
-                                        elije la opcion de "insertar"
-                                        <img src="../../../public/img/iframe-tuto/stp2.png" alt="">
-                                    </li>
-                                    <li>
-                                        oprime el boton de copiar y pegalo
-                                        <img src="../../../public/img/iframe-tuto/stp3.png" alt="">
-                                    </li>
-                                </ol>
-                            </div>
-                            <!-- modal footer -->
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary rounded-5" data-bs-dismiss="modal">Listo</button>
-                            </div>
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- modal header -->
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Como obtener el ifrmae
+                                de tu video </h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- modal body -->
+                        <div class="modal-body ">
+                            <ol>
+                                <li>dirijete a tu video de youtube</li>
+                                <li>Oprimite el boton de compartir
+                                    <img src="../../../public/img/iframe-tuto/stp1.png" alt="">
+                                </li>
+                                <li>
+                                    elije la opcion de "insertar"
+                                    <img src="../../../public/img/iframe-tuto/stp2.png" alt="">
+                                </li>
+                                <li>
+                                    oprime el boton de copiar y pegalo
+                                    <img src="../../../public/img/iframe-tuto/stp3.png" alt="">
+                                </li>
+                            </ol>
+                        </div>
+                        <!-- modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary rounded-5" data-bs-dismiss="modal">Listo</button>
                         </div>
                     </div>
                 </div>
-                </article>
-
-<div class="nxt-bck-btn">
-    <button type="button" btn-sec="2" class="btn btn-secondary rounded-5">Anterior</button>
-    <button type="button" btn-sec="2" class="btn btn-primary rounded-5">Siguiente</button>
-
-</div>
-
-</section>
-
-<!-- Sección 3 -->
-                <section id="section3" class="hidden container m-2 w-50 ">
-                <!-- about social networks -->
-                    <h2>Tus redes sociales</h2>
-                <!-- Musicican social media links -->
-                    <article>
-                    <!-- instagram -->
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-instagram"></i></i></span>
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="insta" placeholder="URL" required>
-                                <label default=""  for="floatingInputGroup1" aceptan>URL</label>
-                            </div>
-                        </div>
-                    <!-- spotify -->
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-spotify"></i></span>
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="spoty" placeholder="URL">
-                                <label default=""  for="floatingInputGroup1">URL</label>
-                            </div>
-                        </div>
-                    <!-- twiter -->
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-tiktok"></i></span>
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="tik" placeholder="URL">
-                                <label  default="" for="floatingInputGroup1">URL</label>
-                            </div>
-                        </div>
-                    <!-- facebook -->
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-facebook"></i></span>
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="face" placeholder="URL">
-                                <label default=""  for="floatingInputGroup1">URL</label>
-                            </div>
-                        </div>
-                    <!-- youtube -->
-                        <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-youtube"></i></i></span>
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="ytb" placeholder="URL">
-                                <label  default="" for="floatingInputGroup1">URL</label>
-                            </div>
-                        </div>
-                        
-                    </article>
-                <!-- to next section -->
-                    <div class="nxt-bck-btn  d-flex justify-content-end">
-                        <button type="button" btn-sec="3" class="btn btn-secondary rounded-5">Anterior</button>
-                        <button type="button" btn-sec="3" class="btn btn-primary rounded-5">Siguiente</button>
+            </div>
+                        </section>
+    <!-- Sección 3 -->
+    <section id="section3" class="hidden container">
+        <!-- about social networks -->
+            <h2>Tus redes sociales</h2>
+        <!-- Musicican social media links -->
+            <article>
+            <!-- instagram -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-instagram"></i></i></span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="insta" placeholder="URL" required>
+                        <label default=""  for="floatingInputGroup1" aceptan>URL</label>
                     </div>
-                </section>
+                </div>
+            <!-- spotify -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-spotify"></i></span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="spoty" placeholder="URL">
+                        <label default=""  for="floatingInputGroup1">URL</label>
+                    </div>
+                </div>
+            <!-- twiter -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-tiktok"></i></span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="tik" placeholder="URL">
+                        <label  default="" for="floatingInputGroup1">URL</label>
+                    </div>
+                </div>
+            <!-- facebook -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-facebook"></i></span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="face" placeholder="URL">
+                        <label default=""  for="floatingInputGroup1">URL</label>
+                    </div>
+                </div>
+            <!-- youtube -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-youtube"></i></i></span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="ytb" placeholder="URL">
+                        <label  default="" for="floatingInputGroup1">URL</label>
+                    </div>
+                </div>
+                
+            </article>
+        <!-- to next section -->
+            <div class="nxt-bck-btn  d-flex justify-content-end">
+                <button type="button" btn-sec="3" class="btn btn-secondary rounded-5">Anterior</button>
+                <button type="button" btn-sec="3" class="btn btn-primary rounded-5">Siguiente</button>
+            </div>
+        </section>
+           <!-- Sección 4 -->
+           <section id="section4" class="hidden container ">
+            <!-- account and payment -->
+            <h2>Datos de la cuenta</h2>
+            <article id="payment-options">
+                <h3>Metodos de pago</h3>
+            <!-- payment -->
+                <div id="opciones-pago" class="border border-primary rounded-4">
+                    <h4>Suscripcion al servicio: <strong>$10.000 </strong>cop</h4>
+                <!-- paymet ways -->
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=LcHLwsJ5zAGIu3ZM"  target="_blank"><button type="button" class="btn btn-primary rounded-5">Nequi</button></a>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?si=LcHLwsJ5zAGIu3ZM" target="_blank"><button type="button" class="btn btn-primary rounded-5">Tarjeta de Credito</button></a>
+                <a href="https://youtu.be/dQw4w9WgXcQ?si=LcHLwsJ5zAGIu3ZM" target="_blank"><button type="button" class="btn btn-primary rounded-5">Tarjeta Debito</button></a>
+                </div>
+            </article>
+        <!-- account data -->
+            <article id="data-acount">
+                <h3>Datos de la cuenta</h3>
+            <!-- User Name -->
+                <div class="form-group my-3">
+                    <label for="nickname">Nombre de usuario(Diferente a el nombre de banda)</label>
+                    <input type="text" class="form-control" id="nickname" placeholder="Nombre de usuario" required>
+                </div>
+            <!-- WhatsApp -->
+                <div class="mb-3">
+                    <label for="phone" class="form-label">WhatsApp</label>
+                    <input type="tel" class="form-control" id="phone"
+                        aria-describedby="WhatsApp">
+                    <div id="emailHelp" class="form-text">Por este numero te podran contactar
+                    </div>
+                </div>
+            <!-- email -->
+                <div id="email-verification">
+                    <div class="mb-3">
+                        <label for="mail" class="form-label">Correo electronico
+                        </label>
+                        <input type="email" class="form-control" id="mail"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Este correo sera privado</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confi-mail" class="form-label">Verificar Correo</label>
+                        <input type="email" class="form-control" id="confi-mail"
+                            aria-describedby="emailHelp">
 
-                <!-- Sección 4 -->
-                <section id="section4" class="hidden container m-2 w-50">
-                    <!-- account and payment -->
-                    <h2>Datos de la cuenta</h2>
-                    <article id="payment-options">
-                        <h3>Metodos de pago</h3>
-                    <!-- payment -->
-                        <div id="opciones-pago" class="border border-primary rounded-4">
-                            <h4>Suscripcion al servicio: <strong>$10.000 </strong>cop</h4>
-                        <!-- paymet ways -->
-                            <a href="https://youtu.be/dQw4w9WgXcQ?si=LcHLwsJ5zAGIu3ZM"  target="_blank"><button type="button" class="btn btn-primary rounded-5">Nequi</button></a>
-                            <a href="https://youtu.be/dQw4w9WgXcQ?si=LcHLwsJ5zAGIu3ZM" target="_blank"><button type="button" class="btn btn-primary rounded-5">Tarjeta de Credito</button></a>
-                        <a href="https://youtu.be/dQw4w9WgXcQ?si=LcHLwsJ5zAGIu3ZM" target="_blank"><button type="button" class="btn btn-primary rounded-5">Tarjeta Debito</button></a>
-                        </div>
-                    </article>
-                <!-- account data -->
-                    <article id="data-acount">
-                        <h3>Datos de la cuenta</h3>
-                    <!-- User Name -->
-                        <div class="form-group my-3">
-                            <label for="nickname">Nombre de usuario(Diferente a el nombre de banda)</label>
-                            <input type="text" class="form-control" id="nickname" placeholder="Nombre de usuario" required>
-                        </div>
-                    <!-- WhatsApp -->
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">WhatsApp</label>
-                            <input type="tel" class="form-control" id="phone"
-                                aria-describedby="WhatsApp">
-                            <div id="emailHelp" class="form-text">Por este numero te podran contactar
-                            </div>
-                        </div>
-                    <!-- email -->
-                        <div id="email-verification">
-                            <div class="mb-3">
-                                <label for="mail" class="form-label">Correo electronico
-                                </label>
-                                <input type="email" class="form-control" id="mail"
-                                    aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">Este correo sera privado</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="confi-mail" class="form-label">Verificar Correo</label>
-                                <input type="email" class="form-control" id="confi-mail"
-                                    aria-describedby="emailHelp">
+                    </div>
+                </div>
+            <!-- password -->
+                <div id="pssw-validation" class="d-flex justify-content-evenly">
+                    <div class="mb-3">
+                        <label for="psw" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="psw">
+                    </div>
+                    <div class="mb-3">
+                        <label for="psw-verifier" class="form-label">Confirmar Contraseña</label>
+                        <input type="password" class="form-control" id="psw-verifier">
+                    </div>
+                </div>
+            <!-- privacy aggrement-->
+                <div class="mb-3 form-check">
+                    <h5>Politicas de privacidad y condiciones del servicio</h5>
+                    <input type="checkbox" class="form-check-input" id="term-condi-service" required>
+                    <label class="form-check-label" for="term-condi-service">acepto los <a href="">Terminos y
+                            condiciones</a> del servicio</label>
+                </div>
+            <!-- submition -->
+                <div class="nxt-bck-btn  d-flex justify-content-end">
+                    <button type="button" btn-sec="4" class="btn btn-secondary rounded-5">Anterior</button>
+                    <button type="submit" class="btn btn-success rounded-5">Enviar</button>
+                </div>
 
-                            </div>
-                        </div>
-                    <!-- password -->
-                        <div id="pssw-validation" class="d-flex justify-content-evenly">
-                            <div class="mb-3">
-                                <label for="psw" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="psw">
-                            </div>
-                            <div class="mb-3">
-                                <label for="psw-verifier" class="form-label">Confirmar Contraseña</label>
-                                <input type="password" class="form-control" id="psw-verifier">
-                            </div>
-                        </div>
-                    <!-- privacy aggrement-->
-                        <div class="mb-3 form-check">
-                            <h5>Politicas de privacidad y condiciones del servicio</h5>
-                            <input type="checkbox" class="form-check-input" id="term-condi-service" required>
-                            <label class="form-check-label" for="term-condi-service">acepto los <a href="">Terminos y
-                                    condiciones</a> del servicio</label>
-                        </div>
-                    <!-- submition -->
-                        <div class="nxt-bck-btn  d-flex justify-content-end">
-                            <button type="button" btn-sec="4" class="btn btn-secondary rounded-5">Anterior</button>
-                            <button type="submit" class="btn btn-success rounded-5">Enviar</button>
-                        </div>
-
-                </section>
-            </form>
-        </div>
-    </main>
+        </section>
+    </form>
+</div>
+</main>
 
     <footer class=" footer text-center text-lg-start">
         <!-- Grid container -->
@@ -440,6 +422,7 @@
     </footer>
     <script type="module" src="../../js/main.js"></script>
     <script type="module" src="../../js/registerMusic.js"></script>
+    <script type="module" src="../../js/logout.js"></script>
 </body>
 
 </html>
