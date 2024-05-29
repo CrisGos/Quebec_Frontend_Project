@@ -6,7 +6,18 @@
 <div>
 <h2>Starting point</h2>
 <bold>In the world of music, artists who are dedicated to this profession usually don't have a portfolio to offer their services to potential employers or companies that can hire them.</bold>
-<p> The currency of live events, every day are events that need good musicians and music for their events.</p>
+<p> The currency of live events, every day are events that need good musicians and music for their events.
+Many times when we are looking for live music for some event(small and big scale), both parts finds themselves in a problem: </p>
+<ul>
+  <li>
+    Musicians don´t have a portfolio for their services, showing the music they play
+  </li>
+  <li>
+    Employers and companies don't have any idea of the musician they are hiring when may be better options that fit better your event
+  </li>
+</ul>
+
+
   
 </div>
 
