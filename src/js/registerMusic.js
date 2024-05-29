@@ -231,6 +231,7 @@ async function registerMusician(musician) {
         },
         body: JSON.stringify(musician),
     })
+    window.location.href="./src/pages/auth/login.html"
 
     
 }
