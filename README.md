@@ -1,5 +1,4 @@
-# Quebec_Frontend_Project
-Team project for Riwi training
-## MusicMarket
-### Musica en vivo a un click
-
+<div aling="center">
+<img src="./public/icon/logo.webp" alt="MusicMarket Logo">
+# Music Market
+</div> 
