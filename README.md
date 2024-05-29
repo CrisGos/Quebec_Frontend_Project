@@ -16,7 +16,8 @@ Many times when we are looking for live music for some event(small and big scale
     Employers and companies don't have any idea of the musician they are hiring when may be better options that fit better your event
   </li>
 </ul>
-
+<p> In <bold>Music Market</bold>, Our objective is to be the connection between musicians and new opportunities to play their music and make themselves known.<br>
+the MUSIC MARKET platform is an opportunity to sell musical services on a small and large scale, where potential contractors can have a reference that will encourage them to hire the services of these musicians who will have their profile on our platform.p>
 
   
 </div>
