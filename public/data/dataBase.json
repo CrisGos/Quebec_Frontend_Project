@@ -26,32 +26,38 @@
     {
       "musicGenre": "Urbano",
       "route": "../../public/img/urbano-genre.webp",
-      "idGenre": "genero-1"
+      "idGenre": "genero-1",
+      "id": "85a4"
     },
     {
       "musicGenre": "Pop",
       "route": "../../public/img/pop-genre.webp",
-      "idGenre": "genero-2"
+      "idGenre": "genero-2",
+      "id": "716f"
     },
     {
       "musicGenre": "Popular",
       "route": "../../public/img/popular-genre.webp",
-      "idGenre": "genero-3"
+      "idGenre": "genero-3",
+      "id": "f33c"
     },
     {
       "musicGenre": "Tropical",
       "route": "../../public/img/tropical-genre.webp",
-      "idGenre": "genero-4"
+      "idGenre": "genero-4",
+      "id": "cde1"
     },
     {
       "musicGenre": "Rock",
       "route": "../../public/img/rock-genre.webp",
-      "idGenre": "genero-5"
+      "idGenre": "genero-5",
+      "id": "773b"
     },
     {
       "musicGenre": "Electronica",
       "route": "../../public/img/electronica-genre.webp",
-      "idGenre": "genero-6"
+      "idGenre": "genero-6",
+      "id": "34ba"
     }
   ],
   "artists": [
