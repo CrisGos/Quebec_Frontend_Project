@@ -35,6 +35,23 @@ On the home page there will be a section containing an initial mosaic cover that
   <li>creation of user company or contractor</li>
 </ul>
 
+<h3>Companies</h3>
+<p>A company or natural person must register the following data to register</p>
+<ul>
+  <li>ID or company serial name</li>
+  <li>name of the company or person</li>
+  (since for the moment we will be in Medellin, we will omit the city, and the country)
+  <li>e-mail address</li>
+  <li>password</li>
+</ul>
+<h3>Musicians</h3>
+<p>Our Most valuable resource for the page are the musicians, because of that, we get the most valuable information about them, to ease the process of the user to find and hire new musicians  </p>
+
+
+<ul>
+  <li></li>
+</ul>
+
 </div>
 
   
