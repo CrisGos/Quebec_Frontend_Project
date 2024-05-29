@@ -76,7 +76,8 @@ function prevSection(currentSection) {
 }
 
 function validateSection(section) {
-    const inputs = section.querySelectorAll('input[required]')
+
+    const inputs = section.querySelectorAll('input')
     for (let input of inputs) {
         if (!input.checkValidity()) {
             input.reportValidity()
@@ -106,9 +107,9 @@ document.querySelector('#imageUpload').addEventListener('change', function (even
 //artist
 const name=formRegister.querySelector('#artistic-name')
 // genres
-const genrero=formRegister.querySelector('#artistic-genre')
-const genrero2=formRegister.querySelector('#artistic-genre-2')
-const genrero3=formRegister.querySelector('#artistic-genre-3')
+const g1=formRegister.querySelector('#artistic-genre')
+const g2=formRegister.querySelector('#artistic-genre-2')
+const g3=formRegister.querySelector('#artistic-genre-3')
 //image
 const img=formRegister.querySelector('#imageUpload') // la ultima en organizar
 //description
@@ -123,67 +124,114 @@ const tik=formRegister.querySelector('#tik')
 const ytb=formRegister.querySelector('#ytb')
 //nick
 const nik=formRegister.querySelector('#nickname')
+//phone
+const phone=formRegister.querySelector('#phone')
 //email
 const mail=formRegister.querySelector('#mail')
 const mailConfi=formRegister.querySelector('#confi-mail')
 
 const psw=formRegister.querySelector('#psw')
 const pswConfi=formRegister.querySelector('#psw-verifier')
-
-function lookForDefault(section) {
-    if(section.value=== null || section.value=== undefined){
+function validation(secCounter) {
+    if (secCounter==1) {
 
     }
-
+    if (secCounter==2) {
+        
+    }
+    if (secCounter==3) {
+        
+    }
+    if (secCounter==4) {
+        
+    }
 }
 
-
+function genroVal(gen) {
+    if (gen.value== "void") {
+        alert('problema con generos')
+    }
+    
+}
 
 // creacion json
 formRegister.addEventListener('submit',async(event)=>{
     event.preventDefault()
-    console.log(name,genrero,genrero2,genrero3,img,bandDesc,iframe,insta,spoty,nik,mail,psw)
+    const newMusician = {
+        
+        username: nik.value,
+        logInfo: {
+            email: mail.value,
+            password: psw.value
+        },
+        mainInfo: {
+            name:name.value,
+            photo: img.value ,
+            biography: bandDesc.value
+        },
+        genres: {
+            genre1: g1.value,
+            genre2: g2.value,
+            genre3:g3.value 
+        },
+        info: {
+            video:iframe.value ,
+            phoneNumber: phone.value
+        },
+        socialMedia: {
+        instagram: insta.value ,
+        facebook: face.value ,
+        spotify: spoty.value ,
+        tiktok: tik.value ,
+        youtube:ytb.value 
+    }
+}
+    
+    console.log(newMusician);
+    registerMusician(newMusician)
     // await registerUser(username, fullName, email, password)
     //     window.location.href="./login.html"
 
 })
 
-// async function registerMusician(username, email, password, bandName, photo,biography,g1,g2,g3,iframe,phone,insta,spoty,face,tik, ) {
-//     const newMusician = {
-        
-//         username: username.value,
-//         logInfo: {
-//             email: email.value,
-//             password: password.value
-//         },
-//         mainInfo: {
-//             name:bandName,
-//             photo: ,
-//             biography: 
-//         },
-//         genres: {
-//             genre1: ,
-//             genre2: ,
-//             genre3: 
-//         },
-//         info: {
-//             video: ,
-//             phoneNumber: 
-//         },
-//         socialMedia: {
-//         instagram: ,
-//         facebook: ,
-//         spotify: ,
-//         tiktok: ,
-//         youtube: 
+// {
+//     "username": "Kaligos",
+//     "logInfo": {
+//         "email": "castro@int",
+//         "password": "123"
+//     },
+//     "mainInfo": {
+//         "name": "tumba",
+//         "photo": "C:\\fakepath\\Screenshot from 2024-05-28 14-36-20.png",
+//         "biography": "213"
+//     },
+//     "genres": {
+//         "genre1": "Género",
+//         "genre2": "",
+//         "genre3": "rock"
+//     },
+//     "info": {
+//         "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bxCsPVgwC5Y?si=yu28MrmpTtyUHdHZ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
+//         "phoneNumber": "3224495321"
+//     },
+//     "socialMedia": {
+//         "instagram": "https://www.instagram.com/",
+//         "facebook": "",
+//         "spotify": "",
+//         "tiktok": "",
+//         "youtube": ""
 //     }
+// }
 
-// }
-//     await fetch("http://localhost:3000/artists", {
-//         method: 'POST',
-//         headers: {
-//             "Content-Type": "application/json"
-//         },
-//         body: JSON.stringify(newMusician),
-//     })
-// }
+async function registerMusician(musician) {
+    await fetch("http://localhost:3000/artists", {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(musician),
+    })
+
+    
+}
+    

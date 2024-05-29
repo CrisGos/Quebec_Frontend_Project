@@ -109,7 +109,7 @@
                         </div>
                     </article>
                     <!-- band info -->
-                    <article class="d-flex flex-row">
+                    <article class="d-flex f">
                         <div class="me-5 ">
                         <!-- band name -->
                             <div class="form-group my-3 ">
@@ -117,7 +117,43 @@
                                 <input type="text" class="form-control" id="artistic-name" placeholder="Nombre Artisitico"
                                     required>
                             </div>
-                        
+                            <div class="mb-3">
+                                <label for="floatingSelect" class="form-label">Género</label>
+                                <select class="form-select" id="artistic-genre" aria-label="Floating label select example" >
+                                    <option value="void" selected disabled>Género</option>
+                                    <option value="">No</option>
+                                    <option value="urbano">Urbano</option>
+                                    <option value="pop">Pop</option>
+                                    <option value="popular">Popular</option>
+                                    <option value="rock">Rock</option>
+                                    <option value="electronica">Electronica</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="floatingSelect" class="form-label">Género</label>
+                                <select class="form-select" id="artistic-genre-2" aria-label="Floating label select example">
+                                    <option value="" selected disabled>Género</option>
+                                    <option value="">No</option>
+                                    <option value="urbano">Urbano</option>
+                                    <option value="pop">Pop</option>
+                                    <option value="popular">Popular</option>
+                                    <option value="rock">Rock</option>
+                                    <option value="electronica">Electronica</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="floatingSelect" class="form-label">Género</label>
+                                <select class="form-select" id="artistic-genre-3" aria-label="Floating label select example">
+                                    <option value="" selected disabled>Género</option>
+                                    <option value="">No</option>
+                                    <option value="urbano">Urbano</option>
+                                    <option value="pop">Pop</option>
+                                    <option value="popular">Popular</option>
+                                    <option value="rock">Rock</option>
+                                    <option value="electronica">Electronica</option>
+                                </select>
+                            </div>
+                        </div>
 
                         <div class="band-image">
                             <figure class="w-50 h-75 bandPhoto">
@@ -248,7 +284,7 @@
                         </div>
                     <!-- youtube -->
                         <div class="input-group mb-3">
-                            <span class="input-group-text"><i class="bi bi-facebook"></i></span>
+                            <span class="input-group-text"><i class="bi bi-youtube"></i></i></span>
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="ytb" placeholder="URL">
                                 <label  default="" for="floatingInputGroup1">URL</label>
@@ -283,13 +319,13 @@
                         <h3>Datos de la cuenta</h3>
                     <!-- User Name -->
                         <div class="form-group my-3">
-                            <label for="nickname">NOmbre de usuario(Diferente a el nombre de banda)</label>
+                            <label for="nickname">Nombre de usuario(Diferente a el nombre de banda)</label>
                             <input type="text" class="form-control" id="nickname" placeholder="Nombre de usuario" required>
                         </div>
                     <!-- WhatsApp -->
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">WhatsApp</label>
-                            <input type="tel" class="form-control" id="exampleInputEmail1"
+                            <label for="phone" class="form-label">WhatsApp</label>
+                            <input type="tel" class="form-control" id="phone"
                                 aria-describedby="WhatsApp">
                             <div id="emailHelp" class="form-text">Por este numero te podran contactar
                             </div>
