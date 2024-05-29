@@ -194,7 +194,7 @@ formRegister.addEventListener('submit',async(event)=>{
     //     window.location.href="./login.html"
 
 })
-
+//   example 
 // {
 //     "username": "Kaligos",
 //     "logInfo": {
