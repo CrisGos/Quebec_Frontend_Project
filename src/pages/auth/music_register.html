@@ -159,10 +159,15 @@
                                             <img class="img-fluid" id="imagePreview" src="" alt="">
                                         </figure>
                                     </div>
+                                    
                                     <div class="mb-3">
-                                        <label for="imageUpload" class="form-label">Agrega tu imagen imagen (Formato horizontal)</label>
-                                        <input class="form-control" type="file" accept="image/png, image/jpeg" id="imageUpload">
-                                    </div>
+                                        <label for="imageUpload" class="form-label">URL de imagen</label>
+                                        <div class="input-group">
+                                          <span class="input-group-text" id="image-addon3">URL</span>
+                                          <input type="url" class="form-control" id="imageUpload" aria-describedby="image-addon3 image-addon4">
+                                        </div>
+                                        <div class="form-text" id="image-addon4">Debes subir una imagen de un servidor (pagina) externo.</div>
+                                      </div>
                                     
                                 </div>
                             </div>
