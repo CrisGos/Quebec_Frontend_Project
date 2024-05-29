@@ -4,6 +4,7 @@ import '../scss/registerMusic.scss'
 
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
+
 let formRegister = document.querySelector("form")
 let secCounter = 1
 let arrsection = formRegister.querySelectorAll('section')
@@ -193,7 +194,7 @@ formRegister.addEventListener('submit',async(event)=>{
     //     window.location.href="./login.html"
 
 })
-
+//   example 
 // {
 //     "username": "Kaligos",
 //     "logInfo": {
@@ -231,7 +232,7 @@ async function registerMusician(musician) {
         },
         body: JSON.stringify(musician),
     })
-    window.location.href ="/"
+    window.location.href="./src/pages/auth/login.html"
 
     
 }
