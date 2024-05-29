@@ -6,8 +6,8 @@ function controlHeader() {
      // Hide login buttons and registration menu
       document.getElementById("login").style.display = "none";
       document.getElementById("dropdown").style.display = "none";
-      document.getElementById("the-contractor").style.display = "none";
-      document.getElementById("the-artist").style.display = "none";
+      // document.getElementById("the-contractor").style.display = "none";
+      // document.getElementById("the-artist").style.display = "none";
      // Show new drop-down menu with user name
       const userData = JSON.parse(userOnline);
       const username = userData.username;
