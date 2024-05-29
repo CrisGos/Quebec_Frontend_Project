@@ -1,12 +1,13 @@
 // Function to control header buttons
-function manejarEncabezado() {
+function controlHeader() {
     // Check for data in localStorage to determine if a user is online
     const userOnline = localStorage.getItem("userOnline");
     if (userOnline) {
      // Hide login buttons and registration menu
       document.getElementById("login").style.display = "none";
       document.getElementById("dropdown").style.display = "none";
-  
+      document.getElementById("the-contractor").style.display = "none";
+      document.getElementById("the-artist").style.display = "none";
      // Show new drop-down menu with user name
       const userData = JSON.parse(userOnline);
       const username = userData.username;
@@ -26,5 +27,5 @@ function manejarEncabezado() {
   }
   
   // Execute the function when loading the DOM
-  document.addEventListener("DOMContentLoaded", manejarEncabezado);
+  document.addEventListener("DOMContentLoaded", controlHeader);
   

@@ -152,6 +152,15 @@
     text-decoration: none;
 }
 
+.footer{
+    color:var(--white-color);
+    font-size: 1em;
+  }
+
+  .footer a span{
+    color: var(--white-color);
+  }
+
 // giving responsive properties
 @media (max-width:400px){
 
