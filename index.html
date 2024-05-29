@@ -31,10 +31,10 @@
 
   <header class="header">
 
-<!-- navbar -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark  fixed-top  p-1" id="navbar">
 
-      <div class="overlay"></div> <!-- Div para la transparencia -->
+      <div class="overlay"></div> <!-- Div for transparency -->
       <section class="container">
         <a href="/">
           <img src="/public/icon/logo.webp" alt="logo" class="logo">
@@ -56,7 +56,7 @@
             <ul class="navbar-nav">
               <div class="" id="dropdown">
 
-                <ul class="navbar-nav" >
+                <ul class="navbar-nav">
 
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
@@ -64,8 +64,10 @@
                       Registrarse
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                      <li><a class="dropdown-item" href="./src/pages/auth/music_register.html">Artista</a></li>
-                      <li><a class="dropdown-item" href="./src/pages/auth/user_register.html">Cliente</a></li>
+                      <li><a class="dropdown-item" href="/src/pages/auth/artist_account.html" id="profile">Artista</a>
+                      </li>
+                      <li><a class="dropdown-item" href="/src/pages/auth/user_register.html" id="acount">Cliente</a>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -73,7 +75,7 @@
 
               <div class="" id="user-dropdown" style="display:none;">
 
-                <ul class="navbar-nav" >
+                <ul class="navbar-nav">
 
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
@@ -96,15 +98,7 @@
     <div class="container mt-5">
       <div class="row mt-5">
         <article class="col-sm-6 mt-5 ">
-          <!-- <select class="form-select estyl-select w-50 text-center m-5" aria-label="Default select example">
-                  <option selected class="text-center w-25">Buscar artista por genero</option>
-                  <option value="1">Urbano</option>
-                  <option value="2">Pop</option>
-                  <option value="3">Popular</option>
 
-                  <option value="4">Rock</option>
-                  <option value="5">Electronica</option>
-                </select> -->
           <a href="./src/pages/genero.html"><input class="btn  artist-genre" value="Ver artistas por genero"
               type="submit" id="genre-select" class="artist-genre"></input></a>
 
@@ -114,8 +108,9 @@
           <h3 class="subtitle mb-5">Realiza tus contrataciones de manera segura. <br>
             Te conectamos con el mejor talento de Medellín.</h3>
           <div class="container d-flex justify-content-center gap-2">
-            <a class="btn btn-style  w-25" href="./src/pages/auth/login.html" type="button">Quiero contratar</a>
-            <a class="btn  btn-style w-25" href="./src/pages/auth/login.html">Soy artista</a>
+            <a class="btn btn-style  w-25" href="./src/pages/auth/login.html" type="button" id="the-contractor">Quiero
+              contratar</a>
+            <a class="btn  btn-style w-25" href="./src/pages/auth/login.html" id="the-artist">Soy artista</a>
           </div>
         </div>
 
@@ -126,38 +121,108 @@
   <!-- Start main -->
   <main class="main">
     <!-- Start carousel image -->
-    <article class="artist w-70 p-5">
-      <div id="carouselExampleAutoplaying justify-content-center " class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active d-flex flex-wrap">
-            <img src="/public/img/concert.webp" class="d-block w-25" alt="...">
-            <img src="/public/img/dj.webp" class="d-block w-25" alt="...">
-            <img src="/public/img/dj.webp" class="d-block w-25" alt="...">
-            <img src="/public/img/dj.webp" class="d-block w-25" alt="...">
+    <!--  -->
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-2">
+              <div class="card flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img src="/public/img/evan_soto.webp" class="card-img-top" alt="Card image">
+                      </div>
+                      <div class="flip-card-back">
+                          <div class="card-body">
+                              <h5 class="card-title">Evann Soto</h5>
+                              <p class="card-text">Genero: Urbano</p>
+                              <p class="card-text"><small class="text-muted">Disfruta de Buena Música</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="carousel-item d-flex flex-wrap">
-            <img src="/public/img/laura_escobar.webp" class="d-block w-25" alt="...">
-            <img src="/public/img/electronica-genre.webp" class="d-block w-25" alt="...">
-            <img src="/public/img/genero_background.webp" class="d-block w-25" alt="...">
-            <img src="/public/img/guitar.webp" class="d-block w-25" alt="...">
+          <div class="col-md-2">
+              <div class="card flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img src="/public/img/nar_marina.webp" class="card-img-top" alt="Card image">
+                      </div>
+                      <div class="flip-card-back">
+                          <div class="card-body">
+                              <h5 class="card-title">Nar Marina</h5>
+                              <p class="card-text">Genero:Pop-R&B</p>
+                              <p class="card-text"><small class="text-muted">Disfruta de buena música</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+          <div class="col-md-2">
+              <div class="card flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img src="/public/img/seone.webp" class="card-img-top" alt="Card image">
+                      </div>
+                      <div class="flip-card-back">
+                          <div class="card-body">
+                              <h5 class="card-title">Seone</h5>
+                              <p class="card-text">Genero:Urbano</p>
+                              <p class="card-text"><small class="text-muted">Disfruta buena música</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev" id="carouselExampleAutoplaying">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next" id="carouselExampleAutoplaying">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </article>
+          <div class="col-md-2">
+              <div class="card flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img src="/public/img/solar_ruben.webp" class="card-img-top" alt="Card image">
+                      </div>
+                      <div class="flip-card-back">
+                          <div class="card-body">
+                              <h5 class="card-title">Laura Escobar</h5>
+                              <p class="card-text">Genero: Tropical</p>
+                              <p class="card-text"><small class="text-muted">Disfruta de buena música</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2">
+              <div class="card flip-card">
+                  <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                          <img src="/public/img/tropical-genre.webp" class="card-img-top" alt="Card image">
+                      </div>
+                      <div class="flip-card-back text-center">
+                          <div class="card-body">
+                              <h5 class="card-title">Combi Orquesta</h5>
+                              <p class="card-text">Genero:Tropical</p>
+                              <p class="card-text"><small class="text-muted">Disfruta de buena música</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
+          <div class="col-md-2">
+            <div class="card flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/public/img/mariachi_medellin_show.webp" class="card-img-top" alt="Card image">
+                    </div>
+                    <div class="flip-card-back text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Mariachi Medellín</h5>
+                            <p class="card-text">Genero:Popular</p>
+                            <p class="card-text"><small class="text-muted">Disfruta de buena música</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
     <section class="two-parts p-3 container ">
       <div class="row">
         <article class="right col-sm-6 p-5 how">
@@ -166,7 +231,7 @@
           </h2>
           <p class="subtitle">
             Te ayudamos a conectar tu talento con contratantes a nivel local.</p>
-          <p>Te conectamos con músicos profesionales de Medellín.
+          <p class="subtitle">Te conectamos con músicos profesionales de Medellín.
             Queremos ser parte del crecimiento de tu negocio o evento musical.</p>
           <a class="btn btn-conocer" type="button" href="/src/pages/funciona.html">Conocer Más</a>
         </article>
@@ -191,10 +256,10 @@
 
           <ul class="list-unstyled">
             <li>
-              <a href="./src/pages/auth/music_register.html" class="text-body"><span>Promociona tu talento</span></a>
+              <a href="/src/pages/auth/artist_account.html" class="text-body"><span>Promociona tu talento</span></a>
             </li>
             <li>
-              <a href="./src/pages/auth/music_register.html" class="text-body"><span>Registrate</span></a>
+              <a href="./src/pages/auth/user_register.html" class="text-body"><span>Registrate</span></a>
             </li>
           </ul>
         </div>

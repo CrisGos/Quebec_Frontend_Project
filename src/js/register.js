@@ -1,6 +1,6 @@
-//sacar el formulario
+//extract the form
 const form = document.getElementById("register-form")
-//sacar los input
+//extract the input
 const username = document.getElementById("username")
 const fullName = document.getElementById("fullname")
 const email = document.getElementById("email")
@@ -13,13 +13,13 @@ form.addEventListener("submit", async (event) => {
     const checkEmail = await validateEmail(email)
 
     if (checkPasswords === true && checkEmail == true) {
-        //acá llamamos a la función que nos guarda un nuevo usuario
+          //here we call the function that saves us a new user
         await registerUser(username, fullName, email, password)
-        window.location.href="./login.html"
+        window.location.href = "./login.html"
     }
 })
 
-//valida que las contraseñas sean iguales
+//validates that the passwords are the same
 function validatePassword(password, confirmPasword) {
     if (password.value === confirmPasword.value) {
         return true
@@ -27,10 +27,10 @@ function validatePassword(password, confirmPasword) {
         return false
     }
 }
-//valida que el correo que no exista
+//validates mail that does not exist
 async function validateEmail(email) {
-    const response = await fetch(`http://localhost:3000/users?email=${email.value}`)//traemos todos lo usuarios o el dato específico que requerimos
-    const data = await response.json()//pasamos de json a javaScript
+    const response = await fetch(`http://localhost:3000/users?email=${email.value}`)
+    const data = await response.json()
 
     if (data.length === 0) {
         return true
