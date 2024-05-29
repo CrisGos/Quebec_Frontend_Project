@@ -56,7 +56,6 @@
   ],
   "artists": [
     {
-      "id": "586f89a3-ef61-4f51-9c4c-1e7024f6e107",
       "username": "LauraEscobar",
       "logInfo": {
         "email": "LauraEscobar@gmail.com",
@@ -65,7 +64,7 @@
       "mainInfo": {
         "name": "Laura Escobar",
         "photo": "../../public/img/laura_escobar.webp",
-        "biography": "Laura Escobar nació como cantante en 2015 en el colegio de la UPB, ha participado en eventos en múltiples ciudades de Colombia y España, ha sido solista y ha pertenecido a grupos. Tiene un repertorio muy versátil con múltiples géneros."
+        "biography": "Laura Escobar nació como cantante en 2015 en la upb, ha participado en eventos en múltiples ciudades de Colombia y España, ha sido solista y ha pertenecido a grupos. Tiene un repertorio muy versátil con múltiples géneros."
       },
       "genres": {
         "genre1": "Pop",
@@ -82,7 +81,8 @@
         "spotify": "",
         "tiktok": "",
         "youtube": "https://www.youtube.com/@laurita961"
-      }
+      },
+      "id": "586f89a3-ef61-4f51-9c4c-1e7024f6e107"
     },
     {
       "id": "a1350f22-3c8f-4a2d-9de5-75cde8604c7c",
