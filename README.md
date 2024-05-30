@@ -2,6 +2,20 @@
 <img src="./public/icon/logo.webp" alt="MusicMarket Logo"/>
   <h1>Music Market</h1>
 </div>
+<div>
+  <h2>Our team</h2>
+  <ul>
+    <li>Narciris Mena: <a href="">Github</a></li>
+     <li>Alexis Soto: <a href="">Github</a></li>
+     <li>Cristian : <a href="">Github</a></li>
+     <li>Santiago C. Giraldo : <a href="">Github</a></li>
+  </ul>
+</div>
+<div>
+  <h2>Mock-up and work Dawsboard</h2>
+  Trello:
+  figma:
+</div>
 
 <div>
 <h2>Starting point</h2>
@@ -38,14 +52,14 @@ On the home page there will be a section containing an initial mosaic cover that
 <h3>Companies</h3>
 <p>A company or natural person must register the following data to register</p>
 <ul>
-  <li>ID or company serial name</li>
+  <li>ID or RUT(unitary tax register, since our service are focused in Medellin,Colombia)</li>
   <li>name of the company or person</li>
   (since for the moment we will be in Medellin, we will omit the city, and the country)
   <li>e-mail address</li>
   <li>password</li>
 </ul>
 <h3>Musicians</h3>
-<p>Our Most valuable resource for the page are the musicians, because of that, we get the most valuable information about them, to ease the process of the user to find and hire new musicians  </p>
+<p>Our Most valuable resource in this project are the musicians, because of that, we get the most valuable information about them, to ease the process of the user finding and hiring new musicians  </p>
 
 
 <ul>
