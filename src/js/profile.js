@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     artistsContainer.addEventListener("click", async (event) => {
         event.preventDefault();
-        alert("Hola");
         const response = await fetch(URL_DATABASE);
         const database = await response.json();
 
