@@ -5,16 +5,16 @@
 <div>
   <h2>Our team</h2>
   <ul>
-    <li>Narciris Mena: <a href="">Github</a></li>
-     <li>Alexis Soto: <a href="">Github</a></li>
-     <li>Cristian : <a href="">Github</a></li>
-     <li>Santiago C. Giraldo : <a href="">Github</a></li>
+    <li>Narciris Mena: <a href="https://github.com/SoyNar">Github</a></li>
+     <li>Alexis Soto: <a href="https://github.com/sotomen10">Github</a></li>
+     <li>Cristian : <a href="https://github.com/CrisGos">Github</a></li>
+     <li>Santiago C. Giraldo : <a href="https://github.com/SanDaws">Github</a></li>
   </ul>
 </div>
 <div>
   <h2>Mock-up and work Dawsboard</h2>
-  Trello:
-  figma:
+  Trello: <a href="https://trello.com/invite/b/djk4SDLl/ATTI6de6b47d91ba7fb2fb84419121ee10c04BA8770D/proyecto-quevec">Our trello</a>
+  figma: <a href="https://www.figma.com/design/5YyJVxJ9xeZhJcb6MtKW49/Project-Quevec?node-id=1669-162202&t=42m1EY9EbXhkF3ai-1">Our Figma</a>
 </div>
 
 <div>
@@ -49,24 +49,7 @@ On the home page there will be a section containing an initial mosaic cover that
   <li>creation of user company or contractor</li>
 </ul>
 
-<h3>Companies</h3>
-<p>A company or natural person must register the following data to register</p>
-<ul>
-  <li>ID or RUT(unitary tax register, since our service are focused in Medellin,Colombia)</li>
-  <li>name of the company or person</li>
-  (since for the moment we will be in Medellin, we will omit the city, and the country)
-  <li>e-mail address</li>
-  <li>password</li>
-</ul>
-<h3>Musicians</h3>
-<p>Our Most valuable resource in this project are the musicians, because of that, we get the most valuable information about them, to ease the process of the user finding and hiring new musicians  </p>
-
-
-<ul>
-  <li></li>
-</ul>
-
-</div>
+For more information about the proyect : <a href="https://drive.google.com/file/d/1HXdfwgw4P_JFh6LPYWoSLTYMxucD0tAy/view?usp=sharing">More info</a>
 
   
 </div>
