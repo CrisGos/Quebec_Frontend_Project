@@ -43,4 +43,4 @@ function controlHeader() {
 }
 
 // Execute the function when loading the DOM
-document.addEventListener("DOMContentLoaded", controlHeader);
+document.addEventListener("DOMContentLoaded", controlHeader);
