@@ -18,23 +18,15 @@
   <meta name="googlebot" content="index,follow" />
   <meta name="revisit-after" content="15days" />
   <link rel="shortcut icon" href="./public/icons/favicon.ico" type="image/x-icon" />
-
-
-  <!-- Styles from bootstrap -->
-
   <title>Market Music</title>
 </head>
 
 <body class="text-light body">
-
   <!-- star header -->
-
   <header class="header">
-
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top  p-1" id="navbar">
-
-      <div class="overlay"></div> <!-- Div for transparency -->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navbar-scrolled p-1" id="navbar">
+      <div class="overlay"></div> <!-- Div  for transparency -->
       <section class="container">
         <a href="/">
           <img src="/public/icon/logo.webp" alt="logo" class="logo">
@@ -46,44 +38,39 @@
         <div class="collapse navbar-collapse" id="navbar-start">
           <ul class="navbar-nav ms-auto gap-2">
             <li class="nav-item">
-              <a href="/src/pages/quienes.html" class="nav-link active">
+              <a href="./src/pages/quienes.html" class="nav-link active">
                 Quienes Somos
               </a>
             </li>
+
             <li>
-              <a href="/src/pages/auth/login.html" class="nav-link" id="login">Ingresar</a>
+              <a href="./src/pages/auth/login.html" class="nav-link" id="login">Ingresar</a>
             </li>
             <ul class="navbar-nav">
               <div class="" id="dropdown">
-
                 <ul class="navbar-nav">
-
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
                       Registrarse
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                      <li><a class="dropdown-item" href="./src/pages/auth/music_register.html" id="profile">Artista</a>
-                      </li>
-                      <li><a class="dropdown-item" href="/src/pages/auth/user_register.html" id="acount">Cliente</a>
-                      </li>
+                      <li><a class="dropdown-item" href="./src/pages/auth/music_register.html">Artista</a></li>
+                      <li><a class="dropdown-item" href="./src/pages/auth/user_register.html">Cliente</a></li>
                     </ul>
                   </li>
                 </ul>
               </div>
 
               <div class="" id="user-dropdown" style="display:none;">
-
                 <ul class="navbar-nav">
-
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
                       data-bs-toggle="dropdown" aria-expanded="false">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                      <!-- <li><a class="dropdown-item" href="#" id="perfil">Perfil</a></li> -->
-                      <li><a class="dropdown-item" href="./src/pages/auth/account.html" id="cuenta">Cuenta</a></li>
+                      <li><a class="dropdown-item" href="#" id="profile">Perfil</a></li>
+                      <li><a class="dropdown-item" href="./src/pages/auth/account.html" id="account">Cuenta</a></li>
                       <li><a class="dropdown-item" id="logout" href="#">Cerrar sesión</a></li>
                     </ul>
                   </li>
@@ -256,7 +243,7 @@
 
           <ul class="list-unstyled">
             <li>
-              <a href="/src/pages/auth/artist_account.html" class="text-body"><span>Promociona tu talento</span></a>
+              <a href="./src/pages/auth/music_register.html" class="text-body"><span>Promociona tu talento</span></a>
             </li>
             <li>
               <a href="./src/pages/auth/user_register.html" class="text-body"><span>Registrate</span></a>
@@ -271,10 +258,10 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="/src/pages/funciona.html" class="text-body"><span>Centro de Ayuda</span></a>
+              <a href="./src/pages/funciona.html" class="text-body"><span>Centro de Ayuda</span></a>
             </li>
             <li>
-              <a href="#contact" class="text-body"><span>Contáctanos</span></a>
+              <a href="https://wa.me/573014552334?text=Quiero Conocer mas sobre la plataforma" class="text-body"><span>Contáctanos</span></a>
             </li>
 
           </ul>
