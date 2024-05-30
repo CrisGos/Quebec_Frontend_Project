@@ -31,7 +31,6 @@ async function accountMod() {
     const getData = localStorage.getItem("userOnline");
     const exmp = JSON.parse(getData);
     const artist = database.find(singer => singer.username === exmp.username);
-    console.log(artist);
 
     
     // Populate the form with the artist's data
