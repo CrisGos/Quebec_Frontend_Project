@@ -1,3 +1,291 @@
+//local archives and bootstrap(icons and styles)
 @import url(./normalize.scss);
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import "bootstrap/scss/bootstrap";
+@import url(./colors.scss);
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Jersey+25+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+.main{
+    background-color:var(--gray);
+
+}
+
+
+
+:root{
+    --verde:#015958;
+    --color:#137676;
+    --color-thre:#02A5A4;
+    --color-four:#266f6e;
+    --color-five:#203838;
+    --fire-color:#D92525;
+    --dark-color:#000000;
+    --white-color:#FFFFFF;  /* Estilos para el texto superpuesto */
+	--gray:#1f2124;
+    --color-ilustration:#122626;
+  --color-wasap: #25D366;
+
+}
+
+
+
+// <!-- here start main -->
+.header {
+  
+	width: 100%;
+  background-image: url(/public/img/sing.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px;
+  margin-bottom: 2em;
+ }
+
+ // class navbar
+#navbar{
+ 
+  height: 5em;
+  text-align: center;
+ 
+}
+
+.navbar-nav {
+  flex-direction: row;
+
+}
+// .navbar-nav .nav-item {
+//   margin-left: 1rem;
+// }
+// .navbar-nav .dropdown-menu {
+//   display: block !important;
+// }
+
+.ms-auto {
+  margin-left: auto !important;
+}
+
+.change{
+  transition: 350ms cubic-bezier(0.65,0,0.35,1);
+  background:linear-gradient(#008057,#005181);
+}
+
+// styles logo
+.logo{
+    width: 6.5em;
+    margin-top: 1em;
+}
+.title{
+  font-size: 2.5em;
+}
+.subtitle{
+  font-size: 1em;
+}
+ // styles buttom header
+.btn-style,
+.btn-conocer{
+  background:linear-gradient(#008057,#005181);
+  font-size: 0.6em;
+  width: 12em;
+  color:var(--white-color);
+  opacity: .5;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-style:hover,
+.btn-conocer:hover, 
+.artist-genre:hover{
+  background:var(--gray);
+}
+
+//styles slider index
+.artist-genre{
+  background-color: var(--color-ilustration);
+  opacity: .8;
+  color:var(--white-color);
+  margin:3em;
+  width: 50%;
+  font-weight: bold;
+}
+
+
+//section about us
+.about-us{
+  width: 80%;
+  margin:2em;
+  
+}
+
+//main page whos
+
+.main-whos{
+ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// //section functions
+
+.img-fun {
+margin-bottom: 2em;
+background-image: url(/public/img/ilustracion2.png);
+}
+
+.im-artis:hover,
+.want-to-hire:hover{
+  cursor: pointer;
+  border: solid var(--white-color) 0.1em;
+}
+//image bottom
+.image-container{
+  opacity: 0.6;
+}
+// footer
+.redes{
+  color:var(--white-color);
+  display: flex;
+  
+}
+
+.footer{
+  background:linear-gradient(#008057,#005181);
+}
+.footer a {
+  
+  text-decoration: none;
+  color: var(--white-color);
+}
+a span{
+  color:var(--white-color);
+  font-size: 1em;
+}
+
+
+//flip-card
+
+.flip-card {
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+.flip-card-back {
+  background-color: #f8f9fa;
+  color: black;
+  transform: rotateY(180deg);
+}
+.card-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-cuerpo   {
+  padding: 20px;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-wasap);
+}
+
+.bi{
+  width: 10em;
+}
+
+
+@media (max-width: 576px) {
+
+
+  .body{
+    background-color: var(--gray);
+  }
+  .header{
+    height: 100vh;
+  
+  }
+
+  .logo{
+    width: 3rem;
+    margin-top: 0;
+  }
+  .title {
+    font-size: 1.7rem;
+    text-align: center;
+
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    text-align: center;
+    
+  }
+.left{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  .btn-style {
+    width: 100%;
+    
+  }
+  .contain-artis{
+    display: flex;
+    justify-content: center;
+  }
+
+  .artist-genre{
+    width:80%
+  }
+  .navbar-nav{
+    padding-bottom: 5em;
+    
+  }
+.how{
+  text-align: center;
+}
+.how h2{
+  font-size: 1.8rem;
+  margin-top: 2em;
+}
+
+  .carousel-item img {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+}
+
+
